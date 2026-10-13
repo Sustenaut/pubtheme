@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+// pubtheme's command; see lib/cli.js.
+import("../lib/cli.js");

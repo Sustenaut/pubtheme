@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/range",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+  ],
+  "name": "range",
+  "related": {
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:mrrhcs3656brxb5mcjgrbafi6xs24st5fdsuvlmtxlhu3yzyqtsa",
+    "size": 346
+  },
+  "cid": "pub:sha2-256:mrrhcs3656brxb5mcjgrbafi6xs24st5fdsuvlmtxlhu3yzyqtsa",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:mrrhcs3656brxb5mcjgrbafi6xs24st5fdsuvlmtxlhu3yzyqtsa",
+    "heads": [
+      "pub:sha2-256:mrrhcs3656brxb5mcjgrbafi6xs24st5fdsuvlmtxlhu3yzyqtsa"
+    ],
+    "members": [
+      "pub:sha2-256:mrrhcs3656brxb5mcjgrbafi6xs24st5fdsuvlmtxlhu3yzyqtsa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "normative",
+      "content": "Home growing and buying are compared per kilogram of fresh herbs or microgreens eaten, not per kilogram grown or bought.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "publication 0"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:hfeljizepyn6llgox3eyceuig7hylfw6osjcp7osctqis2i7dcua": {
+      "cid": "pub:sha2-256:hfeljizepyn6llgox3eyceuig7hylfw6osjcp7osctqis2i7dcua",
+      "class": "normative",
+      "held": true,
+      "label": "The counterfactual to growing a kilogram of herbs at home is buying the same kilogram, of the same crops,…",
+      "name": null,
+      "path": "o/pub:sha2-256:hfeljizepyn6llgox3eyceuig7hylfw6osjcp7osctqis2i7dcua.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:mrrhcs3656brxb5mcjgrbafi6xs24st5fdsuvlmtxlhu3yzyqtsa",
+    "class": "normative",
+    "held": true,
+    "label": "Home growing and buying are compared per kilogram of fresh herbs or microgreens eaten, not per kilogram grown…",
+    "name": null,
+    "path": "o/pub:sha2-256:mrrhcs3656brxb5mcjgrbafi6xs24st5fdsuvlmtxlhu3yzyqtsa.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:hfeljizepyn6llgox3eyceuig7hylfw6osjcp7osctqis2i7dcua",
+      "how": "presupposed by"
+    }
+  ]
+}

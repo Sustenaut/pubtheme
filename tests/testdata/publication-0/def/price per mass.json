@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/price%20per%20mass",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq"
+  ],
+  "name": "price per mass",
+  "related": {
+    "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq": {
+      "cid": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+      "class": "definitional",
+      "held": true,
+      "label": "price per mass",
+      "name": "price per mass",
+      "path": "o/pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

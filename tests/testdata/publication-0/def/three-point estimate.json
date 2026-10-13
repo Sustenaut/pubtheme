@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/three-point%20estimate",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a"
+  ],
+  "name": "three-point estimate",
+  "related": {
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a": {
+      "cid": "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+      "class": "definitional",
+      "held": true,
+      "label": "three-point estimate",
+      "name": "three-point estimate",
+      "path": "o/pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    }
+  }
+}

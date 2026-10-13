@@ -1,0 +1,84 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+    "size": 425
+  },
+  "cid": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+    "heads": [
+      "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq"
+    ],
+    "members": [
+      "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "procedural",
+      "content": "Visit three large supermarkets in Tallinn in one week, record the price and stated mass of every fresh herb pot and microgreen pack on the shelf, and weigh one pack's packaging of each kind at home.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq": {
+      "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+      "class": "empirical",
+      "held": true,
+      "label": "One retail pack holds this much herb and this much packaging.",
+      "name": null,
+      "path": "o/pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q": {
+      "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+      "class": "empirical",
+      "held": true,
+      "label": "Fresh herbs and microgreens on the shelf cost this much per kilogram.",
+      "name": null,
+      "path": "o/pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+    "class": "procedural",
+    "held": true,
+    "label": "Visit three large supermarkets in Tallinn in one week, record the price and stated mass of every fresh herb…",
+    "name": null,
+    "path": "o/pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+      "how": "method of"
+    },
+    {
+      "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+      "how": "method of"
+    }
+  ]
+}

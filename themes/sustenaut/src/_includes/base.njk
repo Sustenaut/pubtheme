@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title and title != site.title %}{{ title }} · {% endif %}{{ site.title }}</title>
+<link rel="stylesheet" href="{{ '/style.css' | url }}">
+{%- if site.logo %}<link rel="icon" href="{{ '/logo.svg' | url }}" type="image/svg+xml">{% endif %}
+</head>
+<body>
+<div class="flex min-h-screen flex-col">
+  <header class="border-b border-rule bg-surface">
+    <nav class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-7 gap-y-3 px-6 py-3" aria-label="Site">
+      <a href="{{ '/' | url }}" class="flex min-h-11 items-center gap-2.5 font-display text-xl font-extrabold text-ink no-underline">
+        {%- if site.logo %}<img src="{{ '/logo.svg' | url }}" alt="" width="28" height="28">{% endif %}
+        {{ site.title }}
+      </a>
+      <div class="flex flex-wrap gap-5 font-semibold">
+        <a href="{{ '/' | url }}" class="no-underline">Publications</a>
+        <a href="{{ '/names/' | url }}" class="no-underline">Names</a>
+      </div>
+    </nav>
+  </header>
+  <main class="mx-auto box-border flex w-full max-w-6xl flex-col gap-6 px-6 pt-6 pb-12">
+    {{ content | safe }}
+  </main>
+  <footer class="border-t border-rule bg-surface">
+    <div class="mx-auto flex max-w-6xl flex-wrap gap-x-8 gap-y-2 px-6 py-4 text-sm text-muted">
+      <span>{% if site.footer %}{{ site.footer }}{% else %}Pages made by pubtheme's sustenaut theme from the objects they show.{% endif %}</span>
+      {%- if checkable %}<a href="{{ checkable | url }}" class="ml-auto">Check this page against its object</a>{% endif %}
+    </div>
+  </footer>
+</div>
+</body>
+</html>

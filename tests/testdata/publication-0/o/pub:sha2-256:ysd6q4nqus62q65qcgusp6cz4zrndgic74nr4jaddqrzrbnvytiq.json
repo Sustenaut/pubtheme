@@ -1,0 +1,55 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:ysd6q4nqus62q65qcgusp6cz4zrndgic74nr4jaddqrzrbnvytiq",
+    "size": 332
+  },
+  "cid": "pub:sha2-256:ysd6q4nqus62q65qcgusp6cz4zrndgic74nr4jaddqrzrbnvytiq",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:ysd6q4nqus62q65qcgusp6cz4zrndgic74nr4jaddqrzrbnvytiq",
+    "heads": [
+      "pub:sha2-256:ysd6q4nqus62q65qcgusp6cz4zrndgic74nr4jaddqrzrbnvytiq"
+    ],
+    "members": [
+      "pub:sha2-256:ysd6q4nqus62q65qcgusp6cz4zrndgic74nr4jaddqrzrbnvytiq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "normative",
+      "content": "Each pillar's result stands on its own: a saving in one pillar is never subtracted from a cost in another.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "publication 0"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:ysd6q4nqus62q65qcgusp6cz4zrndgic74nr4jaddqrzrbnvytiq",
+    "class": "normative",
+    "held": true,
+    "label": "Each pillar's result stands on its own: a saving in one pillar is never subtracted from a cost in another.",
+    "name": null,
+    "path": "o/pub:sha2-256:ysd6q4nqus62q65qcgusp6cz4zrndgic74nr4jaddqrzrbnvytiq.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

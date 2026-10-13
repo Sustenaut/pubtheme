@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/water%20per%20tray",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq"
+  ],
+  "name": "water per tray",
+  "related": {
+    "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq": {
+      "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+      "class": "definitional",
+      "held": true,
+      "label": "water per tray",
+      "name": "water per tray",
+      "path": "o/pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

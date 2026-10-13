@@ -1,0 +1,154 @@
+---
+pagination:
+  data: pub.objects
+  size: 1
+  alias: b
+permalink: "o/{{ b.cid }}/index.html"
+layout: base.njk
+eleventyComputed:
+  title: "{{ b.summary.label }}"
+  checkable: "/{{ b.bytes.path }}"
+---
+{%- import "components.njk" as ui with context -%}
+{%- set s = b.summary -%}
+{%- set body = b.object.body -%}
+{%- set signatures = b.used_by | byhow("signature") -%}
+{%- set docs = [] -%}
+{%- for e in b.used_by %}{% if e.how.startsWith("cited in document") %}{% set docs = (docs.push(e), docs) %}{% endif %}{% endfor -%}
+
+{%- if docs.length %}
+<p class="m-0 text-sm text-muted">
+  {%- for e in docs %}In {{ ui.ref(e.cid, b.related) }}{% if not loop.last %} · {% endif %}{% endfor -%}
+</p>
+{%- endif %}
+
+<div class="flex flex-col gap-2.5">
+  <div class="flex flex-wrap gap-2">
+    {%- if s.class %}{{ ui.tag(s.class + (" " + s.sort if s.sort else " claim")) }}{% else %}{{ ui.tag(s.type) }}{% endif %}
+    {%- if body.data and body.data.rows | hasnull %} {{ ui.tag("values not yet gathered", "warning") }}{% endif %}
+    {%- if not signatures.length %} {{ ui.tag("unsigned") }}{% endif %}
+    {%- if b.lineage.heads.length > 1 %} {{ ui.tag("branched", "warning") }}{% endif %}
+  </div>
+  <h1 class="m-0 max-w-4xl font-display text-3xl leading-tight font-extrabold">{% if s.sort %}{{ s.label }}{% elif body.title %}{{ body.title }}{% elif body.content %}{{ body.content }}{% else %}{{ s.label }}{% endif %}</h1>
+  {%- if s.sort and body.content %}<p class="m-0 max-w-3xl text-lg">{{ body.content }}</p>{% endif %}
+  {%- if body.scope %}
+  <p class="m-0 text-muted">Asserted under: <strong class="text-ink">{{ body.scope.domain }}</strong>
+    {%- if body.scope.precision %} · precision {{ body.scope.precision }}{% endif %}
+    {%- if body.scope.temporal %} · {{ body.scope.temporal.from }} to {{ body.scope.temporal.to }}{% endif %}</p>
+  {%- for c in body.scope.conditions %}<p class="m-0 text-sm text-muted">Condition: {{ c }}</p>{% endfor %}
+  {%- elif body.content %}
+  <p class="m-0 text-muted">No scope declared: the author did not state the conditions this holds under.</p>
+  {%- endif %}
+  {%- if b.address %}<p class="m-0 font-mono text-sm text-muted">{{ b.address }}</p>{% endif %}
+</div>
+
+{%- if b.critiques.length %}
+{% call ui.callout("warning") %}<strong>{{ b.critiques.length }} critique{% if b.critiques.length > 1 %}s{% endif %}.</strong>
+{% for c in b.critiques %} {{ ui.ref(c, b.related) }}{% endfor %}{% endcall %}
+{%- endif %}
+
+{% call ui.panel("Where this sits") %}
+<div class="flex flex-wrap items-stretch gap-5">
+  <div class="flex min-w-0 flex-[1_1_280px] flex-col gap-2">
+    {{ ui.eyebrow("Rests on · " + b.rests_on.length) }}
+    {%- for e in b.rests_on %}{{ ui.objlink(e.cid, b.related, e.how) }}{% else %}<span class="text-muted">Nothing: it presupposes no other publet.</span>{% endfor %}
+    {%- if b.closure.length > b.rests_on.length %}
+    <details class="my-1"><summary class="cursor-pointer text-muted">Everything it rests on, all the way down ({{ b.closure.length }})</summary>
+      <div class="mt-2 flex flex-col gap-2">{% for c in b.closure %}{{ ui.objlink(c, b.related) }}{% endfor %}</div>
+    </details>
+    {%- endif %}
+  </div>
+  <div class="flex flex-[0_1_180px] flex-col items-center justify-center gap-1 text-center">
+    <svg width="140" height="32" viewBox="0 0 140 32" aria-hidden="true" class="text-rule-strong"><path d="M2 16 H54 M86 16 H138 M48 10 L54 16 L48 22 M132 10 L138 16 L132 22" stroke="currentColor" stroke-width="2" fill="none"></path><circle cx="70" cy="16" r="12" class="fill-primary"></circle></svg>
+    <span class="font-bold">This {% if s.sort %}definition{% elif s.class %}claim{% else %}object{% endif %}</span>
+    <code class="text-xs text-muted">{{ b.cid | short }}</code>
+  </div>
+  <div class="flex min-w-0 flex-[1_1_280px] flex-col gap-2">
+    {%- set users = b.used_by | nothow("signature") %}
+    {{ ui.eyebrow("Used by · " + users.length) }}
+    {%- for e in users %}{{ ui.objlink(e.cid, b.related, e.how) }}{% else %}<span class="text-muted">Nothing here cites it yet.</span>{% endfor %}
+    <span class="mt-2">{{ ui.eyebrow("Critiques · " + b.critiques.length) }}</span>
+    {%- if not b.critiques.length %}<span class="text-muted">None yet.</span>{% endif %}
+    <span class="mt-2">{{ ui.eyebrow("Versions · " + b.lineage.members.length) }}</span>
+    {%- if b.lineage.members.length == 1 %}<span class="text-muted">This is the only version.</span>
+    {%- else %}{% for m in b.lineage.members %}{% if m == b.cid %}<span>This version</span>{% else %}{{ ui.objlink(m, b.related, "head" if m in b.lineage.heads else "earlier") }}{% endif %}{% endfor %}{% endif %}
+  </div>
+</div>
+{% endcall %}
+
+<div class="flex flex-wrap items-start gap-6">
+  <div class="flex min-w-0 flex-[999_1_560px] flex-col gap-6">
+    {%- if body.defines %}
+    {% call ui.panel("What it defines") %}
+    {%- set d = body.defines %}
+    <dl class="m-0 grid grid-cols-[max-content_1fr] gap-x-4 gap-y-1">
+      <dt class="text-muted">sort</dt><dd class="m-0">{{ d.sort }}</dd>
+      {%- if d.symbol %}<dt class="text-muted">symbol</dt><dd class="m-0"><code>{{ d.symbol }}</code></dd>{% endif %}
+      {%- if d.name %}<dt class="text-muted">name</dt><dd class="m-0">{{ d.name }}{% if d.version %} {{ d.version }}{% endif %}</dd>{% endif %}
+      {%- if d.sort == "unit" %}<dt class="text-muted">equals</dt><dd class="m-0">{{ d.value }} <code>{{ d.unit }}</code></dd>{% endif %}
+      {%- if d.dimension %}<dt class="text-muted">dimension</dt><dd class="m-0">{% for base, exp in d.dimension %}<code>{{ base }}</code>{% if exp != 1 %}<sup>{{ exp }}</sup>{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</dd>{% endif %}
+      {%- if d.units %}<dt class="text-muted">units</dt><dd class="m-0">{% for u in d.units %}<code>{{ u }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</dd>{% endif %}
+      {%- if d.describes %}<dt class="text-muted">describes</dt><dd class="m-0">{{ d.describes }}</dd>{% endif %}
+    </dl>
+    {%- if d.parameters %}
+    <table class="border-collapse"><tbody>
+      {%- for p in d.parameters %}<tr><td class="py-0.5 pr-4"><code>{{ p.name }}</code></td><td class="py-0.5 pr-4 text-muted">{{ p.type }}</td><td class="py-0.5">{{ p.meaning }}</td></tr>{% endfor %}
+    </tbody></table>
+    {%- endif %}
+    {% endcall %}
+    {%- endif %}
+
+    {%- if body.data %}
+    {% call ui.panel("Values") %}{{ ui.values(b) }}{% endcall %}
+    {%- endif %}
+
+    {%- if body.computes %}
+    {% call ui.panel("What it computes") %}
+    <dl class="m-0 grid grid-cols-[max-content_1fr] gap-x-4 gap-y-1">
+      {%- for i in body.computes.inputs %}<dt class="text-muted">input <code>{{ i.name }}</code></dt><dd class="m-0">{{ ui.ref(i.kind, b.related) }}</dd>{% endfor %}
+      {%- for o in body.computes.outputs %}<dt class="text-muted">output <code>{{ o.name }}</code></dt><dd class="m-0">{{ ui.ref(o.kind, b.related) }}</dd>{% endfor %}
+      {%- if body.computes.rounding %}<dt class="text-muted">rounding</dt><dd class="m-0">{{ body.computes.rounding }}</dd>{% endif %}
+      {%- if body.computes.seed %}<dt class="text-muted">seed</dt><dd class="m-0">{{ body.computes.seed }}</dd>{% endif %}
+    </dl>
+    {% endcall %}
+    {%- endif %}
+
+    {%- if body.evidence and body.evidence.length %}
+    {% call ui.panel("How it is known") %}
+    <ul class="m-0 flex list-none flex-col gap-2 p-0">
+      {%- for e in body.evidence %}
+      <li><span class="text-sm text-muted">{{ e.role }}</span>
+        {% if e.kind == "external" %}{% if e.ref | isurl %}<a href="{{ e.ref }}" rel="nofollow noreferrer">{{ e.ref }}</a>{% else %}{{ e.ref }}{% endif %} {{ ui.tag("unverified", "warning") }}{% else %}{{ ui.ref(e.ref, b.related) }}{% endif %}
+        {%- if e.note %}<br><span class="text-sm text-muted">{{ e.note }}</span>{% endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+    {% endcall %}
+    {%- endif %}
+
+    {%- if s.type == "doc" %}
+    {%- for section in body.sections %}
+    {% call ui.panel(section.heading) %}
+    {%- for item in section.items %}
+    <div class="flex flex-col gap-1.5 border-b border-rule pb-3 last:border-0">
+      <div class="flex flex-wrap gap-2">{{ ui.tag(item.role or "assert") }}</div>
+      {{ ui.ref(item.ref, b.related) }}
+      {%- if item.gloss %}<p class="m-0 border-l-2 border-dotted border-rule-strong pl-3 text-muted italic">{{ item.gloss }}</p>{% endif %}
+      {%- if pub.byCid[item.ref] %}{{ ui.values(pub.byCid[item.ref]) }}{% endif %}
+    </div>
+    {%- endfor %}
+    {% endcall %}
+    {%- endfor %}
+    {%- endif %}
+  </div>
+
+  <aside class="flex min-w-0 flex-[1_1_300px] flex-col gap-2.5 rounded-panel border border-rule bg-surface px-6 py-5 text-sm" aria-label="The object">
+    <h2 class="m-0 font-display text-lg font-extrabold">The object</h2>
+    <div><span class="text-muted">Identifier</span><br><code class="break-all">{{ b.cid }}</code></div>
+    <div><span class="text-muted">Type</span><br>{{ s.type }}</div>
+    <div><span class="text-muted">Author</span><br>{{ ui.ref(b.object.author, b.related) }}</div>
+    <div><span class="text-muted">Created</span><br>{{ b.object.created }}</div>
+    <div><span class="text-muted">Signatures</span><br>{% if signatures.length %}{{ signatures.length }} held; check them with <code>pub why</code>{% else %}none: an unsigned object{% endif %}</div>
+    <div class="flex flex-wrap gap-3"><a href="{{ ('/' + b.bytes.path) | url }}">Canonical bytes</a><a href="{{ ('/o/' + b.cid + '.json') | url }}">Reading bundle</a></div>
+  </aside>
+</div>

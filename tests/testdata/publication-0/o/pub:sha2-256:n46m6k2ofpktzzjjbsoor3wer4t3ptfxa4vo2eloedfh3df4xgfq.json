@@ -1,0 +1,84 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+    "size": 344
+  },
+  "cid": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+    "heads": [
+      "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq"
+    ],
+    "members": [
+      "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "procedural",
+      "content": "Keep the receipts for seed and substrate, and divide each purchase's price by the number of trays it sowed or filled.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq": {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray uses this much seed and substrate, which go to compost after harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q": {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "class": "empirical",
+      "held": true,
+      "label": "Seed and substrate for one tray cost this much.",
+      "name": null,
+      "path": "o/pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+    "class": "procedural",
+    "held": true,
+    "label": "Keep the receipts for seed and substrate, and divide each purchase's price by the number of trays it sowed or…",
+    "name": null,
+    "path": "o/pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "how": "method of"
+    },
+    {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "how": "method of"
+    }
+  ]
+}

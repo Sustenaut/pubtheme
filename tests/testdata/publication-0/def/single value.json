@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/single%20value",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa"
+  ],
+  "name": "single value",
+  "related": {
+    "pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa": {
+      "cid": "pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa",
+      "class": "definitional",
+      "held": true,
+      "label": "single value",
+      "name": "single value",
+      "path": "o/pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    }
+  }
+}

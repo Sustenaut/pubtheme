@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/empirical%20sample",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq"
+  ],
+  "name": "empirical sample",
+  "related": {
+    "pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq": {
+      "cid": "pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq",
+      "class": "definitional",
+      "held": true,
+      "label": "empirical sample",
+      "name": "empirical sample",
+      "path": "o/pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    }
+  }
+}

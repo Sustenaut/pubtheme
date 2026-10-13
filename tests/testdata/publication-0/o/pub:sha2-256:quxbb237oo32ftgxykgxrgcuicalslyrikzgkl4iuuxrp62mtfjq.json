@@ -1,0 +1,116 @@
+{
+  "address": "https://pub.sustenaut.eu/def/price%20per%20mass",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+    "size": 505
+  },
+  "cid": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+  "closure": [
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+    "heads": [
+      "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq"
+    ],
+    "members": [
+      "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "price per mass: what a household pays for one unit mass of a good.",
+      "defines": {
+        "dimension": {
+          "[EUR]": 1,
+          "g": -1
+        },
+        "name": "price per mass",
+        "sort": "kind",
+        "units": [
+          "[EUR]/kg"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa": {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "class": "definitional",
+      "held": true,
+      "label": "[EUR]",
+      "name": "[eur]",
+      "path": "o/pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q": {
+      "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+      "class": "empirical",
+      "held": true,
+      "label": "Fresh herbs and microgreens on the shelf cost this much per kilogram.",
+      "name": null,
+      "path": "o/pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+    "class": "definitional",
+    "held": true,
+    "label": "price per mass",
+    "name": "price per mass",
+    "path": "o/pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+      "how": "kind of"
+    }
+  ]
+}

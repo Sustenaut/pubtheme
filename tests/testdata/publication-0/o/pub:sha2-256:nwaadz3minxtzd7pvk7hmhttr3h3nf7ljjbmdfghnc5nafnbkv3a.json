@@ -1,0 +1,182 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+    "size": 1038
+  },
+  "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+  "closure": [
+    "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+    "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq",
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+    "heads": [
+      "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a"
+    ],
+    "members": [
+      "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "One tray of each crop takes this much tap water from soaking the seed to harvest.",
+      "data": {
+        "columns": [
+          {
+            "name": "crop"
+          },
+          {
+            "kind": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+            "measure": "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq",
+            "name": "water",
+            "unit": "L/{tray}",
+            "unit_defs": {
+              "{tray}": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "pea shoots",
+            null
+          ],
+          [
+            "sunflower",
+            null
+          ],
+          [
+            "radish",
+            null
+          ],
+          [
+            "basil",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+        "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+        "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "home growing in Estonia, LED shelf, from 2026-11"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq": [
+      "mean",
+      "sd",
+      "n"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq": {
+      "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+      "class": "definitional",
+      "held": true,
+      "label": "water per tray",
+      "name": "water per tray",
+      "path": "o/pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq": {
+      "cid": "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq",
+      "class": "definitional",
+      "held": true,
+      "label": "mean and standard deviation",
+      "name": "mean and standard deviation",
+      "path": "o/pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta": {
+      "cid": "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta",
+      "class": "procedural",
+      "held": true,
+      "label": "Pour every watering for the tray from one measuring jug and write down each volume, from soaking the seed to…",
+      "name": null,
+      "path": "o/pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+    "class": "empirical",
+    "held": true,
+    "label": "One tray of each crop takes this much tap water from soaking the seed to harvest.",
+    "name": null,
+    "path": "o/pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

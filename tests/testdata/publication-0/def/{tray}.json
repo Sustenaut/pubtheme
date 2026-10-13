@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/%7Btray%7D",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+  ],
+  "name": "{tray}",
+  "related": {
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  }
+}

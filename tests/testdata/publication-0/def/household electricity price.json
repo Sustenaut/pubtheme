@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/household%20electricity%20price",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a"
+  ],
+  "name": "household electricity price",
+  "related": {
+    "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a": {
+      "cid": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+      "class": "definitional",
+      "held": true,
+      "label": "household electricity price",
+      "name": "household electricity price",
+      "path": "o/pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

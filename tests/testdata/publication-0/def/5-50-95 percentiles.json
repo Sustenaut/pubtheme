@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/5-50-95%20percentiles",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq"
+  ],
+  "name": "5-50-95 percentiles",
+  "related": {
+    "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq": {
+      "cid": "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+      "class": "definitional",
+      "held": true,
+      "label": "5-50-95 percentiles",
+      "name": "5-50-95 percentiles",
+      "path": "o/pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    }
+  }
+}

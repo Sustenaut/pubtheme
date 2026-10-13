@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/mean%20and%20standard%20deviation",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq"
+  ],
+  "name": "mean and standard deviation",
+  "related": {
+    "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq": {
+      "cid": "pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq",
+      "class": "definitional",
+      "held": true,
+      "label": "mean and standard deviation",
+      "name": "mean and standard deviation",
+      "path": "o/pub:sha2-256:4auj66bxgla3mflu4hasmm6ppc7pw6kj6ivyd6v6ahfow2gkcjzq.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    }
+  }
+}

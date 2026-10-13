@@ -1,0 +1,92 @@
+{
+  "address": "https://pub.sustenaut.eu/def/5-50-95%20percentiles",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+    "size": 541
+  },
+  "cid": "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+    "heads": [
+      "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq"
+    ],
+    "members": [
+      "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "5-50-95 percentiles: a distribution summarised by its 5th, 50th and 95th percentiles.",
+      "defines": {
+        "describes": "uncertainty",
+        "name": "5-50-95 percentiles",
+        "parameters": [
+          {
+            "meaning": "the 5th percentile",
+            "name": "p05",
+            "type": "quantity"
+          },
+          {
+            "meaning": "the median",
+            "name": "p50",
+            "type": "quantity"
+          },
+          {
+            "meaning": "the 95th percentile",
+            "name": "p95",
+            "type": "quantity"
+          }
+        ],
+        "sort": "measure"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq": {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "class": "empirical",
+      "held": true,
+      "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "name": null,
+      "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+    "class": "definitional",
+    "held": true,
+    "label": "5-50-95 percentiles",
+    "name": "5-50-95 percentiles",
+    "path": "o/pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq.json",
+    "sort": "measure",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "how": "measure of"
+    }
+  ]
+}

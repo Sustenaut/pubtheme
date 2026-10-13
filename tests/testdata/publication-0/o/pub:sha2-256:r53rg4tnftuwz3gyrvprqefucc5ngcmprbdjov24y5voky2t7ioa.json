@@ -1,0 +1,132 @@
+{
+  "address": "https://pub.sustenaut.eu/def/cost%20per%20tray",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+    "size": 593
+  },
+  "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+  "closure": [
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+    "heads": [
+      "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa"
+    ],
+    "members": [
+      "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "cost per tray: what a household pays for one tray's consumables or electricity.",
+      "defines": {
+        "dimension": {
+          "[EUR]": 1,
+          "{tray}": -1
+        },
+        "name": "cost per tray",
+        "sort": "kind",
+        "units": [
+          "[EUR]/{tray}"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa": {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "class": "definitional",
+      "held": true,
+      "label": "[EUR]",
+      "name": "[eur]",
+      "path": "o/pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q": {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "class": "empirical",
+      "held": true,
+      "label": "Seed and substrate for one tray cost this much.",
+      "name": null,
+      "path": "o/pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+    "class": "definitional",
+    "held": true,
+    "label": "cost per tray",
+    "name": "cost per tray",
+    "path": "o/pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "how": "kind of"
+    }
+  ]
+}

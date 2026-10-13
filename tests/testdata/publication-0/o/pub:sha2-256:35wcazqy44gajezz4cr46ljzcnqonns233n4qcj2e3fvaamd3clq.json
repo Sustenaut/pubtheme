@@ -1,0 +1,117 @@
+{
+  "address": "https://pub.sustenaut.eu/def/water%20per%20tray",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+    "size": 524
+  },
+  "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+  "closure": [
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+    "heads": [
+      "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq"
+    ],
+    "members": [
+      "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "water per tray: the tap water poured into one tray from sowing to harvest.",
+      "defines": {
+        "dimension": {
+          "m": 3,
+          "{tray}": -1
+        },
+        "name": "water per tray",
+        "sort": "kind",
+        "units": [
+          "mL/{tray}",
+          "L/{tray}"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a": {
+      "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop takes this much tap water from soaking the seed to harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+    "class": "definitional",
+    "held": true,
+    "label": "water per tray",
+    "name": "water per tray",
+    "path": "o/pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+      "how": "kind of"
+    }
+  ]
+}

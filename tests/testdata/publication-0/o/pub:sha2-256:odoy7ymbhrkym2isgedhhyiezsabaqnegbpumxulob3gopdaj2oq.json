@@ -1,0 +1,150 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+    "size": 822
+  },
+  "cid": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+  "closure": [
+    "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq",
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+    "heads": [
+      "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq"
+    ],
+    "members": [
+      "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "Households in Europe throw away this share of the fresh herbs they buy uneaten.",
+      "data": {
+        "columns": [
+          {
+            "name": "product"
+          },
+          {
+            "kind": "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq",
+            "measure": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+            "name": "share",
+            "unit": "%"
+          }
+        ],
+        "rows": [
+          [
+            "fresh herbs",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq",
+        "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "European households"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": [
+      "low",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq": {
+      "cid": "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq",
+      "class": "definitional",
+      "held": true,
+      "label": "share",
+      "name": "share",
+      "path": "o/pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma": {
+      "cid": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+      "class": "procedural",
+      "held": true,
+      "label": "Search for life-cycle assessments of fresh culinary herbs or microgreens sold in Europe, keep those that…",
+      "name": null,
+      "path": "o/pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+    "class": "empirical",
+    "held": true,
+    "label": "Households in Europe throw away this share of the fresh herbs they buy uneaten.",
+    "name": null,
+    "path": "o/pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

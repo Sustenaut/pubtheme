@@ -1,0 +1,172 @@
+{
+  "address": "https://pub.sustenaut.eu/def/climate%20impact%20per%20mass",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+    "size": 558
+  },
+  "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+  "closure": [
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+    "heads": [
+      "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q"
+    ],
+    "members": [
+      "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "climate impact per mass: the climate impact of producing, or of providing, one unit mass of a good.",
+      "defines": {
+        "dimension": {
+          "{CO2e}": 1
+        },
+        "name": "climate impact per mass",
+        "sort": "kind",
+        "units": [
+          "g{CO2e}/g",
+          "kg{CO2e}/kg"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa": {
+      "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+      "class": "procedural",
+      "held": true,
+      "label": "Read each three-point estimate as a PERT distribution, draw 100000 samples of energy times grid intensity…",
+      "name": null,
+      "path": "o/pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa": {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "class": "empirical",
+      "held": true,
+      "label": "Producing one kilogram of each growing input has this climate impact, cradle to retail.",
+      "name": null,
+      "path": "o/pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q": {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "class": "empirical",
+      "held": true,
+      "label": "Supplying one kilogram of fresh herbs or microgreens to a supermarket shelf has this climate impact.",
+      "name": null,
+      "path": "o/pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq": {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "class": "empirical",
+      "held": true,
+      "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "name": null,
+      "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq": {
+      "cid": "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq",
+      "class": "procedural",
+      "held": true,
+      "label": "Multiply energy per tray by grid intensity and divide by harvest per tray, combining ranges with interval…",
+      "name": null,
+      "path": "o/pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a": {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "class": "definitional",
+      "held": true,
+      "label": "{CO2e}",
+      "name": "{co2e}",
+      "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+    "class": "definitional",
+    "held": true,
+    "label": "climate impact per mass",
+    "name": "climate impact per mass",
+    "path": "o/pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "how": "kind of"
+    },
+    {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "how": "kind of"
+    },
+    {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "how": "kind of"
+    },
+    {
+      "cid": "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq",
+      "how": "presupposed by"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "address": "https://pub.sustenaut.eu/def/grid%20carbon%20intensity",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+    "size": 559
+  },
+  "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+  "closure": [
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+    "heads": [
+      "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq"
+    ],
+    "members": [
+      "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "grid carbon intensity: the climate impact of one unit of electricity drawn from a grid.",
+      "defines": {
+        "dimension": {
+          "m": -2,
+          "s": 2,
+          "{CO2e}": 1
+        },
+        "name": "grid carbon intensity",
+        "sort": "kind",
+        "units": [
+          "g{CO2e}/(kW.h)",
+          "kg{CO2e}/(kW.h)"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa": {
+      "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+      "class": "procedural",
+      "held": true,
+      "label": "Read each three-point estimate as a PERT distribution, draw 100000 samples of energy times grid intensity…",
+      "name": null,
+      "path": "o/pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya": {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "class": "empirical",
+      "held": true,
+      "label": "Electricity drawn from the Estonian grid during a home grow light's hours had this climate impact in 2026.",
+      "name": null,
+      "path": "o/pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq": {
+      "cid": "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq",
+      "class": "procedural",
+      "held": true,
+      "label": "Multiply energy per tray by grid intensity and divide by harvest per tray, combining ranges with interval…",
+      "name": null,
+      "path": "o/pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a": {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "class": "definitional",
+      "held": true,
+      "label": "{CO2e}",
+      "name": "{co2e}",
+      "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+    "class": "definitional",
+    "held": true,
+    "label": "grid carbon intensity",
+    "name": "grid carbon intensity",
+    "path": "o/pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "how": "kind of"
+    },
+    {
+      "cid": "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq",
+      "how": "presupposed by"
+    }
+  ]
+}

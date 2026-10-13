@@ -1,0 +1,219 @@
+{
+  "address": "https://pub.sustenaut.eu/def/%7Btray%7D",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "size": 399
+  },
+  "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+  "closure": [
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "heads": [
+      "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+    ],
+    "members": [
+      "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "tray: one 25 by 50 cm growing tray, sown once and harvested once.",
+      "defines": {
+        "sort": "dimension",
+        "symbol": "{tray}"
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa": {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "class": "definitional",
+      "held": true,
+      "label": "harvest per tray",
+      "name": "harvest per tray",
+      "path": "o/pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq": {
+      "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+      "class": "definitional",
+      "held": true,
+      "label": "water per tray",
+      "name": "water per tray",
+      "path": "o/pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla": {
+      "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of microgreens under a 12 h/day LED uses this much electricity from sowing to harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq": {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "class": "definitional",
+      "held": true,
+      "label": "electrical energy per tray",
+      "name": "electrical energy per tray",
+      "path": "o/pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq": {
+      "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+      "class": "definitional",
+      "held": true,
+      "label": "input mass per tray",
+      "name": "input mass per tray",
+      "path": "o/pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a": {
+      "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop takes this much tap water from soaking the seed to harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa": {
+      "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+      "class": "definitional",
+      "held": true,
+      "label": "cost per tray",
+      "name": "cost per tray",
+      "path": "o/pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq": {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray uses this much seed and substrate, which go to compost after harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q": {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "class": "empirical",
+      "held": true,
+      "label": "Seed and substrate for one tray cost this much.",
+      "name": null,
+      "path": "o/pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa": {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop gives this much fresh harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "class": "definitional",
+    "held": true,
+    "label": "{tray}",
+    "name": "{tray}",
+    "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+    "sort": "dimension",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+      "how": "unit of"
+    },
+    {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+      "how": "unit of"
+    },
+    {
+      "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "how": "unit of"
+    },
+    {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "how": "unit of"
+    },
+    {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "how": "unit of"
+    }
+  ]
+}

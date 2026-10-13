@@ -1,0 +1,8 @@
+---
+layout: base.njk
+permalink: "404.html"
+title: Not found
+---
+{%- import "components.njk" as ui with context -%}
+{{ ui.page_heading("Not found", "This site holds no page at this address. An object it does not hold has no page here; its identifier may still find it on another host.") }}
+<p class="m-0"><a href="{{ '/' | url }}">Back to the publications</a> · <a href="{{ '/names/' | url }}">Names</a></p>

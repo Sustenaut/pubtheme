@@ -1,0 +1,70 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta",
+    "size": 355
+  },
+  "cid": "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta",
+    "heads": [
+      "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta"
+    ],
+    "members": [
+      "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "procedural",
+      "content": "Pour every watering for the tray from one measuring jug and write down each volume, from soaking the seed to the day of harvest.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a": {
+      "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop takes this much tap water from soaking the seed to harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta",
+    "class": "procedural",
+    "held": true,
+    "label": "Pour every watering for the tray from one measuring jug and write down each volume, from soaking the seed to…",
+    "name": null,
+    "path": "o/pub:sha2-256:sd65md4x5j3muc66yda4fbl5hhi4zt6xzfysefqrwl4swd5o2pta.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+      "how": "method of"
+    }
+  ]
+}

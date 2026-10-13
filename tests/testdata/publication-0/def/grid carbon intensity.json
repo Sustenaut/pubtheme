@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/grid%20carbon%20intensity",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq"
+  ],
+  "name": "grid carbon intensity",
+  "related": {
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq": {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "class": "definitional",
+      "held": true,
+      "label": "grid carbon intensity",
+      "name": "grid carbon intensity",
+      "path": "o/pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

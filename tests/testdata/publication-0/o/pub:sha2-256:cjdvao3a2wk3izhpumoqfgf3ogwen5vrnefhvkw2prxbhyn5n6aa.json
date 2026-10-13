@@ -1,0 +1,67 @@
+{
+  "address": "https://pub.sustenaut.eu/def/single%20value",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa",
+    "size": 400
+  },
+  "cid": "pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa",
+    "heads": [
+      "pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa"
+    ],
+    "members": [
+      "pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "single value: a value stated as exact, with no uncertainty.",
+      "defines": {
+        "describes": "exact",
+        "name": "single value",
+        "parameters": [
+          {
+            "meaning": "the value",
+            "name": "value",
+            "type": "quantity"
+          }
+        ],
+        "sort": "measure"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa",
+    "class": "definitional",
+    "held": true,
+    "label": "single value",
+    "name": "single value",
+    "path": "o/pub:sha2-256:cjdvao3a2wk3izhpumoqfgf3ogwen5vrnefhvkw2prxbhyn5n6aa.json",
+    "sort": "measure",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

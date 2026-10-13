@@ -1,0 +1,189 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+    "size": 1084
+  },
+  "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+  "closure": [
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+    "heads": [
+      "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla"
+    ],
+    "members": [
+      "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "One tray of microgreens under a 12 h/day LED uses this much electricity from sowing to harvest.",
+      "data": {
+        "columns": [
+          {
+            "name": "setup"
+          },
+          {
+            "kind": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+            "measure": "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+            "name": "energy",
+            "unit": "kW.h/{tray}",
+            "unit_defs": {
+              "{tray}": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "LED panel, 12 h/day, no heat mat",
+            null
+          ],
+          [
+            "LED panel, 16 h/day, heat mat",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+        "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+        "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "home growing in Estonia, LED shelf, from 2026-11"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a": [
+      "low",
+      "likely",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq": {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "class": "definitional",
+      "held": true,
+      "label": "electrical energy per tray",
+      "name": "electrical energy per tray",
+      "path": "o/pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a": {
+      "cid": "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+      "class": "definitional",
+      "held": true,
+      "label": "three-point estimate",
+      "name": "three-point estimate",
+      "path": "o/pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia": {
+      "cid": "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia",
+      "class": "procedural",
+      "held": true,
+      "label": "Plug the tray's light, and any heat mat or fan, into one logging plug meter on the day of sowing, read the…",
+      "name": null,
+      "path": "o/pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq": {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "class": "empirical",
+      "held": true,
+      "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "name": null,
+      "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+    "class": "empirical",
+    "held": true,
+    "label": "One tray of microgreens under a 12 h/day LED uses this much electricity from sowing to harvest.",
+    "name": null,
+    "path": "o/pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "how": "source of"
+    }
+  ]
+}

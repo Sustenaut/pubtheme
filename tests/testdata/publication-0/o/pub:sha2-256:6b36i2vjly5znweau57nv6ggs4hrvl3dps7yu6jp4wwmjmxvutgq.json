@@ -1,0 +1,184 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+    "size": 1263
+  },
+  "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+  "closure": [
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+    "heads": [
+      "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq"
+    ],
+    "members": [
+      "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "One retail pack holds this much herb and this much packaging.",
+      "data": {
+        "columns": [
+          {
+            "name": "product"
+          },
+          {
+            "kind": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+            "measure": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+            "name": "herbs",
+            "unit": "g/{pack}",
+            "unit_defs": {
+              "{pack}": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa"
+            }
+          },
+          {
+            "kind": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+            "measure": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+            "name": "packaging",
+            "unit": "g/{pack}",
+            "unit_defs": {
+              "{pack}": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "basil pot",
+            null,
+            null
+          ],
+          [
+            "microgreen pack",
+            null,
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+        "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+        "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "large supermarkets in Tallinn, 2026-11"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": [
+      "low",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq": {
+      "cid": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+      "class": "procedural",
+      "held": true,
+      "label": "Visit three large supermarkets in Tallinn in one week, record the price and stated mass of every fresh herb…",
+      "name": null,
+      "path": "o/pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa": {
+      "cid": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+      "class": "definitional",
+      "held": true,
+      "label": "{pack}",
+      "name": "{pack}",
+      "path": "o/pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q": {
+      "cid": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+      "class": "definitional",
+      "held": true,
+      "label": "mass per pack",
+      "name": "mass per pack",
+      "path": "o/pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+      "how": "kind"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+    "class": "empirical",
+    "held": true,
+    "label": "One retail pack holds this much herb and this much packaging.",
+    "name": null,
+    "path": "o/pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

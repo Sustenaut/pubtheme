@@ -1,0 +1,43 @@
+---
+layout: base.njk
+permalink: "index.html"
+---
+{%- import "components.njk" as ui with context -%}
+{{ ui.page_heading(site.title, site.description) }}
+<p class="m-0 text-sm text-muted">{{ pub.objects.length }} objects and {{ pub.names.length }} names. Every page shows one object as it was stored, and links to its bytes so you can check it.</p>
+
+{%- set documents = pub.index.objects | bykey("type", "doc") %}
+{%- if documents.length %}
+{% call ui.panel("Documents") %}
+<ul class="m-0 grid list-none gap-0 p-0">{% for d in documents %}<li class="border-b border-rule py-2"><a href="{{ ('/o/' + d.cid + '/') | url }}" class="font-display text-lg font-extrabold">{{ d.label }}</a></li>{% endfor %}</ul>
+{% endcall %}
+{%- endif %}
+
+{%- set classes = ["normative", "empirical", "formal", "attributive", "archival", "procedural", "performative", "expressive"] %}
+{% call ui.panel("Claims") %}
+{%- for class in classes %}
+{%- set claims = [] %}
+{%- for o in pub.index.objects %}{% if o.class == class and not o.sort %}{% set claims = (claims.push(o), claims) %}{% endif %}{% endfor %}
+{%- if claims.length %}
+<h3 class="m-0 mt-2 text-sm font-bold tracking-wider text-muted uppercase">{{ class }} · {{ claims.length }}</h3>
+<ul class="m-0 grid list-none gap-0 p-0">
+  {%- for o in claims %}
+  <li class="flex flex-wrap items-baseline gap-2.5 border-b border-rule py-2"><a href="{{ ('/o/' + o.cid + '/') | url }}">{{ o.label }}</a><code class="text-xs text-muted">{{ o.cid | short }}</code></li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+{%- endfor %}
+{% endcall %}
+
+{%- set sorts = [["system", "Systems of units"], ["dimension", "Base dimensions"], ["unit", "Units"], ["kind", "Quantity kinds"], ["measure", "Statistical measures"]] %}
+{% call ui.panel("Definitions") %}
+{%- for pair in sorts %}
+{%- set defs = pub.index.objects | bykey("sort", pair[0]) %}
+{%- if defs.length %}
+<h3 class="m-0 mt-2 text-sm font-bold tracking-wider text-muted uppercase">{{ pair[1] }} · {{ defs.length }}</h3>
+<div class="flex flex-wrap gap-2">
+  {%- for o in defs %}<a href="{{ ('/def/' + (o.name | encname) + '/') | url }}" class="rounded-full border border-rule px-3 py-1 no-underline hover:border-primary">{{ o.label }}</a>{% endfor %}
+</div>
+{%- endif %}
+{%- endfor %}
+{% endcall %}

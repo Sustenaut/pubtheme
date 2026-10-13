@@ -1,0 +1,173 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+    "size": 1021
+  },
+  "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+  "closure": [
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+    "heads": [
+      "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq"
+    ],
+    "members": [
+      "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "One tray uses this much seed and substrate, which go to compost after harvest.",
+      "data": {
+        "columns": [
+          {
+            "name": "input"
+          },
+          {
+            "kind": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+            "measure": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+            "name": "mass",
+            "unit": "g/{tray}",
+            "unit_defs": {
+              "{tray}": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "pea seed",
+            null
+          ],
+          [
+            "coir substrate",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+        "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+        "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "home growing in Estonia, LED shelf, from 2026-11"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": [
+      "low",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq": {
+      "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+      "class": "definitional",
+      "held": true,
+      "label": "input mass per tray",
+      "name": "input mass per tray",
+      "path": "o/pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq": {
+      "cid": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+      "class": "procedural",
+      "held": true,
+      "label": "Keep the receipts for seed and substrate, and divide each purchase's price by the number of trays it sowed or…",
+      "name": null,
+      "path": "o/pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+    "class": "empirical",
+    "held": true,
+    "label": "One tray uses this much seed and substrate, which go to compost after harvest.",
+    "name": null,
+    "path": "o/pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

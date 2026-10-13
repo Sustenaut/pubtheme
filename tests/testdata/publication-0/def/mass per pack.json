@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/mass%20per%20pack",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q"
+  ],
+  "name": "mass per pack",
+  "related": {
+    "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q": {
+      "cid": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+      "class": "definitional",
+      "held": true,
+      "label": "mass per pack",
+      "name": "mass per pack",
+      "path": "o/pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

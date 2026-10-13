@@ -1,0 +1,194 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+    "size": 1128
+  },
+  "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+  "closure": [
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+    "heads": [
+      "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa"
+    ],
+    "members": [
+      "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "procedural",
+      "computes": {
+        "inputs": [
+          {
+            "kind": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+            "name": "energy"
+          },
+          {
+            "kind": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+            "name": "grid intensity"
+          },
+          {
+            "kind": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+            "name": "harvest"
+          }
+        ],
+        "outputs": [
+          {
+            "kind": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+            "name": "climate cost"
+          }
+        ],
+        "rounding": "half to even, two significant figures",
+        "seed": 20261013
+      },
+      "content": "Read each three-point estimate as a PERT distribution, draw 100000 samples of energy times grid intensity divided by harvest with the stated seed, and report the 5th, 50th and 95th percentiles.",
+      "depends": [
+        "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+        "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+        "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+        "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa": {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "class": "definitional",
+      "held": true,
+      "label": "harvest per tray",
+      "name": "harvest per tray",
+      "path": "o/pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq": {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "class": "definitional",
+      "held": true,
+      "label": "electrical energy per tray",
+      "name": "electrical energy per tray",
+      "path": "o/pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq": {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "class": "definitional",
+      "held": true,
+      "label": "grid carbon intensity",
+      "name": "grid carbon intensity",
+      "path": "o/pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q": {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "class": "definitional",
+      "held": true,
+      "label": "climate impact per mass",
+      "name": "climate impact per mass",
+      "path": "o/pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq": {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "class": "empirical",
+      "held": true,
+      "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "name": null,
+      "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a": {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "class": "definitional",
+      "held": true,
+      "label": "{CO2e}",
+      "name": "{co2e}",
+      "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+    "class": "procedural",
+    "held": true,
+    "label": "Read each three-point estimate as a PERT distribution, draw 100000 samples of energy times grid intensity…",
+    "name": null,
+    "path": "o/pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "how": "derivation of"
+    }
+  ]
+}

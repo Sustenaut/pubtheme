@@ -1,0 +1,190 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+    "size": 1123
+  },
+  "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+  "closure": [
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+    "heads": [
+      "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q"
+    ],
+    "members": [
+      "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "Seed and substrate for one tray cost this much.",
+      "data": {
+        "columns": [
+          {
+            "name": "input"
+          },
+          {
+            "kind": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+            "measure": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+            "name": "cost",
+            "unit": "[EUR]/{tray}",
+            "unit_defs": {
+              "[EUR]": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+              "{tray}": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "pea seed",
+            null
+          ],
+          [
+            "coir substrate",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+        "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+        "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "home growing in Estonia, from 2026-11"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": [
+      "low",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa": {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "class": "definitional",
+      "held": true,
+      "label": "[EUR]",
+      "name": "[eur]",
+      "path": "o/pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq": {
+      "cid": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+      "class": "procedural",
+      "held": true,
+      "label": "Keep the receipts for seed and substrate, and divide each purchase's price by the number of trays it sowed or…",
+      "name": null,
+      "path": "o/pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa": {
+      "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+      "class": "definitional",
+      "held": true,
+      "label": "cost per tray",
+      "name": "cost per tray",
+      "path": "o/pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:n46m6k2ofpktzzjjbsoor3wer4t3ptfxa4vo2eloedfh3df4xgfq",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+    "class": "empirical",
+    "held": true,
+    "label": "Seed and substrate for one tray cost this much.",
+    "name": null,
+    "path": "o/pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

@@ -1,0 +1,116 @@
+{
+  "address": "https://pub.sustenaut.eu/def/mass%20per%20pack",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+    "size": 520
+  },
+  "cid": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+  "closure": [
+    "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+    "heads": [
+      "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q"
+    ],
+    "members": [
+      "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "mass per pack: the mass of one part of a retail pack, its herbs or its packaging.",
+      "defines": {
+        "dimension": {
+          "g": 1,
+          "{pack}": -1
+        },
+        "name": "mass per pack",
+        "sort": "kind",
+        "units": [
+          "g/{pack}"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq": {
+      "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+      "class": "empirical",
+      "held": true,
+      "label": "One retail pack holds this much herb and this much packaging.",
+      "name": null,
+      "path": "o/pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa": {
+      "cid": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+      "class": "definitional",
+      "held": true,
+      "label": "{pack}",
+      "name": "{pack}",
+      "path": "o/pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+    "class": "definitional",
+    "held": true,
+    "label": "mass per pack",
+    "name": "mass per pack",
+    "path": "o/pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+      "how": "kind of"
+    }
+  ]
+}

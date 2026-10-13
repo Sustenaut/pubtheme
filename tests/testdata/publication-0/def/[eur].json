@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/%5Beur%5D",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa"
+  ],
+  "name": "[eur]",
+  "related": {
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa": {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "class": "definitional",
+      "held": true,
+      "label": "[EUR]",
+      "name": "[eur]",
+      "path": "o/pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  }
+}

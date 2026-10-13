@@ -1,0 +1,98 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+    "size": 435
+  },
+  "cid": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+    "heads": [
+      "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma"
+    ],
+    "members": [
+      "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "procedural",
+      "content": "Search for life-cycle assessments of fresh culinary herbs or microgreens sold in Europe, keep those that report cradle-to-shelf climate impact per kilogram, and state each kept value with its system boundary.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa": {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "class": "empirical",
+      "held": true,
+      "label": "Producing one kilogram of each growing input has this climate impact, cradle to retail.",
+      "name": null,
+      "path": "o/pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq": {
+      "cid": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+      "class": "empirical",
+      "held": true,
+      "label": "Households in Europe throw away this share of the fresh herbs they buy uneaten.",
+      "name": null,
+      "path": "o/pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q": {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "class": "empirical",
+      "held": true,
+      "label": "Supplying one kilogram of fresh herbs or microgreens to a supermarket shelf has this climate impact.",
+      "name": null,
+      "path": "o/pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+    "class": "procedural",
+    "held": true,
+    "label": "Search for life-cycle assessments of fresh culinary herbs or microgreens sold in Europe, keep those that…",
+    "name": null,
+    "path": "o/pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "how": "method of"
+    },
+    {
+      "cid": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+      "how": "method of"
+    },
+    {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "how": "method of"
+    }
+  ]
+}

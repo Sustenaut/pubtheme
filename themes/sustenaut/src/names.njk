@@ -1,0 +1,14 @@
+---
+layout: base.njk
+permalink: "names/index.html"
+title: Names
+---
+{%- import "components.njk" as ui with context -%}
+{{ ui.page_heading("Names", "Each name a definition goes by has an address of its own. A name is an address, never an identity: the identifier is. A name two definitions share lists both.") }}
+{% call ui.panel() %}
+<ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(16rem,1fr))] gap-x-6 p-0">
+  {%- for n in pub.names %}
+  <li class="border-b border-rule py-2"><a href="{{ ('/def/' + (n.name | encname) + '/') | url }}">{{ n.name }}</a>{% if n.definitions.length > 1 %} {{ ui.tag(n.definitions.length + " definitions", "warning") }}{% endif %}</li>
+  {%- endfor %}
+</ul>
+{% endcall %}

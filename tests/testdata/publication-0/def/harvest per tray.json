@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/harvest%20per%20tray",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa"
+  ],
+  "name": "harvest per tray",
+  "related": {
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa": {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "class": "definitional",
+      "held": true,
+      "label": "harvest per tray",
+      "name": "harvest per tray",
+      "path": "o/pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

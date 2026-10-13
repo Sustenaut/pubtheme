@@ -1,0 +1,177 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+    "size": 1023
+  },
+  "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+  "closure": [
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+    "heads": [
+      "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q"
+    ],
+    "members": [
+      "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "Fresh herbs and microgreens on the shelf cost this much per kilogram.",
+      "data": {
+        "columns": [
+          {
+            "name": "product"
+          },
+          {
+            "kind": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+            "measure": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+            "name": "price",
+            "unit": "[EUR]/kg",
+            "unit_defs": {
+              "[EUR]": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "basil pot",
+            null
+          ],
+          [
+            "microgreen pack",
+            null
+          ],
+          [
+            "pea shoot pack",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+        "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+        "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "large supermarkets in Tallinn, 2026-11"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": [
+      "low",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq": {
+      "cid": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+      "class": "procedural",
+      "held": true,
+      "label": "Visit three large supermarkets in Tallinn in one week, record the price and stated mass of every fresh herb…",
+      "name": null,
+      "path": "o/pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa": {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "class": "definitional",
+      "held": true,
+      "label": "[EUR]",
+      "name": "[eur]",
+      "path": "o/pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq": {
+      "cid": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+      "class": "definitional",
+      "held": true,
+      "label": "price per mass",
+      "name": "price per mass",
+      "path": "o/pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:am2bfxkybz7323b6sv3ztcv7w6icqjd3vf3dmy5yguelwuxfm3qq",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+    "class": "empirical",
+    "held": true,
+    "label": "Fresh herbs and microgreens on the shelf cost this much per kilogram.",
+    "name": null,
+    "path": "o/pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

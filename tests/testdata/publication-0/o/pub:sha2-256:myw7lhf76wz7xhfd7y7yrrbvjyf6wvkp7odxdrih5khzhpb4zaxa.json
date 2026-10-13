@@ -1,0 +1,171 @@
+{
+  "address": "https://pub.sustenaut.eu/def/range",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "size": 498
+  },
+  "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "heads": [
+      "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+    ],
+    "members": [
+      "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "range: a value known only to lie between two bounds, with no likeliest point stated.",
+      "defines": {
+        "describes": "uncertainty",
+        "name": "range",
+        "parameters": [
+          {
+            "meaning": "the least it plausibly is",
+            "name": "low",
+            "type": "quantity"
+          },
+          {
+            "meaning": "the most it plausibly is",
+            "name": "high",
+            "type": "quantity"
+          }
+        ],
+        "sort": "measure"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq": {
+      "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+      "class": "empirical",
+      "held": true,
+      "label": "One retail pack holds this much herb and this much packaging.",
+      "name": null,
+      "path": "o/pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya": {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "class": "empirical",
+      "held": true,
+      "label": "Electricity drawn from the Estonian grid during a home grow light's hours had this climate impact in 2026.",
+      "name": null,
+      "path": "o/pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq": {
+      "cid": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+      "class": "empirical",
+      "held": true,
+      "label": "Households in Europe throw away this share of the fresh herbs they buy uneaten.",
+      "name": null,
+      "path": "o/pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq": {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray uses this much seed and substrate, which go to compost after harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q": {
+      "cid": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+      "class": "empirical",
+      "held": true,
+      "label": "A household paid this much per kilowatt-hour of electricity in 2026, taxes and network fees included.",
+      "name": null,
+      "path": "o/pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q": {
+      "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+      "class": "empirical",
+      "held": true,
+      "label": "Fresh herbs and microgreens on the shelf cost this much per kilogram.",
+      "name": null,
+      "path": "o/pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q": {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "class": "empirical",
+      "held": true,
+      "label": "Seed and substrate for one tray cost this much.",
+      "name": null,
+      "path": "o/pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "class": "definitional",
+    "held": true,
+    "label": "range",
+    "name": "range",
+    "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+    "sort": "measure",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+      "how": "measure of"
+    },
+    {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "how": "measure of"
+    },
+    {
+      "cid": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+      "how": "measure of"
+    },
+    {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "how": "measure of"
+    },
+    {
+      "cid": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+      "how": "measure of"
+    },
+    {
+      "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+      "how": "measure of"
+    },
+    {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "how": "measure of"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+    "size": 1011
+  },
+  "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+  "closure": [
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+    "heads": [
+      "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa"
+    ],
+    "members": [
+      "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "One tray of each crop gives this much fresh harvest.",
+      "data": {
+        "columns": [
+          {
+            "name": "crop"
+          },
+          {
+            "kind": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+            "measure": "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+            "name": "harvest",
+            "unit": "g/{tray}",
+            "unit_defs": {
+              "{tray}": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "pea shoots",
+            null
+          ],
+          [
+            "sunflower",
+            null
+          ],
+          [
+            "radish",
+            null
+          ],
+          [
+            "basil",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+        "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+        "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "home growing in Estonia, LED shelf, from 2026-11"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a": [
+      "low",
+      "likely",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa": {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "class": "definitional",
+      "held": true,
+      "label": "harvest per tray",
+      "name": "harvest per tray",
+      "path": "o/pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a": {
+      "cid": "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a",
+      "class": "procedural",
+      "held": true,
+      "label": "Cut the whole tray at the stated height on the day of harvest and weigh the cut mass at once on a kitchen…",
+      "name": null,
+      "path": "o/pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a": {
+      "cid": "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+      "class": "definitional",
+      "held": true,
+      "label": "three-point estimate",
+      "name": "three-point estimate",
+      "path": "o/pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq": {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "class": "empirical",
+      "held": true,
+      "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "name": null,
+      "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+    "class": "empirical",
+    "held": true,
+    "label": "One tray of each crop gives this much fresh harvest.",
+    "name": null,
+    "path": "o/pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "how": "source of"
+    }
+  ]
+}

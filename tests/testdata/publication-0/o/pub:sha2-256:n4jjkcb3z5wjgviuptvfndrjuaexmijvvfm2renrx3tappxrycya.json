@@ -1,0 +1,200 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+    "size": 1267
+  },
+  "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+  "closure": [
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+    "heads": [
+      "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya"
+    ],
+    "members": [
+      "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "Electricity drawn from the Estonian grid during a home grow light's hours had this climate impact in 2026.",
+      "data": {
+        "columns": [
+          {
+            "name": "hours"
+          },
+          {
+            "kind": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+            "measure": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+            "name": "intensity",
+            "unit": "g{CO2e}/(kW.h)",
+            "unit_defs": {
+              "{CO2e}": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "06:00 to 18:00",
+            null
+          ],
+          [
+            "all hours",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+        "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+        "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa",
+          "role": "method"
+        },
+        {
+          "kind": "external",
+          "note": "hourly consumption mix; to read",
+          "ref": "https://www.elering.ee/en/electricity-market-transparency",
+          "role": "source"
+        },
+        {
+          "kind": "external",
+          "note": "cross-check; to read",
+          "ref": "https://ember-energy.org/data/",
+          "role": "source"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "electricity consumed in Estonia, 2026"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": [
+      "low",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq": {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "class": "definitional",
+      "held": true,
+      "label": "grid carbon intensity",
+      "name": "grid carbon intensity",
+      "path": "o/pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq": {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "class": "empirical",
+      "held": true,
+      "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "name": null,
+      "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa": {
+      "cid": "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa",
+      "class": "procedural",
+      "held": true,
+      "label": "Take the hourly carbon intensity of electricity consumed in Estonia for the year, and average it over the…",
+      "name": null,
+      "path": "o/pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a": {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "class": "definitional",
+      "held": true,
+      "label": "{CO2e}",
+      "name": "{co2e}",
+      "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "how": "unit"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+    "class": "empirical",
+    "held": true,
+    "label": "Electricity drawn from the Estonian grid during a home grow light's hours had this climate impact in 2026.",
+    "name": null,
+    "path": "o/pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "how": "source of"
+    }
+  ]
+}

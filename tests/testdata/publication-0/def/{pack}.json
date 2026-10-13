@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/%7Bpack%7D",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa"
+  ],
+  "name": "{pack}",
+  "related": {
+    "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa": {
+      "cid": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+      "class": "definitional",
+      "held": true,
+      "label": "{pack}",
+      "name": "{pack}",
+      "path": "o/pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  }
+}

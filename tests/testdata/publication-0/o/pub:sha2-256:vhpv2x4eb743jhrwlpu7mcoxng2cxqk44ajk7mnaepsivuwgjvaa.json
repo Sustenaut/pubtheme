@@ -1,0 +1,70 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa",
+    "size": 403
+  },
+  "cid": "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa",
+    "heads": [
+      "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa"
+    ],
+    "members": [
+      "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "procedural",
+      "content": "Take the hourly carbon intensity of electricity consumed in Estonia for the year, and average it over the hours the lights are on, weighting each hour by the energy used in it.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya": {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "class": "empirical",
+      "held": true,
+      "label": "Electricity drawn from the Estonian grid during a home grow light's hours had this climate impact in 2026.",
+      "name": null,
+      "path": "o/pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa",
+    "class": "procedural",
+    "held": true,
+    "label": "Take the hourly carbon intensity of electricity consumed in Estonia for the year, and average it over the…",
+    "name": null,
+    "path": "o/pub:sha2-256:vhpv2x4eb743jhrwlpu7mcoxng2cxqk44ajk7mnaepsivuwgjvaa.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "how": "method of"
+    }
+  ]
+}

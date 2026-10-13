@@ -1,0 +1,111 @@
+{
+  "address": "https://pub.sustenaut.eu/def/confidence%20interval",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a",
+    "size": 664
+  },
+  "cid": "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a",
+    "heads": [
+      "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a"
+    ],
+    "members": [
+      "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "confidence interval: an estimate with the interval that covers the true value at a stated confidence level.",
+      "defines": {
+        "describes": "uncertainty",
+        "name": "confidence interval",
+        "parameters": [
+          {
+            "meaning": "the point estimate",
+            "name": "estimate",
+            "type": "quantity"
+          },
+          {
+            "meaning": "the interval's lower bound",
+            "name": "low",
+            "type": "quantity"
+          },
+          {
+            "meaning": "the interval's upper bound",
+            "name": "high",
+            "type": "quantity"
+          },
+          {
+            "meaning": "the confidence level, such as 0.95",
+            "name": "level",
+            "type": "fraction"
+          }
+        ],
+        "sort": "measure"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa": {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "class": "empirical",
+      "held": true,
+      "label": "Producing one kilogram of each growing input has this climate impact, cradle to retail.",
+      "name": null,
+      "path": "o/pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q": {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "class": "empirical",
+      "held": true,
+      "label": "Supplying one kilogram of fresh herbs or microgreens to a supermarket shelf has this climate impact.",
+      "name": null,
+      "path": "o/pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a",
+    "class": "definitional",
+    "held": true,
+    "label": "confidence interval",
+    "name": "confidence interval",
+    "path": "o/pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a.json",
+    "sort": "measure",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "how": "measure of"
+    },
+    {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "how": "measure of"
+    }
+  ]
+}

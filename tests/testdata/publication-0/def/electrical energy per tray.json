@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/electrical%20energy%20per%20tray",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq"
+  ],
+  "name": "electrical energy per tray",
+  "related": {
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq": {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "class": "definitional",
+      "held": true,
+      "label": "electrical energy per tray",
+      "name": "electrical energy per tray",
+      "path": "o/pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

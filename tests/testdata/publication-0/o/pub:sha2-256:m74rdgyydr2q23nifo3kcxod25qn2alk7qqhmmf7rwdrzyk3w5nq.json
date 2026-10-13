@@ -1,0 +1,117 @@
+{
+  "address": "https://pub.sustenaut.eu/def/input%20mass%20per%20tray",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+    "size": 548
+  },
+  "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+  "closure": [
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+    "heads": [
+      "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq"
+    ],
+    "members": [
+      "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "input mass per tray: the mass of one consumable, such as seed or substrate, used by one tray.",
+      "defines": {
+        "dimension": {
+          "g": 1,
+          "{tray}": -1
+        },
+        "name": "input mass per tray",
+        "sort": "kind",
+        "units": [
+          "g/{tray}",
+          "kg/{tray}"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq": {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray uses this much seed and substrate, which go to compost after harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+    "class": "definitional",
+    "held": true,
+    "label": "input mass per tray",
+    "name": "input mass per tray",
+    "path": "o/pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "how": "kind of"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{#- The sustenaut theme's components, ported from Sustenaut's React library
+    (business-plan ui/): the same markup and Tailwind classes, as Nunjucks
+    macros. Presentation only: each takes what it shows as arguments. -#}
+
+{% macro tag(text, tone="neutral") -%}
+<span class="inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-sm {% if tone == 'success' %}bg-accent-soft{% elif tone == 'warning' %}bg-warn-soft{% elif tone == 'danger' %}bg-bad-soft{% else %}bg-sunken{% endif %}">{{ text }}</span>
+{%- endmacro %}
+
+{% macro callout(tone="neutral") -%}
+<div class="rounded-control border-l-4 px-3.5 py-2.5 {% if tone == 'success' %}bg-accent-soft border-primary{% elif tone == 'warning' %}bg-warn-soft border-warn{% elif tone == 'danger' %}bg-bad-soft border-bad{% else %}bg-sunken border-rule-strong{% endif %}"{% if tone == 'warning' or tone == 'danger' %} role="alert"{% endif %}>{{ caller() }}</div>
+{%- endmacro %}
+
+{% macro panel(title="", eyebrow="", emphasis=false, as="section", id="") -%}
+<{{ as }}{% if id %} id="{{ id }}"{% endif %} class="flex min-w-0 flex-col gap-3.5 rounded-panel bg-surface px-6 py-5 {% if emphasis %}border-2 border-primary{% else %}border border-rule{% endif %}">
+  {%- if eyebrow %}<span class="text-sm text-muted">{{ eyebrow }}</span>{% endif %}
+  {%- if title %}<h2 class="m-0 font-display text-xl font-extrabold">{{ title }}</h2>{% endif %}
+  {{ caller() }}
+</{{ as }}>
+{%- endmacro %}
+
+{% macro page_heading(title, lede="") -%}
+<div class="flex flex-col gap-1.5">
+  <h1 class="m-0 font-display text-3xl font-extrabold">{{ title }}</h1>
+  {%- if lede %}<p class="m-0 max-w-3xl text-muted">{{ lede }}</p>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro eyebrow(text) -%}
+<span class="text-xs font-bold tracking-wider text-muted uppercase">{{ text }}</span>
+{%- endmacro %}
+
+{#- One object in a list: a link by its label, with its short identifier,
+    or the identifier alone when this site does not hold it. -#}
+{% macro objlink(cid, related, how="") -%}
+{%- set r = related[cid] -%}
+{%- if r and r.held -%}
+<a href="{{ ('/o/' + cid + '/') | url }}" class="flex min-h-11 flex-col justify-center gap-0.5 rounded-control border border-rule bg-surface px-3 py-2 text-ink no-underline hover:border-primary">
+  {%- if how %}<span class="text-xs text-muted">{{ how }}</span>{% endif %}
+  <span>{{ r.label }}</span>
+</a>
+{%- else -%}
+<span class="flex flex-col gap-0.5 rounded-control border border-dashed border-rule px-3 py-2 text-muted">
+  {%- if how %}<span class="text-xs">{{ how }}</span>{% endif %}
+  <code class="break-all text-xs">{{ cid }}</code><span class="text-xs">not held here</span>
+</span>
+{%- endif -%}
+{%- endmacro %}
+
+{#- An inline link to an object, by label. -#}
+{% macro ref(cid, related) -%}
+{%- set r = related[cid] -%}
+{%- if r and r.held %}<a href="{{ ('/o/' + cid + '/') | url }}">{{ r.label }}</a>{% else %}<code class="break-all text-xs">{{ cid }}</code>{% endif -%}
+{%- endmacro %}
+
+{#- A table cell: null reads "not yet known", never a blank that could be
+    taken for zero; a quantity lists its parameters in its measure's order. -#}
+{% macro cell(value, order) -%}
+{%- if value | isnull -%}<span class="text-warn italic">not yet known</span>
+{%- elif value | isobject -%}
+{%- for pair in value | ordered(order) %}<span class="text-xs text-muted">{{ pair[0] }}</span> {{ pair[1] }}{% if not loop.last %}<br>{% endif %}{% endfor -%}
+{%- else -%}{{ value }}{%- endif -%}
+{%- endmacro %}
+
+{#- A claim's table of values, its columns naming their unit, kind and
+    measure by link. -#}
+{% macro values(b) -%}
+{%- set data = b.object.body.data -%}
+{%- if data and data.columns -%}
+<div class="overflow-x-auto">
+  <table class="w-full border-collapse tabular-nums">
+    <thead><tr>
+      {%- for c in data.columns %}
+      <th scope="col" class="border-b border-rule px-2.5 py-2 text-left align-bottom text-sm font-semibold text-muted">
+        {{ c.name }}
+        {%- if c.unit %}<br><code class="text-ink">{{ c.unit }}</code>{% endif %}
+        {%- if c.kind %}<br><span class="text-xs font-normal">{{ ref(c.kind, b.related) }}</span>{% endif %}
+        {%- if c.measure %}<br><span class="text-xs font-normal">as {{ ref(c.measure, b.related) }}</span>{% endif %}
+      </th>
+      {%- endfor %}
+    </tr></thead>
+    <tbody>
+      {%- for row in data.rows %}
+      <tr>
+        {%- for v in row %}
+        {%- set col = data.columns[loop.index0] %}
+        <td class="border-b border-rule px-2.5 py-2 text-left align-top {% if loop.first %}whitespace-normal{% endif %}">{{ cell(v, b.parameters[col.measure] if col.measure else []) }}</td>
+        {%- endfor %}
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
+{%- if data.rows | hasnull %}<p class="m-0 text-sm text-muted">Not yet known means the value has not been gathered.</p>{% endif %}
+{%- elif data and data.ref -%}
+<p class="m-0">A file: {{ data.media }}, {{ data.size }} bytes.</p>
+{%- endif -%}
+{%- endmacro %}

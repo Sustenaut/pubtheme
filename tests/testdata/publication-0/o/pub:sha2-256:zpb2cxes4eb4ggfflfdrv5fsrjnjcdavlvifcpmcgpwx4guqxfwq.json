@@ -1,0 +1,77 @@
+{
+  "address": "https://pub.sustenaut.eu/def/empirical%20sample",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq",
+    "size": 541
+  },
+  "cid": "pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq",
+    "heads": [
+      "pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq"
+    ],
+    "members": [
+      "pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "empirical sample: raw measurements too many for a table, carried as a file.",
+      "defines": {
+        "describes": "variation",
+        "name": "empirical sample",
+        "parameters": [
+          {
+            "meaning": "the file of measurements",
+            "name": "ref",
+            "type": "blob"
+          },
+          {
+            "meaning": "the file's length in bytes",
+            "name": "size",
+            "type": "count"
+          },
+          {
+            "meaning": "how many measurements",
+            "name": "n",
+            "type": "count"
+          }
+        ],
+        "sort": "measure"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq",
+    "class": "definitional",
+    "held": true,
+    "label": "empirical sample",
+    "name": "empirical sample",
+    "path": "o/pub:sha2-256:zpb2cxes4eb4ggfflfdrv5fsrjnjcdavlvifcpmcgpwx4guqxfwq.json",
+    "sort": "measure",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

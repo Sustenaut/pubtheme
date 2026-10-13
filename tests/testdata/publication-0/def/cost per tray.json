@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/cost%20per%20tray",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa"
+  ],
+  "name": "cost per tray",
+  "related": {
+    "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa": {
+      "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+      "class": "definitional",
+      "held": true,
+      "label": "cost per tray",
+      "name": "cost per tray",
+      "path": "o/pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia",
+    "size": 414
+  },
+  "cid": "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia",
+    "heads": [
+      "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia"
+    ],
+    "members": [
+      "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "procedural",
+      "content": "Plug the tray's light, and any heat mat or fan, into one logging plug meter on the day of sowing, read the meter on the day of harvest, and divide by the number of trays under that light.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla": {
+      "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of microgreens under a 12 h/day LED uses this much electricity from sowing to harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia",
+    "class": "procedural",
+    "held": true,
+    "label": "Plug the tray's light, and any heat mat or fan, into one logging plug meter on the day of sowing, read the…",
+    "name": null,
+    "path": "o/pub:sha2-256:iqeissu6utumpifkzfs7fi372w3pgyu5ncwahomppycyeqmsmyia.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+      "how": "method of"
+    }
+  ]
+}

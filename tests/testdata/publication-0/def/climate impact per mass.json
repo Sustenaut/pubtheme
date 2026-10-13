@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/climate%20impact%20per%20mass",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q"
+  ],
+  "name": "climate impact per mass",
+  "related": {
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q": {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "class": "definitional",
+      "held": true,
+      "label": "climate impact per mass",
+      "name": "climate impact per mass",
+      "path": "o/pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

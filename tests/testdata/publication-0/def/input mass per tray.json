@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/input%20mass%20per%20tray",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq"
+  ],
+  "name": "input mass per tray",
+  "related": {
+    "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq": {
+      "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+      "class": "definitional",
+      "held": true,
+      "label": "input mass per tray",
+      "name": "input mass per tray",
+      "path": "o/pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

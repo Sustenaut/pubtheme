@@ -1,0 +1,70 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a",
+    "size": 357
+  },
+  "cid": "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a",
+    "heads": [
+      "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a"
+    ],
+    "members": [
+      "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "procedural",
+      "content": "Cut the whole tray at the stated height on the day of harvest and weigh the cut mass at once on a kitchen scale that reads to 1 g.",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa": {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop gives this much fresh harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a",
+    "class": "procedural",
+    "held": true,
+    "label": "Cut the whole tray at the stated height on the day of harvest and weigh the cut mass at once on a kitchen…",
+    "name": null,
+    "path": "o/pub:sha2-256:35zgmdffodrwgpocub33zo4gnuvx22oji3aixzqxsvm6gu65ta5a.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "how": "method of"
+    }
+  ]
+}

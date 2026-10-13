@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/%7Bco2e%7D",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+  ],
+  "name": "{co2e}",
+  "related": {
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a": {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "class": "definitional",
+      "held": true,
+      "label": "{CO2e}",
+      "name": "{co2e}",
+      "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  }
+}

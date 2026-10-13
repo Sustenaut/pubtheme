@@ -1,0 +1,43 @@
+---
+pagination:
+  data: pub.names
+  size: 1
+  alias: n
+permalink: "def/{{ n.name }}/index.html"
+layout: base.njk
+eleventyComputed:
+  title: "{{ n.name }}"
+---
+{%- import "components.njk" as ui with context -%}
+<p class="m-0 text-sm text-muted"><a href="{{ '/names/' | url }}">Names</a> › {{ n.name }}</p>
+<div class="flex flex-col gap-2">
+  <div class="flex flex-wrap gap-2">{{ ui.tag("name") }}</div>
+  <h1 class="m-0 font-display text-4xl font-extrabold">{{ n.name }}</h1>
+  <p class="m-0 font-mono text-sm text-muted">{{ n.address }}</p>
+</div>
+{%- if n.definitions.length > 1 %}
+{% call ui.callout("warning") %}{{ n.definitions.length }} definitions go by this name. They are different definitions, each with its own identifier; which one a claim means is fixed by the identifier it cites.{% endcall %}
+{%- endif %}
+
+{%- for cid in n.definitions %}
+{%- set d = pub.byCid[cid] %}
+{% call ui.panel("", "The definition · " + loop.index + " of " + n.definitions.length, true) %}
+<p class="m-0 text-xl">{{ d.object.body.content }}</p>
+<div class="flex flex-wrap gap-x-7 gap-y-2 text-sm">
+  <span><span class="text-muted">Sort</span> {{ d.summary.sort }}</span>
+  {%- for e in d.rests_on %}<span><span class="text-muted">{{ e.how }}</span> {{ ui.ref(e.cid, d.related) }}</span>{% endfor %}
+  <span><span class="text-muted">Identifier</span> <a href="{{ ('/o/' + cid + '/') | url }}"><code>{{ cid | short }}</code></a></span>
+</div>
+{% endcall %}
+
+{%- set users = d.used_by | nothow("signature") %}
+{%- if users.length %}
+{% call ui.panel("Used by · " + users.length) %}
+<ul class="m-0 grid list-none gap-0 p-0">
+  {%- for e in users %}
+  <li class="flex flex-wrap items-baseline gap-2.5 border-b border-rule py-2">{{ ui.ref(e.cid, d.related) }}{{ ui.tag(e.how) }}</li>
+  {%- endfor %}
+</ul>
+{% endcall %}
+{%- endif %}
+{%- endfor %}

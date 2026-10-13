@@ -1,0 +1,169 @@
+{
+  "address": "https://pub.sustenaut.eu/def/%7Bco2e%7D",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+    "size": 502
+  },
+  "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+  "closure": [
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+    "heads": [
+      "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+    ],
+    "members": [
+      "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "CO2e: carbon dioxide equivalent over a 100-year horizon, using IPCC AR6 global warming potentials.",
+      "defines": {
+        "matches": [
+          {
+            "ref": "http://qudt.org/vocab/unit/KiloGM_CO2eq",
+            "relation": "close"
+          }
+        ],
+        "sort": "dimension",
+        "symbol": "{CO2e}"
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq": {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "class": "definitional",
+      "held": true,
+      "label": "grid carbon intensity",
+      "name": "grid carbon intensity",
+      "path": "o/pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q": {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "class": "definitional",
+      "held": true,
+      "label": "climate impact per mass",
+      "name": "climate impact per mass",
+      "path": "o/pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya": {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "class": "empirical",
+      "held": true,
+      "label": "Electricity drawn from the Estonian grid during a home grow light's hours had this climate impact in 2026.",
+      "name": null,
+      "path": "o/pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa": {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "class": "empirical",
+      "held": true,
+      "label": "Producing one kilogram of each growing input has this climate impact, cradle to retail.",
+      "name": null,
+      "path": "o/pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q": {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "class": "empirical",
+      "held": true,
+      "label": "Supplying one kilogram of fresh herbs or microgreens to a supermarket shelf has this climate impact.",
+      "name": null,
+      "path": "o/pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq": {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "class": "empirical",
+      "held": true,
+      "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "name": null,
+      "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+    "class": "definitional",
+    "held": true,
+    "label": "{CO2e}",
+    "name": "{co2e}",
+    "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+    "sort": "dimension",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "how": "unit of"
+    },
+    {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "how": "unit of"
+    },
+    {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "how": "unit of"
+    },
+    {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "how": "unit of"
+    }
+  ]
+}

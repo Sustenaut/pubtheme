@@ -1,0 +1,311 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+    "size": 1543
+  },
+  "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+  "closure": [
+    "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+    "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+    "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+    "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+    "heads": [
+      "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq"
+    ],
+    "members": [
+      "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "data": {
+        "columns": [
+          {
+            "name": "crop"
+          },
+          {
+            "kind": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+            "measure": "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+            "name": "climate cost",
+            "unit": "kg{CO2e}/kg",
+            "unit_defs": {
+              "{CO2e}": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "pea shoots",
+            null
+          ],
+          [
+            "sunflower",
+            null
+          ],
+          [
+            "radish",
+            null
+          ],
+          [
+            "basil",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+        "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+        "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+        "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+        "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+        "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+          "role": "derivation"
+        },
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+          "role": "source"
+        },
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+          "role": "source"
+        },
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+          "role": "source"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "home growing in Estonia, LED shelf, from 2026-11"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq": [
+      "p05",
+      "p50",
+      "p95"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa": {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "class": "definitional",
+      "held": true,
+      "label": "harvest per tray",
+      "name": "harvest per tray",
+      "path": "o/pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla": {
+      "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of microgreens under a 12 h/day LED uses this much electricity from sowing to harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq": {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "class": "definitional",
+      "held": true,
+      "label": "electrical energy per tray",
+      "name": "electrical energy per tray",
+      "path": "o/pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a": {
+      "cid": "pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a",
+      "class": "definitional",
+      "held": true,
+      "label": "three-point estimate",
+      "name": "three-point estimate",
+      "path": "o/pub:sha2-256:i7vdofelpheguwjkovn4kckk4rye3jpsn7h4hptfsztbm7x6zw2a.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa": {
+      "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+      "class": "procedural",
+      "held": true,
+      "label": "Read each three-point estimate as a PERT distribution, draw 100000 samples of energy times grid intensity…",
+      "name": null,
+      "path": "o/pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq": {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "class": "definitional",
+      "held": true,
+      "label": "grid carbon intensity",
+      "name": "grid carbon intensity",
+      "path": "o/pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q": {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "class": "definitional",
+      "held": true,
+      "label": "climate impact per mass",
+      "name": "climate impact per mass",
+      "path": "o/pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya": {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "class": "empirical",
+      "held": true,
+      "label": "Electricity drawn from the Estonian grid during a home grow light's hours had this climate impact in 2026.",
+      "name": null,
+      "path": "o/pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq": {
+      "cid": "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+      "class": "definitional",
+      "held": true,
+      "label": "5-50-95 percentiles",
+      "name": "5-50-95 percentiles",
+      "path": "o/pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a": {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "class": "definitional",
+      "held": true,
+      "label": "{CO2e}",
+      "name": "{co2e}",
+      "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa": {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop gives this much fresh harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+      "how": "source"
+    },
+    {
+      "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+      "how": "derivation"
+    },
+    {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "how": "source"
+    },
+    {
+      "cid": "pub:sha2-256:ve5fbtzzjrifvm7vn226pead67mnldyoxuwhcpge7fwqzxpm4fyq",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "how": "source"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+    "class": "empirical",
+    "held": true,
+    "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+    "name": null,
+    "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

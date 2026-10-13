@@ -1,0 +1,173 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+    "size": 1063
+  },
+  "cid": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+  "closure": [
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+    "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+    "heads": [
+      "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q"
+    ],
+    "members": [
+      "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "A household paid this much per kilowatt-hour of electricity in 2026, taxes and network fees included.",
+      "data": {
+        "columns": [
+          {
+            "name": "contract"
+          },
+          {
+            "kind": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+            "measure": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+            "name": "price",
+            "unit": "[EUR]/(kW.h)",
+            "unit_defs": {
+              "[EUR]": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "exchange price",
+            null
+          ],
+          [
+            "fixed price",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+        "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+        "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:agedpycei2gdv6cg23wk7rhxwt26vcoeuvr6wklwzpypqlzvygta",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "an Estonian household on an exchange-price contract, 2026"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": [
+      "low",
+      "high"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:agedpycei2gdv6cg23wk7rhxwt26vcoeuvr6wklwzpypqlzvygta": {
+      "cid": "pub:sha2-256:agedpycei2gdv6cg23wk7rhxwt26vcoeuvr6wklwzpypqlzvygta",
+      "class": "procedural",
+      "held": true,
+      "label": "Divide each month's household electricity bill, taxes and network fees included, by the kilowatt-hours it…",
+      "name": null,
+      "path": "o/pub:sha2-256:agedpycei2gdv6cg23wk7rhxwt26vcoeuvr6wklwzpypqlzvygta.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa": {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "class": "definitional",
+      "held": true,
+      "label": "[EUR]",
+      "name": "[eur]",
+      "path": "o/pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a": {
+      "cid": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+      "class": "definitional",
+      "held": true,
+      "label": "household electricity price",
+      "name": "household electricity price",
+      "path": "o/pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa": {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "class": "definitional",
+      "held": true,
+      "label": "range",
+      "name": "range",
+      "path": "o/pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:agedpycei2gdv6cg23wk7rhxwt26vcoeuvr6wklwzpypqlzvygta",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "how": "unit"
+    },
+    {
+      "cid": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:myw7lhf76wz7xhfd7y7yrrbvjyf6wvkp7odxdrih5khzhpb4zaxa",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+    "class": "empirical",
+    "held": true,
+    "label": "A household paid this much per kilowatt-hour of electricity in 2026, taxes and network fees included.",
+    "name": null,
+    "path": "o/pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

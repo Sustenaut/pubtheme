@@ -1,0 +1,81 @@
+/* The sustenaut theme's tokens and element defaults, for Tailwind v4.
+   Ported from Sustenaut's component library (business-plan ui/theme.css,
+   from brand/palette.json): the same token names, so the same utilities
+   (bg-surface, text-muted, border-rule, bg-primary) mean the same thing. */
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 1000;
+  src: url("fonts/nunito-latin-wght-normal.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 1000;
+  src: url("fonts/nunito-sans-latin-wght-normal.woff2") format("woff2-variations");
+}
+
+@theme {
+  --color-ground: #f3efe2; /* cream */
+  --color-surface: #fffdf6;
+  --color-sunken: #ede6d4;
+  --color-ink: #17110c; /* soil */
+  --color-muted: #5d4d3f;
+  --color-rule: #ddd4bf;
+  --color-rule-strong: #c9bea6;
+  --color-link: #1f6b35; /* canopy */
+  --color-primary: #1f6b35;
+  --color-on-primary: #fffdf6;
+  --color-accent: #5bc236; /* sprout */
+  --color-accent-soft: #ddf0d2;
+  --color-warn: #8a5a00;
+  --color-warn-soft: #f6e6c2;
+  --color-bad: #9b2c1f;
+  --color-bad-soft: #f6d9d3;
+  --color-soil: #17110c;
+
+  --font-sans: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Nunito", "Nunito Sans", system-ui, sans-serif;
+
+  --radius-control: 10px;
+  --radius-panel: 14px;
+}
+
+/* Dark: the same token names, so components need no dark: variants. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-ground: #17110c;
+    --color-surface: #221911;
+    --color-sunken: #2b2017;
+    --color-ink: #f3efe2;
+    --color-muted: #b9ab95;
+    --color-rule: #3a2a1e;
+    --color-rule-strong: #54402f;
+    --color-link: #a6de58;
+    --color-primary: #5bc236;
+    --color-on-primary: #17110c;
+    --color-accent-soft: #24361a;
+    --color-warn: #e8a317;
+    --color-warn-soft: #33260f;
+    --color-bad: #f08a7a;
+    --color-bad-soft: #3a1c17;
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+  body {
+    @apply bg-ground font-sans text-base/relaxed text-ink;
+  }
+  a {
+    @apply text-link;
+  }
+  code {
+    @apply font-mono text-[0.9em];
+  }
+}

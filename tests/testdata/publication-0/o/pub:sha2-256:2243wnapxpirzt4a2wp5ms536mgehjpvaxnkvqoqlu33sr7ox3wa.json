@@ -1,0 +1,145 @@
+{
+  "address": "https://pub.sustenaut.eu/def/harvest%20per%20tray",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+    "size": 536
+  },
+  "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+  "closure": [
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+    "heads": [
+      "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa"
+    ],
+    "members": [
+      "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "harvest per tray: the fresh mass cut from one tray, as weighed on the day it is cut.",
+      "defines": {
+        "dimension": {
+          "g": 1,
+          "{tray}": -1
+        },
+        "name": "harvest per tray",
+        "sort": "kind",
+        "units": [
+          "g/{tray}",
+          "kg/{tray}"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa": {
+      "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+      "class": "procedural",
+      "held": true,
+      "label": "Read each three-point estimate as a PERT distribution, draw 100000 samples of energy times grid intensity…",
+      "name": null,
+      "path": "o/pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq": {
+      "cid": "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq",
+      "class": "procedural",
+      "held": true,
+      "label": "Multiply energy per tray by grid intensity and divide by harvest per tray, combining ranges with interval…",
+      "name": null,
+      "path": "o/pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa": {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop gives this much fresh harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+    "class": "definitional",
+    "held": true,
+    "label": "harvest per tray",
+    "name": "harvest per tray",
+    "path": "o/pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:ld4msp2nfehgjc3nvjvphvzgbwyhkas23oxv25b6wvf3esmwosxa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:vwyben2mr74jocub6oxldruvkjd4vy3pl7dulouwqtuub6itg5rq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "how": "kind of"
+    }
+  ]
+}

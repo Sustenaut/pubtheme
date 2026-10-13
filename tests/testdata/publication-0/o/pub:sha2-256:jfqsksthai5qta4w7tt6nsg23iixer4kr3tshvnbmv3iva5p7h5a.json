@@ -1,0 +1,118 @@
+{
+  "address": "https://pub.sustenaut.eu/def/household%20electricity%20price",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+    "size": 575
+  },
+  "cid": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+  "closure": [
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+    "heads": [
+      "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a"
+    ],
+    "members": [
+      "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "household electricity price: what a household pays for one unit of electricity, taxes and network fees included.",
+      "defines": {
+        "dimension": {
+          "[EUR]": 1,
+          "g": -1,
+          "m": -2,
+          "s": 2
+        },
+        "name": "household electricity price",
+        "sort": "kind",
+        "units": [
+          "[EUR]/(kW.h)"
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa": {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "class": "definitional",
+      "held": true,
+      "label": "[EUR]",
+      "name": "[eur]",
+      "path": "o/pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q": {
+      "cid": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+      "class": "empirical",
+      "held": true,
+      "label": "A household paid this much per kilowatt-hour of electricity in 2026, taxes and network fees included.",
+      "name": null,
+      "path": "o/pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+    "class": "definitional",
+    "held": true,
+    "label": "household electricity price",
+    "name": "household electricity price",
+    "path": "o/pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+      "how": "kind of"
+    }
+  ]
+}

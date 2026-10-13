@@ -1,0 +1,11 @@
+name: ci
+
+on:
+  push: { branches: [main] }
+  pull_request:
+
+jobs:
+  ci:
+    uses: schryer/pubkit/.github/workflows/python-ci.yml@v0.9.1
+    with:
+      setup: make venv node

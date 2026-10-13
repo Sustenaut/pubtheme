@@ -1,0 +1,175 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+    "size": 1007
+  },
+  "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+  "closure": [
+    "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a",
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+  ],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+    "heads": [
+      "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa"
+    ],
+    "members": [
+      "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "empirical",
+      "content": "Producing one kilogram of each growing input has this climate impact, cradle to retail.",
+      "data": {
+        "columns": [
+          {
+            "name": "input"
+          },
+          {
+            "kind": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+            "measure": "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a",
+            "name": "impact",
+            "unit": "kg{CO2e}/kg",
+            "unit_defs": {
+              "{CO2e}": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a"
+            }
+          }
+        ],
+        "rows": [
+          [
+            "pea seed",
+            null
+          ],
+          [
+            "coir substrate",
+            null
+          ]
+        ]
+      },
+      "depends": [
+        "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+        "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+        "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+        "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a"
+      ],
+      "evidence": [
+        {
+          "kind": "claim",
+          "ref": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+          "role": "method"
+        }
+      ],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "inputs sold in Europe"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {
+    "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a": [
+      "estimate",
+      "low",
+      "high",
+      "level"
+    ]
+  },
+  "related": {
+    "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a": {
+      "cid": "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a",
+      "class": "definitional",
+      "held": true,
+      "label": "confidence interval",
+      "name": "confidence interval",
+      "path": "o/pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a.json",
+      "sort": "measure",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma": {
+      "cid": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+      "class": "procedural",
+      "held": true,
+      "label": "Search for life-cycle assessments of fresh culinary herbs or microgreens sold in Europe, keep those that…",
+      "name": null,
+      "path": "o/pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q": {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "class": "definitional",
+      "held": true,
+      "label": "climate impact per mass",
+      "name": "climate impact per mass",
+      "path": "o/pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq": {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a": {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "class": "definitional",
+      "held": true,
+      "label": "{CO2e}",
+      "name": "{co2e}",
+      "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:2g3mryisqpi7d22jdrwbbnypwt5kvimmwu6exmjrvubqqlrwqp5a",
+      "how": "measure"
+    },
+    {
+      "cid": "pub:sha2-256:lvftd5o3svwaoyy6slu4vlashuckbnvrq5p52dnxnx7ib6jzvdma",
+      "how": "method"
+    },
+    {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "how": "kind"
+    },
+    {
+      "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "how": "unit"
+    }
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+    "class": "empirical",
+    "held": true,
+    "label": "Producing one kilogram of each growing input has this climate impact, cradle to retail.",
+    "name": null,
+    "path": "o/pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

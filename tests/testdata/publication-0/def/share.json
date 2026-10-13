@@ -1,0 +1,20 @@
+{
+  "address": "https://pub.sustenaut.eu/def/share",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq"
+  ],
+  "name": "share",
+  "related": {
+    "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq": {
+      "cid": "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq",
+      "class": "definitional",
+      "held": true,
+      "label": "share",
+      "name": "share",
+      "path": "o/pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  }
+}

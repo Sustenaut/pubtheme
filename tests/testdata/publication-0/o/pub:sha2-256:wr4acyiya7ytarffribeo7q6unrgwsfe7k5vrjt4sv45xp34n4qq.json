@@ -1,0 +1,459 @@
+{
+  "address": "https://pub.sustenaut.eu/def/ucum",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "size": 401
+  },
+  "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+  "closure": [],
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "heads": [
+      "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+    ],
+    "members": [
+      "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+    "body": {
+      "class": "definitional",
+      "content": "UCUM: the Unified Code for Units of Measure, version 2.2, case-sensitive form.",
+      "defines": {
+        "matches": [
+          {
+            "ref": "https://ucum.org/ucum",
+            "relation": "exact"
+          }
+        ],
+        "name": "UCUM",
+        "sort": "system",
+        "version": "2.2"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa": {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "class": "definitional",
+      "held": true,
+      "label": "harvest per tray",
+      "name": "harvest per tray",
+      "path": "o/pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq": {
+      "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+      "class": "definitional",
+      "held": true,
+      "label": "water per tray",
+      "name": "water per tray",
+      "path": "o/pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq": {
+      "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+      "class": "empirical",
+      "held": true,
+      "label": "One retail pack holds this much herb and this much packaging.",
+      "name": null,
+      "path": "o/pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla": {
+      "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of microgreens under a 12 h/day LED uses this much electricity from sowing to harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa": {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "class": "definitional",
+      "held": true,
+      "label": "{tray}",
+      "name": "{tray}",
+      "path": "o/pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq": {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "class": "definitional",
+      "held": true,
+      "label": "electrical energy per tray",
+      "name": "electrical energy per tray",
+      "path": "o/pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq": {
+      "cid": "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq",
+      "class": "definitional",
+      "held": true,
+      "label": "share",
+      "name": "share",
+      "path": "o/pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa": {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "class": "definitional",
+      "held": true,
+      "label": "[EUR]",
+      "name": "[eur]",
+      "path": "o/pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a": {
+      "cid": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+      "class": "definitional",
+      "held": true,
+      "label": "household electricity price",
+      "name": "household electricity price",
+      "path": "o/pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq": {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "class": "definitional",
+      "held": true,
+      "label": "grid carbon intensity",
+      "name": "grid carbon intensity",
+      "path": "o/pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq": {
+      "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+      "class": "definitional",
+      "held": true,
+      "label": "input mass per tray",
+      "name": "input mass per tray",
+      "path": "o/pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q": {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "class": "definitional",
+      "held": true,
+      "label": "climate impact per mass",
+      "name": "climate impact per mass",
+      "path": "o/pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya": {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "class": "empirical",
+      "held": true,
+      "label": "Electricity drawn from the Estonian grid during a home grow light's hours had this climate impact in 2026.",
+      "name": null,
+      "path": "o/pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra": {
+      "cid": "pub:sha2-256:nmejv7fgw3ejpzoajyxhwzr5xvmwtkfb6w5np5vkhyaw6zzn3qra",
+      "held": false
+    },
+    "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a": {
+      "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop takes this much tap water from soaking the seed to harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa": {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "class": "empirical",
+      "held": true,
+      "label": "Producing one kilogram of each growing input has this climate impact, cradle to retail.",
+      "name": null,
+      "path": "o/pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq": {
+      "cid": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+      "class": "empirical",
+      "held": true,
+      "label": "Households in Europe throw away this share of the fresh herbs they buy uneaten.",
+      "name": null,
+      "path": "o/pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q": {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "class": "empirical",
+      "held": true,
+      "label": "Supplying one kilogram of fresh herbs or microgreens to a supermarket shelf has this climate impact.",
+      "name": null,
+      "path": "o/pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq": {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "class": "empirical",
+      "held": true,
+      "label": "Growing a kilogram of each crop at home costs this much climate impact in electricity.",
+      "name": null,
+      "path": "o/pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq": {
+      "cid": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+      "class": "definitional",
+      "held": true,
+      "label": "price per mass",
+      "name": "price per mass",
+      "path": "o/pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa": {
+      "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+      "class": "definitional",
+      "held": true,
+      "label": "cost per tray",
+      "name": "cost per tray",
+      "path": "o/pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq": {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray uses this much seed and substrate, which go to compost after harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa": {
+      "cid": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+      "class": "definitional",
+      "held": true,
+      "label": "{pack}",
+      "name": "{pack}",
+      "path": "o/pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q": {
+      "cid": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+      "class": "empirical",
+      "held": true,
+      "label": "A household paid this much per kilowatt-hour of electricity in 2026, taxes and network fees included.",
+      "name": null,
+      "path": "o/pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q": {
+      "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+      "class": "empirical",
+      "held": true,
+      "label": "Fresh herbs and microgreens on the shelf cost this much per kilogram.",
+      "name": null,
+      "path": "o/pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q": {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "class": "empirical",
+      "held": true,
+      "label": "Seed and substrate for one tray cost this much.",
+      "name": null,
+      "path": "o/pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a": {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "class": "definitional",
+      "held": true,
+      "label": "{CO2e}",
+      "name": "{co2e}",
+      "path": "o/pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a.json",
+      "sort": "dimension",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa": {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "class": "empirical",
+      "held": true,
+      "label": "One tray of each crop gives this much fresh harvest.",
+      "name": null,
+      "path": "o/pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q": {
+      "cid": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+      "class": "definitional",
+      "held": true,
+      "label": "mass per pack",
+      "name": "mass per pack",
+      "path": "o/pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "summary": {
+    "cid": "pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq",
+    "class": "definitional",
+    "held": true,
+    "label": "UCUM",
+    "name": "ucum",
+    "path": "o/pub:sha2-256:wr4acyiya7ytarffribeo7q6unrgwsfe7k5vrjt4sv45xp34n4qq.json",
+    "sort": "system",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:2243wnapxpirzt4a2wp5ms536mgehjpvaxnkvqoqlu33sr7ox3wa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:35wcazqy44gajezz4cr46ljzcnqonns233n4qcj2e3fvaamd3clq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:6b36i2vjly5znweau57nv6ggs4hrvl3dps7yu6jp4wwmjmxvutgq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:fimx5kjxrl3afdqsqswr4cexunnabc4hxdfsis7anzy6plpajgtq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:fqrqhj5hxbqmfgrj2h6ikulcgp2pmdrnadb5n2znmda5hgn25ugq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:h432inqysg4tupl7bq2rujnpadpuul56ahv6zteihq2psbxn57sa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:jfqsksthai5qta4w7tt6nsg23iixer4kr3tshvnbmv3iva5p7h5a",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:m2legsaoaembbw3xbvzjuof3tp5dpxaryqzdv6cn6g24l3suw6sq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:m74rdgyydr2q23nifo3kcxod25qn2alk7qqhmmf7rwdrzyk3w5nq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:mrksggd2dv6rtha7nzrfr6wt5jaa3a5gyxmma5qyiud6h2ufg56q",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:n4jjkcb3z5wjgviuptvfndrjuaexmijvvfm2renrx3tappxrycya",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:nwaadz3minxtzd7pvk7hmhttr3h3nf7ljjbmdfghnc5nafnbkv3a",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:o5m3s34eojeh2l5as2rlztxer4vsmzbhpbjdpjwqyzgkexjp2zpa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:odoy7ymbhrkym2isgedhhyiezsabaqnegbpumxulob3gopdaj2oq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:op34blijrmpcgwbojyavafdi3ctlv63tbvoaewe35yx52cv5jz4q",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:quxbb237oo32ftgxykgxrgcuicalslyrikzgkl4iuuxrp62mtfjq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:r53rg4tnftuwz3gyrvprqefucc5ngcmprbdjov24y5voky2t7ioa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:rfet254vz46fyenlistlezj4msfw22vm5o2xdq2vipbo5f57y3dq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:sbtinxxd3cnhu57ykgps75td3poas37b4s4uc6ruviutw66u35aa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:und5bqwrot2khdwuvoiap4cunyiw3x6r3qb3hfzemzlnpd4ddu3q",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:vguik2p4xdle5rtodj4mhj2mvvaoiz2ymr3qyqgm2rrbaniycf3q",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:wfkozkyshyv67dquyqrqs7mfon45xczllh66ydallizzxvxgta2q",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:x2o2mfbaggbnghqmre4l4e5okugdzpxi2m4wlsx2o6eqieuata5a",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:xgkogmxvbj72gf7k2pqqfpis6xq7b6ozlcsyquqchvrluidhybpa",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:yno3nzg3ye7i2xfqltlhlfrez6biahwhgpotqvhid5tiuy3qde5q",
+      "how": "presupposed by"
+    }
+  ]
+}

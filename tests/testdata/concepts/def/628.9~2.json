@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/628.9~2",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha"
+  ],
+  "name": "628.9~2",
+  "related": {
+    "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha": {
+      "cid": "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~2",
+      "name": "628.9~2",
+      "path": "o/pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "628.9~2"
+}

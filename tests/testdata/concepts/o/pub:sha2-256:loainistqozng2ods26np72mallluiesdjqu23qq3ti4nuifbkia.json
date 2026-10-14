@@ -1,0 +1,135 @@
+{
+  "address": "https://pub.example.org/def/633_635",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia",
+    "size": 414
+  },
+  "cid": "pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia",
+  "classified_under": [
+    {
+      "by": "pub:sha2-256:6c52srwamq7mdcfsaiwtxq7nli4rc35ihq3pjrbgbtdku72ibmsa",
+      "concept": "pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka"
+    }
+  ],
+  "closure": [],
+  "concept": {
+    "anchors": [],
+    "broader": [
+      "pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka"
+    ],
+    "competing": [],
+    "form": "subject",
+    "members": [],
+    "narrower": [
+      {
+        "by": "pub:sha2-256:mjgmd3knh34corfnp3vknejngjpxlsrp5jchrl5zmeiv7hkecwua",
+        "cid": "pub:sha2-256:aevhzr3ory7zedrvvslbst7vige6jjsdzsuxzofjyw2wmhpgdsgq"
+      }
+    ],
+    "pdc": "633/635",
+    "solved_by": []
+  },
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia",
+    "heads": [
+      "pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia"
+    ],
+    "members": [
+      "pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "class": "definitional",
+      "content": "633/635: Horticulture in general. Specific crops",
+      "defines": {
+        "matches": [
+          {
+            "ref": "http://udcdata.info/051732",
+            "relation": "exact"
+          }
+        ],
+        "name": "Horticulture in general. Specific crops",
+        "pdc": "633/635",
+        "sort": "concept"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:6c52srwamq7mdcfsaiwtxq7nli4rc35ihq3pjrbgbtdku72ibmsa": {
+      "cid": "pub:sha2-256:6c52srwamq7mdcfsaiwtxq7nli4rc35ihq3pjrbgbtdku72ibmsa",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:6c52srwamq7mdcfsaiwtxq7nli4rc35ihq3pjrbgbtdku72ibmsa.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka": {
+      "cid": "pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka",
+      "class": "definitional",
+      "held": true,
+      "label": "631/635",
+      "name": "631/635",
+      "path": "o/pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:aevhzr3ory7zedrvvslbst7vige6jjsdzsuxzofjyw2wmhpgdsgq": {
+      "cid": "pub:sha2-256:aevhzr3ory7zedrvvslbst7vige6jjsdzsuxzofjyw2wmhpgdsgq",
+      "class": "definitional",
+      "held": true,
+      "label": "635",
+      "name": "635",
+      "path": "o/pub:sha2-256:aevhzr3ory7zedrvvslbst7vige6jjsdzsuxzofjyw2wmhpgdsgq.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:mjgmd3knh34corfnp3vknejngjpxlsrp5jchrl5zmeiv7hkecwua": {
+      "cid": "pub:sha2-256:mjgmd3knh34corfnp3vknejngjpxlsrp5jchrl5zmeiv7hkecwua",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:mjgmd3knh34corfnp3vknejngjpxlsrp5jchrl5zmeiv7hkecwua.json",
+      "sort": null,
+      "type": "claim.annotation"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia",
+    "class": "definitional",
+    "held": true,
+    "label": "633/635",
+    "name": "633/635",
+    "path": "o/pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia.json",
+    "sort": "concept",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:6c52srwamq7mdcfsaiwtxq7nli4rc35ihq3pjrbgbtdku72ibmsa",
+      "how": "classifies annotation"
+    }
+  ]
+}

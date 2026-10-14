@@ -13,9 +13,10 @@ from pathlib import Path
 
 from pytest_bdd import given, parsers, scenarios, then, when
 
-scenarios("../features/build.feature")
+scenarios("../features/build.feature", "../features/concepts.feature")
 
 TESTDATA = Path(__file__).resolve().parent.parent / "testdata" / "publication-0"
+CONCEPTS = Path(__file__).resolve().parent.parent / "testdata" / "concepts"
 TRAY_ENERGY = "pub:sha2-256:byz5xtavm3aqnn2kqgv5skwbvmhdpdefkb7jumscxlhfpubtiyla"
 TRAY = "pub:sha2-256:cce4jzdasl2f3bbp4pwdpetu5l3naxt55xovsrs2cqx5tab6tfpa"
 CLIMATE_HOME = "pub:sha2-256:qbogwvodjpvfifeh65x6est6w4b5buesgvg2ytb3zzcdqifncteq"
@@ -188,3 +189,59 @@ def escaped(tmp_path):
 def titled(tmp_path, title: str):
     page = (_site(tmp_path) / "index.html").read_text()
     assert f"<title>{title}</title>" in page, page[:600]
+
+
+# --- concepts (publet spec Section 5.9.1) --------------------------------------
+
+
+@given("the reading bundles of the PDC sample")
+def concept_bundles(tmp_path):
+    shutil.copytree(CONCEPTS, _bundles(tmp_path))
+
+
+def _concept_page(tmp_path: Path, code: str) -> str:
+    return _page(tmp_path, "def", code.replace("/", "_"))
+
+
+@then(parsers.parse('the page for "{code}" says "{text}"'))
+def concept_says(tmp_path, code: str, text: str):
+    page = _concept_page(tmp_path, code)
+    assert text in page or html.escape(text, quote=False) in page, page[:2000]
+
+
+def _extracts(tmp_path: Path) -> dict[str, str]:
+    index = json.loads((_bundles(tmp_path) / "index.json").read_text())
+    return {o["label"].split(" ")[0]: o["cid"] for o in index["objects"]
+            if o.get("class") == "empirical"}
+
+
+@then(parsers.parse('the page for "{code}" lists both extracts as members'))
+def concept_members(tmp_path, code: str):
+    page = _concept_page(tmp_path, code)
+    for cid in _extracts(tmp_path).values():
+        assert f"/o/{cid}/" in page, cid
+
+
+@then(parsers.parse('the classification page lists "{child}" under "{parent}" under "{top}"'))
+def classification(tmp_path, child: str, parent: str, top: str):
+    page = _page(tmp_path, "pdc")
+    at = [page.index(f"<code>{code}</code>") for code in (top, parent, child)]
+    assert at == sorted(at), at
+
+
+@then(parsers.parse('the Gargaro extract\'s page names the concept "{code}"'))
+def extract_concept(tmp_path, code: str):
+    page = _page(tmp_path, "o", _extracts(tmp_path)["Gargaro"])
+    assert f'href="/def/{code}/"' in page and "Member of" in page, page[:3000]
+
+
+@then(parsers.parse('the Gargaro extract\'s page links its suggestion at "{prefix}"'))
+def extract_suggestion(tmp_path, prefix: str):
+    page = _page(tmp_path, "o", _extracts(tmp_path)["Gargaro"])
+    assert f'href="{prefix}pub%3Asha2-256%3A' in page, page[:3000]
+
+
+@then("no page for a concept holds a script")
+def no_script(tmp_path):
+    for page in (_site(tmp_path) / "def").rglob("index.html"):
+        assert "<script" not in page.read_text().lower(), page

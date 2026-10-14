@@ -42,6 +42,23 @@ eleventyComputed:
   {%- if b.address %}<p class="m-0 font-mono text-sm text-muted">{{ b.address }}</p>{% endif %}
 </div>
 
+{%- set review = site.review or "https://review.sustenaut.eu" -%}
+{%- if b.classified_under and b.classified_under.length or b.concept or b.suggestions and b.suggestions.length %}
+{% call ui.panel("Concepts") %}
+{%- if b.concept %}
+<p class="m-0">A {{ b.concept.form }} concept at <a href="{{ (b.concept.pdc | defhref) | url }}"><code>{{ b.concept.pdc }}</code></a>{% if b.concept.competing.length %} {{ ui.tag("contested", "warning") }}{% endif %} · <a href="{{ review }}/concept/{{ b.concept.pdc | urlencode }}">Review it</a></p>
+{%- endif %}
+{%- for u in b.classified_under or [] %}
+{%- set r = b.related[u.concept] %}
+<p class="m-0">Member of <a href="{{ ((r.name if r and r.name else u.concept) | defhref) | url }}">{% if r and r.name %}<code>{{ r.name }}</code> {% endif %}{{ pub.byCid[u.concept].object.body.defines.name if pub.byCid[u.concept] else u.concept }}</a> <span class="text-sm text-muted">placed by {{ ui.ref(u.by, b.related) }}</span></p>
+{%- endfor %}
+{%- for t in b.suggestions or [] %}
+{%- set tb = pub.byCid[t] %}
+<p class="m-0">{{ ui.tag("suggestion", "warning") }} {% if tb %}<code>{{ tb.object.body.value.finding }}</code> by {{ tb.object.body.value.engine.model }} {{ tb.object.body.value.engine.version }}{% else %}{{ ui.ref(t, b.related) }}{% endif %} · <a href="{{ review }}/s/{{ t | urlencode }}">Review the suggestion</a> <span class="text-sm text-muted">A machine's suggestion decides nothing until a person signs.</span></p>
+{%- endfor %}
+{% endcall %}
+{%- endif %}
+
 {%- if b.critiques.length %}
 {% call ui.callout("warning") %}<strong>{{ b.critiques.length }} critique{% if b.critiques.length > 1 %}s{% endif %}.</strong>
 {% for c in b.critiques %} {{ ui.ref(c, b.related) }}{% endfor %}{% endcall %}

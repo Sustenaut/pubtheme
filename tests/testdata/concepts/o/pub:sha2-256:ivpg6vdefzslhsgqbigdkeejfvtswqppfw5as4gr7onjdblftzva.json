@@ -1,0 +1,81 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva",
+    "size": 510
+  },
+  "cid": "pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva",
+    "heads": [
+      "pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva"
+    ],
+    "members": [
+      "pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta",
+    "body": {
+      "current": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+      "lineage": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+      "rationale": "pub:sha2-256:6jedffclkjs7yaviuklkc6n2hjfytzsqhziveprhfvtq6fces54a",
+      "stewards": [
+        "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta",
+        "pub:sha2-256:mzfs2dzyrfsiillch4qigafcfjgpdqmffofsl6y3nvgqc64q4cjq"
+      ],
+      "threshold": 1
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "anchor"
+  },
+  "parameters": null,
+  "related": {
+    "pub:sha2-256:6jedffclkjs7yaviuklkc6n2hjfytzsqhziveprhfvtq6fces54a": {
+      "cid": "pub:sha2-256:6jedffclkjs7yaviuklkc6n2hjfytzsqhziveprhfvtq6fces54a",
+      "class": "procedural",
+      "held": true,
+      "label": "Read the electricity figure from the paper's table (fake).",
+      "name": null,
+      "path": "o/pub:sha2-256:6jedffclkjs7yaviuklkc6n2hjfytzsqhziveprhfvtq6fces54a.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq": {
+      "cid": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9",
+      "name": "628.9",
+      "path": "o/pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:mzfs2dzyrfsiillch4qigafcfjgpdqmffofsl6y3nvgqc64q4cjq": {
+      "cid": "pub:sha2-256:mzfs2dzyrfsiillch4qigafcfjgpdqmffofsl6y3nvgqc64q4cjq",
+      "held": false
+    },
+    "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta": {
+      "cid": "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva",
+    "class": null,
+    "held": true,
+    "label": "anchor",
+    "name": null,
+    "path": "o/pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva.json",
+    "sort": null,
+    "type": "anchor"
+  },
+  "used_by": []
+}

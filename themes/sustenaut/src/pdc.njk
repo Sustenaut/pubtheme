@@ -1,0 +1,26 @@
+---
+layout: base.njk
+permalink: "pdc/index.html"
+title: Classification
+---
+{%- import "components.njk" as ui with context -%}
+{%- macro branch(b, depth) -%}
+<li class="py-1">
+  <a href="{{ (b.concept.pdc | defhref) | url }}"><code>{{ b.concept.pdc }}</code> {{ b.object.body.defines.name }}</a>
+  {%- if b.concept.form != "subject" %} {{ ui.tag(b.concept.form, "success") }}{% endif %}
+  {%- if b.concept.competing.length %} {{ ui.tag("contested", "warning") }}{% endif %}
+  {%- set kids = b | narrower(pub.byCid) %}
+  {%- if kids.length %}
+  <ul class="m-0 list-none border-l border-rule pl-5">{% for k in kids %}{{ branch(k, depth + 1) }}{% endfor %}</ul>
+  {%- endif %}
+</li>
+{%- endmacro -%}
+{{ ui.page_heading("Classification", "The Extended Publet Decimal Classification (PDC): the UDC Summary's classes under their own codes, extended by narrower PDC classes, each a concept publet. From the top tables down.") }}
+{% call ui.panel() %}
+{%- set roots = pub.objects | pdcroots %}
+{%- if roots.length %}
+<ul class="m-0 list-none p-0">{% for r in roots %}{{ branch(r, 0) }}{% endfor %}</ul>
+{%- else %}
+<p class="m-0 text-muted">No concepts here yet.</p>
+{%- endif %}
+{% endcall %}

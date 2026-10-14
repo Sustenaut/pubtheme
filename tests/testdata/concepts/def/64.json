@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/64",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a"
+  ],
+  "name": "64",
+  "related": {
+    "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a": {
+      "cid": "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a",
+      "class": "definitional",
+      "held": true,
+      "label": "64",
+      "name": "64",
+      "path": "o/pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "64"
+}

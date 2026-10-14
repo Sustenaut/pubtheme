@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/631_635",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka"
+  ],
+  "name": "631/635",
+  "related": {
+    "pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka": {
+      "cid": "pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka",
+      "class": "definitional",
+      "held": true,
+      "label": "631/635",
+      "name": "631/635",
+      "path": "o/pub:sha2-256:7d7mdiz3o75gvo5xulasfqdgb7qbbhwegidqkjrz2mm2igfp6cka.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "631_635"
+}

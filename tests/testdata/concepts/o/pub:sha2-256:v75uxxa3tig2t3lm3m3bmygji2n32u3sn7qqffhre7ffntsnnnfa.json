@@ -1,0 +1,78 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa",
+    "size": 350
+  },
+  "cid": "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa",
+    "heads": [
+      "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa"
+    ],
+    "members": [
+      "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "kind": "classifies",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      },
+      "target": "pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna",
+      "value": {
+        "subject": "pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.annotation"
+  },
+  "parameters": null,
+  "related": {
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia": {
+      "cid": "pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia",
+      "class": "definitional",
+      "held": true,
+      "label": "631",
+      "name": "631",
+      "path": "o/pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna": {
+      "cid": "pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna",
+      "class": "definitional",
+      "held": true,
+      "label": "631.4",
+      "name": "631.4",
+      "path": "o/pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa",
+    "class": null,
+    "held": true,
+    "label": "claim.annotation classifies",
+    "name": null,
+    "path": "o/pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa.json",
+    "sort": null,
+    "type": "claim.annotation"
+  },
+  "used_by": []
+}

@@ -15,7 +15,9 @@ pubtheme build --bundles=bundles --out=site --theme=sustenaut --site=site.json
 ```
 
 `site.json` holds the host's settings: `title`, `description`, `logo` (a
-path to an SVG, relative to the file) and `footer`. Each is optional.
+path to an SVG, relative to the file), `footer` and `review` (the review
+service concepts and suggestions link to; the sustenaut theme defaults to
+`https://review.sustenaut.eu`). Each is optional.
 
 ## The themes
 
@@ -37,7 +39,23 @@ or built in a package of their own against the same bundles.
   defines or computes, how it is known, what it rests on, what uses it, its
   critiques and versions.
 - **A page per name** at `/def/<name>/`, the address spec Section 5.9.1
-  describes; a name two definitions share lists both.
+  describes; a name two definitions share lists both. A `/` in a name is
+  `_` in its address (`/def/631_635/`), as `pub bundle` writes it.
+- **A concept's page** at its PDC code, `/def/<code>/`. It shows:
+  - its form (subject, quantity or relation) and its boundary;
+  - its broader and narrower classes, and the claims classified under it;
+  - for a relation, its slots and the calculations that solve it (its
+    interface);
+  - its versions, the expert group (an anchor) covering it, and a link to
+    review it.
+
+  A code that more than one concept lineage claims is shown as contested,
+  with every concept that claims it.
+- **The classification** at `/pdc/`: every subject concept from the top
+  tables down.
+- **Concepts on every page**: an object's page names the concepts it is
+  classified under and links each machine suggestion naming it to the
+  review service.
 - **Its object's bytes** at `/pub/v1/object/<CID>` and its bundle at
   `/o/<CID>.json`, so a reader can check the page against what it shows.
 
@@ -52,7 +70,14 @@ make example       # build the sustenaut theme from the test bundles into _site/
 ```
 
 The test bundles in `tests/testdata/publication-0` are `pub bundle`'s output
-for publication 0 (schryer/business-plan). The functional suite follows
+for publication 0 (schryer/business-plan). Those in `tests/testdata/concepts`
+are fake test data, made by `tools/concept-testdata.py --pub=PATH` with a pub
+that bundles concepts (schryer/publet#49). They hold:
+- 20 classes of the UDC Summary, from schryer/publet-decimal-classification;
+- a quantity concept with two members and two versions, and a competing
+  concept at the same code;
+- a relation concept and a calculation that solves it;
+- an expert group (an anchor), and a machine suggestion. The functional suite follows
 [pubkit](https://github.com/schryer/pubkit)'s setup: Gherkin features run
 by pytest-bdd, driving the program as a host would.
 

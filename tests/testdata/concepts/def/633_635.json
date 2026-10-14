@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/633_635",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia"
+  ],
+  "name": "633/635",
+  "related": {
+    "pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia": {
+      "cid": "pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia",
+      "class": "definitional",
+      "held": true,
+      "label": "633/635",
+      "name": "633/635",
+      "path": "o/pub:sha2-256:loainistqozng2ods26np72mallluiesdjqu23qq3ti4nuifbkia.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "633_635"
+}

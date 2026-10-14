@@ -1,0 +1,97 @@
+{
+  "address": "https://pub.example.org/def/share%20of%20the%20day",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq",
+    "size": 406
+  },
+  "cid": "pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq",
+  "classified_under": [],
+  "closure": [
+    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota"
+  ],
+  "concept": null,
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq",
+    "heads": [
+      "pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq"
+    ],
+    "members": [
+      "pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "class": "definitional",
+      "content": "share of the day: the fraction of a day the lights are on.",
+      "defines": {
+        "dimension": {},
+        "name": "share of the day",
+        "sort": "kind"
+      },
+      "depends": [
+        "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota": {
+      "cid": "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha": {
+      "cid": "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~2",
+      "name": "628.9~2",
+      "path": "o/pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota",
+      "how": "presupposes"
+    }
+  ],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq",
+    "class": "definitional",
+    "held": true,
+    "label": "share of the day",
+    "name": "share of the day",
+    "path": "o/pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha",
+      "how": "presupposed by"
+    }
+  ]
+}

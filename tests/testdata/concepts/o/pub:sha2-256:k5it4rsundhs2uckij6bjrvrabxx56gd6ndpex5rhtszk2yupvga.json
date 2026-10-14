@@ -1,0 +1,73 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:k5it4rsundhs2uckij6bjrvrabxx56gd6ndpex5rhtszk2yupvga",
+    "size": 294
+  },
+  "cid": "pub:sha2-256:k5it4rsundhs2uckij6bjrvrabxx56gd6ndpex5rhtszk2yupvga",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:k5it4rsundhs2uckij6bjrvrabxx56gd6ndpex5rhtszk2yupvga",
+    "heads": [
+      "pub:sha2-256:k5it4rsundhs2uckij6bjrvrabxx56gd6ndpex5rhtszk2yupvga"
+    ],
+    "members": [
+      "pub:sha2-256:k5it4rsundhs2uckij6bjrvrabxx56gd6ndpex5rhtszk2yupvga"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "class": "normative",
+      "content": "Without a stated photoperiod, assume 16 hours of light a day (fake).",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:v5aymfuwejvcoupkg5iogv6ne5cxyobwh7ltffulhg5uyj4vqvxa": {
+      "cid": "pub:sha2-256:v5aymfuwejvcoupkg5iogv6ne5cxyobwh7ltffulhg5uyj4vqvxa",
+      "class": "procedural",
+      "held": true,
+      "label": "Multiply lamp power per area by the share of the day lit (fake).",
+      "name": null,
+      "path": "o/pub:sha2-256:v5aymfuwejvcoupkg5iogv6ne5cxyobwh7ltffulhg5uyj4vqvxa.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:k5it4rsundhs2uckij6bjrvrabxx56gd6ndpex5rhtszk2yupvga",
+    "class": "normative",
+    "held": true,
+    "label": "Without a stated photoperiod, assume 16 hours of light a day (fake).",
+    "name": null,
+    "path": "o/pub:sha2-256:k5it4rsundhs2uckij6bjrvrabxx56gd6ndpex5rhtszk2yupvga.json",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:v5aymfuwejvcoupkg5iogv6ne5cxyobwh7ltffulhg5uyj4vqvxa",
+      "how": "presupposed by"
+    }
+  ]
+}

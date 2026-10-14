@@ -1,0 +1,98 @@
+{#- A concept's page, at its PDC code (publet spec Section 5.9.1): its form,
+    boundary, place in the classification, members, the calculations that
+    solve it, its versions, the expert group covering it, and a link to
+    review it. More than one lineage at a code is a contested code. -#}
+{%- import "components.njk" as ui with context -%}
+{%- set review = site.review or "https://review.sustenaut.eu" -%}
+{%- set lines = n.definitions | lineages(pub.byCid) -%}
+{%- if lines.length > 1 %}
+{% call ui.callout("warning") %}<strong>Contested code.</strong> {{ lines.length }} concepts claim {{ n.name }}. Each is shown; which one a PDC edition or the code's expert group recommends is theirs to say, and a claim citing one means that one.{% endcall %}
+{%- endif %}
+
+{%- for line in lines %}
+{%- set b = pub.byCid[line.head] %}
+{%- set c = b.concept %}
+{%- set d = b.object.body.defines %}
+{% call ui.panel(d.name, (c.form | capitalize) + " concept" + (" · " + loop.index + " of " + lines.length if lines.length > 1 else ""), true) %}
+<div class="flex flex-wrap gap-2">{{ ui.tag(c.form + " concept", "success") }}{% if lines.length > 1 %} {{ ui.tag("contested", "warning") }}{% endif %}</div>
+<p class="m-0 text-lg">{{ b.object.body.content }}</p>
+<div class="flex flex-wrap gap-x-7 gap-y-2 text-sm">
+  <span><span class="text-muted">PDC code</span> <code>{{ c.pdc }}</code></span>
+  {%- if d.kind %}<span><span class="text-muted">Kind</span> {{ ui.ref(d.kind, b.related) }}</span>{% endif %}
+  <span><span class="text-muted">Identifier</span> <a href="{{ ('/o/' + b.cid + '/') | url }}"><code>{{ b.cid | short }}</code></a></span>
+  <a href="{{ review }}/concept/{{ c.pdc | urlencode }}">Review this concept</a>
+</div>
+{%- if d.boundary %}
+<div class="flex flex-wrap gap-6">
+  <div class="min-w-0 flex-[1_1_240px]">{{ ui.eyebrow("Includes") }}
+    <ul class="mt-1 mb-0">{% for l in d.boundary.includes %}<li>{{ l }}</li>{% else %}<li class="text-muted">Nothing stated.</li>{% endfor %}</ul></div>
+  <div class="min-w-0 flex-[1_1_240px]">{{ ui.eyebrow("Excludes") }}
+    <ul class="mt-1 mb-0">{% for l in d.boundary.excludes %}<li>{{ l }}</li>{% else %}<li class="text-muted">Nothing stated.</li>{% endfor %}</ul></div>
+</div>
+{%- endif %}
+{%- if d.relation %}
+<div>{{ ui.eyebrow("Relation") }}
+  <p class="mt-1 mb-1">{{ d.relation.statement }}</p>
+  <table class="border-collapse text-sm"><tbody>
+    {%- for slot in d.relation.slots %}
+    <tr><td class="py-0.5 pr-4"><code>{{ slot.role }}</code></td>
+      <td class="py-0.5 pr-4">{% if slot.concept %}<a href="{{ (slot.concept | defhref) | url }}">{{ slot.concept }}</a>{% else %}{{ ui.ref(slot.kind, b.related) }}{% endif %}</td>
+      <td class="py-0.5 text-muted">{% if d.relation.form.product %}exponent {{ d.relation.form.product.exponents[slot.role] }}{% endif %}</td></tr>
+    {%- endfor %}
+  </tbody></table>
+  {%- if d.relation.form.product %}<p class="m-0 text-sm text-muted">A product with coefficient {{ d.relation.form.product.coefficient }}: any one slot is computed from all the others.</p>{% endif %}
+</div>
+{%- endif %}
+{%- if d.matches %}<p class="m-0 text-sm">{% for m in d.matches %}<span class="text-muted">{{ m.relation }} match</span> <a href="{{ m.ref }}" rel="nofollow noreferrer">{{ m.ref }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+{% endcall %}
+
+<div class="flex flex-wrap items-start gap-6">
+  <div class="flex min-w-0 flex-[999_1_480px] flex-col gap-6">
+    {% call ui.panel("Where it sits in the classification") %}
+    <div class="flex flex-col gap-2">
+      {{ ui.eyebrow("Broader · " + c.broader.length) }}
+      {%- for p in c.broader %}{% set r = b.related[p] %}<a href="{{ ((r.name if r and r.name else p) | defhref) | url }}">{% if r and r.name %}<code>{{ r.name }}</code>{% endif %} {{ pub.byCid[p].object.body.defines.name if pub.byCid[p] else p }}</a>{% else %}<span class="text-muted">None: a top class.</span>{% endfor %}
+      <span class="mt-2">{{ ui.eyebrow("Narrower · " + c.narrower.length) }}</span>
+      {%- for x in b | narrower(pub.byCid) %}<a href="{{ (x.concept.pdc | defhref) | url }}"><code>{{ x.concept.pdc }}</code> {{ x.object.body.defines.name }}</a>{% else %}<span class="text-muted">None yet.</span>{% endfor %}
+    </div>
+    {% endcall %}
+
+    {%- if c.form != "relation" %}
+    {% call ui.panel("Members · " + c.members.length) %}
+    {%- for m in c.members %}{{ ui.objlink(m.cid, b.related) }}{% else %}<span class="text-muted">No claim is classified under this concept yet.</span>{% endfor %}
+    {% endcall %}
+    {%- endif %}
+
+    {%- if c.form == "relation" %}
+    {% call ui.panel("Ways to compute it · " + c.solved_by.length) %}
+    <p class="m-0 text-sm text-muted">Each calculation solves one slot from the others it requires; together they are the concept's interface.</p>
+    {%- for calc in c.solved_by %}
+    {%- set cb = pub.byCid[calc] %}
+    {%- set sv = cb.object.body.computes.solves if cb else null %}
+    <div class="flex flex-col gap-1 border-b border-rule pb-2">
+      {{ ui.objlink(calc, b.related) }}
+      {%- if sv %}<span class="text-sm">solves <code>{{ sv.target }}</code> from {% for r in sv.requires %}<code>{{ r }}</code>{% if not loop.last %}, {% endif %}{% else %}nothing else{% endfor %}
+        {%- for o in sv.optional %}; optional <code>{{ o.role }}</code>, by default {{ ui.ref(o.default, cb.related) }}{% endfor %}</span>{% endif %}
+    </div>
+    {%- else %}<span class="text-muted">No calculation solves it yet.</span>{% endfor %}
+    {% endcall %}
+    {%- endif %}
+  </div>
+
+  <aside class="flex min-w-0 flex-[1_1_280px] flex-col gap-4">
+    {%- for a in c.anchors %}
+    {% call ui.panel("Expert group", "Stewards of " + (b.related[a.over].name if b.related[a.over] and b.related[a.over].name else "this concept")) %}
+    <p class="m-0 text-sm">{{ a.stewards.length }} steward{% if a.stewards.length != 1 %}s{% endif %}; a change needs {{ a.threshold }} of their signatures. Their choice is a recommendation, never a rule: anyone may still publish, review or dispute.</p>
+    {%- if a.over != b.cid %}<p class="m-0 text-sm text-muted">The group covers <a href="{{ ((b.related[a.over].name or a.over) | defhref) | url }}">{{ b.related[a.over].name }}</a> and the codes under it.</p>{% endif %}
+    {% endcall %}
+    {%- endfor %}
+    {% call ui.panel("Versions · " + line.versions.length) %}
+    <ol class="m-0 flex list-none flex-col gap-2 p-0">
+    {%- for v in line.versions %}{% set vb = pub.byCid[v] %}
+      <li>{% if vb %}<a href="{{ ('/o/' + v + '/') | url }}">{{ vb.object.created }}</a>{% else %}<code class="break-all text-xs">{{ v }}</code>{% endif %} {{ ui.tag("current", "success") if v == b.cid else ui.tag("earlier") }}</li>
+    {%- endfor %}
+    </ol>
+    {% endcall %}
+  </aside>
+</div>
+{%- endfor %}

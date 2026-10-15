@@ -1,0 +1,189 @@
+{
+  "address": "https://pub.example.org/def/6",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:h3snuwdou33qfqa4hayl4dmzrppxy5dm3pu67be7f2xn2wr3snqq",
+    "size": 497
+  },
+  "cid": "pub:sha2-256:h3snuwdou33qfqa4hayl4dmzrppxy5dm3pu67be7f2xn2wr3snqq",
+  "classified_under": [
+    {
+      "by": "pub:sha2-256:5wr33afvue6tm2dmwwjvq6zbuqqsn4g7rh5k4gfmhzgzv3xza6dq",
+      "concept": "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq"
+    }
+  ],
+  "closure": [],
+  "concept": {
+    "anchors": [],
+    "broader": [
+      "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq"
+    ],
+    "competing": [],
+    "form": "subject",
+    "members": [],
+    "narrower": [
+      {
+        "by": "pub:sha2-256:g6mx7yauzeps57dwa7bdexovvigynekt5fht7qoxaiwco2dbajca",
+        "cid": "pub:sha2-256:e3rah3ogyc6fep2cltgjz6qpepc36vzlff7ou3r5filgypojyupa"
+      },
+      {
+        "by": "pub:sha2-256:hu3fooq3q233yqvehcqmabscyb6notr2mycbwbp7otdrazpg56dq",
+        "cid": "pub:sha2-256:mkccr43dyjoxv53eqm4bobua6qrajxyip4ykrvf6w4wldl4xq5ma"
+      },
+      {
+        "by": "pub:sha2-256:l5y5zlxnx7lfb5ixcxymfm3yqx5jwewfinlkyxydtptxphogz3pa",
+        "cid": "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a"
+      }
+    ],
+    "pdc": "6",
+    "solved_by": []
+  },
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:h3snuwdou33qfqa4hayl4dmzrppxy5dm3pu67be7f2xn2wr3snqq",
+    "heads": [
+      "pub:sha2-256:h3snuwdou33qfqa4hayl4dmzrppxy5dm3pu67be7f2xn2wr3snqq"
+    ],
+    "members": [
+      "pub:sha2-256:h3snuwdou33qfqa4hayl4dmzrppxy5dm3pu67be7f2xn2wr3snqq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "class": "definitional",
+      "content": "6: APPLIED SCIENCES. MEDICINE. TECHNOLOGY",
+      "defines": {
+        "boundary": {
+          "excludes": [],
+          "includes": [
+            "Class here generalities about the applied sciences and technology"
+          ]
+        },
+        "matches": [
+          {
+            "ref": "http://udcdata.info/037275",
+            "relation": "exact"
+          }
+        ],
+        "name": "APPLIED SCIENCES. MEDICINE. TECHNOLOGY",
+        "pdc": "6",
+        "sort": "concept"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a": {
+      "cid": "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a",
+      "class": "definitional",
+      "held": true,
+      "label": "64",
+      "name": "64",
+      "path": "o/pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq": {
+      "cid": "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq",
+      "class": "definitional",
+      "held": true,
+      "label": "----",
+      "name": "----",
+      "path": "o/pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:5wr33afvue6tm2dmwwjvq6zbuqqsn4g7rh5k4gfmhzgzv3xza6dq": {
+      "cid": "pub:sha2-256:5wr33afvue6tm2dmwwjvq6zbuqqsn4g7rh5k4gfmhzgzv3xza6dq",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:5wr33afvue6tm2dmwwjvq6zbuqqsn4g7rh5k4gfmhzgzv3xza6dq.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:e3rah3ogyc6fep2cltgjz6qpepc36vzlff7ou3r5filgypojyupa": {
+      "cid": "pub:sha2-256:e3rah3ogyc6fep2cltgjz6qpepc36vzlff7ou3r5filgypojyupa",
+      "class": "definitional",
+      "held": true,
+      "label": "63",
+      "name": "63",
+      "path": "o/pub:sha2-256:e3rah3ogyc6fep2cltgjz6qpepc36vzlff7ou3r5filgypojyupa.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:g6mx7yauzeps57dwa7bdexovvigynekt5fht7qoxaiwco2dbajca": {
+      "cid": "pub:sha2-256:g6mx7yauzeps57dwa7bdexovvigynekt5fht7qoxaiwco2dbajca",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:g6mx7yauzeps57dwa7bdexovvigynekt5fht7qoxaiwco2dbajca.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:hu3fooq3q233yqvehcqmabscyb6notr2mycbwbp7otdrazpg56dq": {
+      "cid": "pub:sha2-256:hu3fooq3q233yqvehcqmabscyb6notr2mycbwbp7otdrazpg56dq",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:hu3fooq3q233yqvehcqmabscyb6notr2mycbwbp7otdrazpg56dq.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:l5y5zlxnx7lfb5ixcxymfm3yqx5jwewfinlkyxydtptxphogz3pa": {
+      "cid": "pub:sha2-256:l5y5zlxnx7lfb5ixcxymfm3yqx5jwewfinlkyxydtptxphogz3pa",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:l5y5zlxnx7lfb5ixcxymfm3yqx5jwewfinlkyxydtptxphogz3pa.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:mkccr43dyjoxv53eqm4bobua6qrajxyip4ykrvf6w4wldl4xq5ma": {
+      "cid": "pub:sha2-256:mkccr43dyjoxv53eqm4bobua6qrajxyip4ykrvf6w4wldl4xq5ma",
+      "class": "definitional",
+      "held": true,
+      "label": "62",
+      "name": "62",
+      "path": "o/pub:sha2-256:mkccr43dyjoxv53eqm4bobua6qrajxyip4ykrvf6w4wldl4xq5ma.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:h3snuwdou33qfqa4hayl4dmzrppxy5dm3pu67be7f2xn2wr3snqq",
+    "class": "definitional",
+    "held": true,
+    "label": "6",
+    "name": "6",
+    "path": "o/pub:sha2-256:h3snuwdou33qfqa4hayl4dmzrppxy5dm3pu67be7f2xn2wr3snqq.json",
+    "sort": "concept",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:5wr33afvue6tm2dmwwjvq6zbuqqsn4g7rh5k4gfmhzgzv3xza6dq",
+      "how": "classifies annotation"
+    }
+  ]
+}

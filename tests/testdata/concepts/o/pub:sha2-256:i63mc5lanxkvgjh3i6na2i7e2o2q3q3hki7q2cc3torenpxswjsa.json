@@ -1,0 +1,78 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa",
+    "size": 350
+  },
+  "cid": "pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa",
+    "heads": [
+      "pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa"
+    ],
+    "members": [
+      "pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "kind": "classifies",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      },
+      "target": "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra",
+      "value": {
+        "subject": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.annotation"
+  },
+  "parameters": null,
+  "related": {
+    "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a": {
+      "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra": {
+      "cid": "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra",
+      "class": "empirical",
+      "held": true,
+      "label": "Gargaro et al. 2025 (fake): a vertical farm's LED shelves used 1.1 kWh per m2 per day.",
+      "name": null,
+      "path": "o/pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa",
+    "class": null,
+    "held": true,
+    "label": "claim.annotation classifies",
+    "name": null,
+    "path": "o/pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa.json",
+    "sort": null,
+    "type": "claim.annotation"
+  },
+  "used_by": []
+}

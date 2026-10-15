@@ -3,7 +3,7 @@ pagination:
   data: pub.names
   size: 1
   alias: n
-permalink: "def/{{ n.name }}/index.html"
+permalink: "def/{{ n.segment or n.name }}/index.html"
 layout: base.njk
 eleventyComputed:
   title: "{{ n.name }}"
@@ -15,6 +15,10 @@ eleventyComputed:
   <h1 class="m-0 font-display text-4xl font-extrabold">{{ n.name }}</h1>
   <p class="m-0 font-mono text-sm text-muted">{{ n.address }}</p>
 </div>
+{%- set first = pub.byCid[n.definitions[0]] %}
+{%- if first and first.concept %}
+{%- include "concept.njk" %}
+{%- else %}
 {%- if n.definitions.length > 1 %}
 {% call ui.callout("warning") %}{{ n.definitions.length }} definitions go by this name. They are different definitions, each with its own identifier; which one a claim means is fixed by the identifier it cites.{% endcall %}
 {%- endif %}
@@ -41,3 +45,4 @@ eleventyComputed:
 {% endcall %}
 {%- endif %}
 {%- endfor %}
+{%- endif %}

@@ -1,0 +1,108 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq",
+    "size": 729
+  },
+  "cid": "pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq",
+    "heads": [
+      "pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq"
+    ],
+    "members": [
+      "pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:2d6bdnp3hgrjdnhtzatucfcqguwx6g4zy4x5uql7xqhy2kddtfja",
+    "body": {
+      "kind": "triage",
+      "target": "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra",
+      "value": {
+        "candidate": "pub:sha2-256:xtyfssl7w2rvtqkytwpkehckvlmcva4ckamvhb63hrfdg2lmbj7a",
+        "engine": {
+          "inputs": "pub:sha2-256:gi4bki7gggl4sknwp54tvaeyx3ik4otpvebggt63zrx2ivt7gnda",
+          "model": "a model (fake)",
+          "prompt": "pub:sha2-256:z4drstxcglvvghqv62iaadizqrw6u2opaviepatfrl6pvs4sfcra",
+          "version": "2026-10"
+        },
+        "finding": "groups-under",
+        "refs": [
+          "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+          "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra",
+          "pub:sha2-256:owthalq6iygc36ptz4f53u4oyy4l252xi4pwmanjxswawi37y6na"
+        ]
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.annotation"
+  },
+  "parameters": null,
+  "related": {
+    "pub:sha2-256:2d6bdnp3hgrjdnhtzatucfcqguwx6g4zy4x5uql7xqhy2kddtfja": {
+      "cid": "pub:sha2-256:2d6bdnp3hgrjdnhtzatucfcqguwx6g4zy4x5uql7xqhy2kddtfja",
+      "held": false
+    },
+    "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a": {
+      "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:gi4bki7gggl4sknwp54tvaeyx3ik4otpvebggt63zrx2ivt7gnda": {
+      "cid": "pub:sha2-256:gi4bki7gggl4sknwp54tvaeyx3ik4otpvebggt63zrx2ivt7gnda",
+      "held": false
+    },
+    "pub:sha2-256:owthalq6iygc36ptz4f53u4oyy4l252xi4pwmanjxswawi37y6na": {
+      "cid": "pub:sha2-256:owthalq6iygc36ptz4f53u4oyy4l252xi4pwmanjxswawi37y6na",
+      "class": "empirical",
+      "held": true,
+      "label": "Piovano et al. 2026 (fake): LED shelves used 0.9 to 1.3 kWh per m2 per day.",
+      "name": null,
+      "path": "o/pub:sha2-256:owthalq6iygc36ptz4f53u4oyy4l252xi4pwmanjxswawi37y6na.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:xtyfssl7w2rvtqkytwpkehckvlmcva4ckamvhb63hrfdg2lmbj7a": {
+      "cid": "pub:sha2-256:xtyfssl7w2rvtqkytwpkehckvlmcva4ckamvhb63hrfdg2lmbj7a",
+      "held": false
+    },
+    "pub:sha2-256:z4drstxcglvvghqv62iaadizqrw6u2opaviepatfrl6pvs4sfcra": {
+      "cid": "pub:sha2-256:z4drstxcglvvghqv62iaadizqrw6u2opaviepatfrl6pvs4sfcra",
+      "held": false
+    },
+    "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra": {
+      "cid": "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra",
+      "class": "empirical",
+      "held": true,
+      "label": "Gargaro et al. 2025 (fake): a vertical farm's LED shelves used 1.1 kWh per m2 per day.",
+      "name": null,
+      "path": "o/pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra.json",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq",
+    "class": null,
+    "held": true,
+    "label": "claim.annotation triage",
+    "name": null,
+    "path": "o/pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq.json",
+    "sort": null,
+    "type": "claim.annotation"
+  },
+  "used_by": []
+}

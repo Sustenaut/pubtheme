@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/ucum",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota"
+  ],
+  "name": "ucum",
+  "related": {
+    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota": {
+      "cid": "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota.json",
+      "sort": "system",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "ucum"
+}

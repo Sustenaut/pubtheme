@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/628",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea"
+  ],
+  "name": "628",
+  "related": {
+    "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea": {
+      "cid": "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea",
+      "class": "definitional",
+      "held": true,
+      "label": "628",
+      "name": "628",
+      "path": "o/pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "628"
+}

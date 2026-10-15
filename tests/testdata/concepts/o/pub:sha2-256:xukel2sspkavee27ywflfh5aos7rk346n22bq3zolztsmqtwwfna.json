@@ -1,0 +1,110 @@
+{
+  "address": "https://pub.example.org/def/631.4",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna",
+    "size": 406
+  },
+  "cid": "pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna",
+  "classified_under": [
+    {
+      "by": "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa",
+      "concept": "pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia"
+    }
+  ],
+  "closure": [],
+  "concept": {
+    "anchors": [],
+    "broader": [
+      "pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia"
+    ],
+    "competing": [],
+    "form": "subject",
+    "members": [],
+    "narrower": [],
+    "pdc": "631.4",
+    "solved_by": []
+  },
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna",
+    "heads": [
+      "pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna"
+    ],
+    "members": [
+      "pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "class": "definitional",
+      "content": "631.4: Soil science. Pedology. Soil research",
+      "defines": {
+        "matches": [
+          {
+            "ref": "http://udcdata.info/051194",
+            "relation": "exact"
+          }
+        ],
+        "name": "Soil science. Pedology. Soil research",
+        "pdc": "631.4",
+        "sort": "concept"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia": {
+      "cid": "pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia",
+      "class": "definitional",
+      "held": true,
+      "label": "631",
+      "name": "631",
+      "path": "o/pub:sha2-256:ibocwin6zq5wsr6adzblx2e5byqbsstyfepahjgsgf4xcnx6pwia.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa": {
+      "cid": "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa.json",
+      "sort": null,
+      "type": "claim.annotation"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna",
+    "class": "definitional",
+    "held": true,
+    "label": "631.4",
+    "name": "631.4",
+    "path": "o/pub:sha2-256:xukel2sspkavee27ywflfh5aos7rk346n22bq3zolztsmqtwwfna.json",
+    "sort": "concept",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:v75uxxa3tig2t3lm3m3bmygji2n32u3sn7qqffhre7ffntsnnnfa",
+      "how": "classifies annotation"
+    }
+  ]
+}

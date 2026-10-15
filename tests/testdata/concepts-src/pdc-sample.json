@@ -1,0 +1,544 @@
+{
+ "source": {
+  "title": "UDC Summary (udcS), SKOS",
+  "publisher": "UDC Consortium",
+  "license": "CC BY-SA 3.0, attribution to the UDC Consortium",
+  "url": "https://api.finto.fi/rest/v1/udcs/data?format=text/turtle",
+  "modified": "2020-11-25T07:53:14+00:00",
+  "retrieved": "2026-10-14",
+  "sha256": "090333d9c3f56946f34daf654e172ae9bc1050a23aab27f7743817afb6a78416"
+ },
+ "note": "20 classes of the UDC Summary, from schryer/publet-decimal-classification's data/pdc/udc-summary.json, for test pages.",
+ "classes": [
+  {
+   "pdc": "----",
+   "uri": "http://udcdata.info/078887",
+   "broader": [],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "----: MAIN TABLES",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "----",
+     "name": "MAIN TABLES",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/078887"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/078887",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "6",
+   "uri": "http://udcdata.info/037275",
+   "broader": [
+    "----"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "6: APPLIED SCIENCES. MEDICINE. TECHNOLOGY",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "6",
+     "name": "APPLIED SCIENCES. MEDICINE. TECHNOLOGY",
+     "boundary": {
+      "includes": [
+       "Class here generalities about the applied sciences and technology"
+      ],
+      "excludes": []
+     },
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/037275"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/037275",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "62",
+   "uri": "http://udcdata.info/040488",
+   "broader": [
+    "6"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "62: Engineering. Technology in general",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "62",
+     "name": "Engineering. Technology in general",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/040488"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/040488",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "628",
+   "uri": "http://udcdata.info/048544",
+   "broader": [
+    "62"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "628: Public health engineering. Water. Sanitation. Illuminating engineering",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "628",
+     "name": "Public health engineering. Water. Sanitation. Illuminating engineering",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/048544"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/048544",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "628.9",
+   "uri": "http://udcdata.info/048946",
+   "broader": [
+    "628"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "628.9: Lighting. Illumination engineering",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "628.9",
+     "name": "Lighting. Illumination engineering",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/048946"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/048946",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "63",
+   "uri": "http://udcdata.info/050820",
+   "broader": [
+    "6"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "63: Agriculture and related sciences and techniques. Forestry. Farming. Wildlife exploitation",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "63",
+     "name": "Agriculture and related sciences and techniques. Forestry. Farming. Wildlife exploitation",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/050820"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/050820",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631/635",
+   "uri": "http://udcdata.info/050934",
+   "broader": [
+    "63"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631/635: Farm management. Agronomy. Horticulture",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631/635",
+     "name": "Farm management. Agronomy. Horticulture",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/050934"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/050934",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631",
+   "uri": "http://udcdata.info/050935",
+   "broader": [
+    "631/635"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631: Agriculture in general",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631",
+     "name": "Agriculture in general",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/050935"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/050935",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631.1",
+   "uri": "http://udcdata.info/050936",
+   "broader": [
+    "631"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631.1: Farm management and organization",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631.1",
+     "name": "Farm management and organization",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/050936"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/050936",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631.2",
+   "uri": "http://udcdata.info/051014",
+   "broader": [
+    "631"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631.2: Farm buildings, structures and installations. Buildings for livestock, produce, machinery and equipment",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631.2",
+     "name": "Farm buildings, structures and installations. Buildings for livestock, produce, machinery and equipment",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/051014"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/051014",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631.3",
+   "uri": "http://udcdata.info/051034",
+   "broader": [
+    "631"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631.3: Agricultural machines, implements and equipment",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631.3",
+     "name": "Agricultural machines, implements and equipment",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/051034"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/051034",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631.4",
+   "uri": "http://udcdata.info/051194",
+   "broader": [
+    "631"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631.4: Soil science. Pedology. Soil research",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631.4",
+     "name": "Soil science. Pedology. Soil research",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/051194"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/051194",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631.5",
+   "uri": "http://udcdata.info/051317",
+   "broader": [
+    "631"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631.5: Agricultural operations",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631.5",
+     "name": "Agricultural operations",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/051317"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/051317",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631.6",
+   "uri": "http://udcdata.info/051465",
+   "broader": [
+    "631"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631.6: Rural engineering",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631.6",
+     "name": "Rural engineering",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/051465"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/051465",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "631.8",
+   "uri": "http://udcdata.info/051489",
+   "broader": [
+    "631"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "631.8: Fertilizers, manures and soil enrichment. Promotion of growth. Plant stimulants",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "631.8",
+     "name": "Fertilizers, manures and soil enrichment. Promotion of growth. Plant stimulants",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/051489"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/051489",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "633/635",
+   "uri": "http://udcdata.info/051732",
+   "broader": [
+    "631/635"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "633/635: Horticulture in general. Specific crops",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "633/635",
+     "name": "Horticulture in general. Specific crops",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/051732"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/051732",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "635",
+   "uri": "http://udcdata.info/052078",
+   "broader": [
+    "633/635"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "635: Garden plants. Gardening",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "635",
+     "name": "Garden plants. Gardening",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/052078"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/052078",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "64",
+   "uri": "http://udcdata.info/053117",
+   "broader": [
+    "6"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "64: Home economics. Domestic science. Housekeeping",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "64",
+     "name": "Home economics. Domestic science. Housekeeping",
+     "boundary": {
+      "includes": [
+       "Class here information about the household, including household articles from the point of view of their use; housekeeping operations and domestic work on a commercial scale (e.g. hotel-keeping, catering, cleaning, laundering)"
+      ],
+      "excludes": []
+     },
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/053117"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/053117",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "641/642",
+   "uri": "http://udcdata.info/053166",
+   "broader": [
+    "64"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "641/642: Food. Cooking. Dishes. Meals",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "641/642",
+     "name": "Food. Cooking. Dishes. Meals",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/053166"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/053166",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  },
+  {
+   "pdc": "641",
+   "uri": "http://udcdata.info/053167",
+   "broader": [
+    "641/642"
+   ],
+   "claim": {
+    "class": "definitional",
+    "lang": "en",
+    "content": "641: Food. Cooking. Dishes",
+    "scope": "unconditional",
+    "defines": {
+     "sort": "concept",
+     "pdc": "641",
+     "name": "Food. Cooking. Dishes",
+     "matches": [
+      {
+       "relation": "exact",
+       "ref": "http://udcdata.info/053167"
+      }
+     ]
+    },
+    "cite": "http://udcdata.info/053167",
+    "cite_note": "UDC Summary, UDC Consortium, CC BY-SA 3.0"
+   }
+  }
+ ]
+}

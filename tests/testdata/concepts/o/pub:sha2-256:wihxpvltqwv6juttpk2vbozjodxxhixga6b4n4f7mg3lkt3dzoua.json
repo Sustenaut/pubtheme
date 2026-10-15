@@ -1,0 +1,61 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:wihxpvltqwv6juttpk2vbozjodxxhixga6b4n4f7mg3lkt3dzoua",
+    "size": 308
+  },
+  "cid": "pub:sha2-256:wihxpvltqwv6juttpk2vbozjodxxhixga6b4n4f7mg3lkt3dzoua",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:wihxpvltqwv6juttpk2vbozjodxxhixga6b4n4f7mg3lkt3dzoua",
+    "heads": [
+      "pub:sha2-256:wihxpvltqwv6juttpk2vbozjodxxhixga6b4n4f7mg3lkt3dzoua"
+    ],
+    "members": [
+      "pub:sha2-256:wihxpvltqwv6juttpk2vbozjodxxhixga6b4n4f7mg3lkt3dzoua"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "damping": 850000,
+      "delta_max": 290000,
+      "independence_distance": 2,
+      "iterations": 20,
+      "replication_floor": 2,
+      "roots": [
+        {
+          "key": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+          "weight": 1000
+        }
+      ],
+      "tau": 660000
+    },
+    "created": "2026-09-12T00:00:00Z",
+    "type": "policy"
+  },
+  "parameters": null,
+  "related": {
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:wihxpvltqwv6juttpk2vbozjodxxhixga6b4n4f7mg3lkt3dzoua",
+    "class": null,
+    "held": true,
+    "label": "policy",
+    "name": null,
+    "path": "o/pub:sha2-256:wihxpvltqwv6juttpk2vbozjodxxhixga6b4n4f7mg3lkt3dzoua.json",
+    "sort": null,
+    "type": "policy"
+  },
+  "used_by": []
+}

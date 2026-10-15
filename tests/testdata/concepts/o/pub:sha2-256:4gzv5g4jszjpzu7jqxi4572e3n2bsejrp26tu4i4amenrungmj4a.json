@@ -1,0 +1,256 @@
+{
+  "address": "https://pub.example.org/def/628.9~1",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+    "size": 678
+  },
+  "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+  "classified_under": [
+    {
+      "by": "pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa",
+      "concept": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq"
+    }
+  ],
+  "closure": [
+    "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota"
+  ],
+  "concept": {
+    "anchors": [
+      {
+        "cid": "pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva",
+        "over": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+        "stewards": [
+          "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta",
+          "pub:sha2-256:mzfs2dzyrfsiillch4qigafcfjgpdqmffofsl6y3nvgqc64q4cjq"
+        ],
+        "threshold": 1
+      }
+    ],
+    "broader": [
+      "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq"
+    ],
+    "competing": [
+      "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa"
+    ],
+    "form": "quantity",
+    "members": [
+      {
+        "by": "pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa",
+        "cid": "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra"
+      },
+      {
+        "by": "pub:sha2-256:shduqqsxwfgc4kh34o2ckqyzkicmpj56x6rrq52lmwatupj4tfva",
+        "cid": "pub:sha2-256:owthalq6iygc36ptz4f53u4oyy4l252xi4pwmanjxswawi37y6na"
+      }
+    ],
+    "narrower": [],
+    "pdc": "628.9~1",
+    "solved_by": []
+  },
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq",
+    "heads": [
+      "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a"
+    ],
+    "members": [
+      "pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq",
+      "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "class": "definitional",
+      "content": "LED shelf electricity per growing area and day: what LED shelves use, with fans and pumps.",
+      "defines": {
+        "boundary": {
+          "excludes": [
+            "Daylight greenhouses"
+          ],
+          "includes": [
+            "Indoor shelves or racks lit only by LEDs",
+            "Electricity for lights, fans and pumps"
+          ]
+        },
+        "kind": "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+        "name": "LED shelf electricity per growing area and day",
+        "pdc": "628.9~1",
+        "sort": "concept"
+      },
+      "depends": [
+        "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T13:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa": {
+      "cid": "pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota": {
+      "cid": "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq": {
+      "cid": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9",
+      "name": "628.9",
+      "path": "o/pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra": {
+      "cid": "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+      "class": "definitional",
+      "held": true,
+      "label": "energy per area and time",
+      "name": "energy per area and time",
+      "path": "o/pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hobmk5fydkhviq4qluwd3jbjnoxieffxdu6qvd6qpla63p4azr5a": {
+      "cid": "pub:sha2-256:hobmk5fydkhviq4qluwd3jbjnoxieffxdu6qvd6qpla63p4azr5a",
+      "class": null,
+      "held": true,
+      "label": "claim.relation supersedes",
+      "name": null,
+      "path": "o/pub:sha2-256:hobmk5fydkhviq4qluwd3jbjnoxieffxdu6qvd6qpla63p4azr5a.json",
+      "sort": null,
+      "type": "claim.relation"
+    },
+    "pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa": {
+      "cid": "pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:i63mc5lanxkvgjh3i6na2i7e2o2q3q3hki7q2cc3torenpxswjsa.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:owthalq6iygc36ptz4f53u4oyy4l252xi4pwmanjxswawi37y6na": {
+      "cid": "pub:sha2-256:owthalq6iygc36ptz4f53u4oyy4l252xi4pwmanjxswawi37y6na",
+      "class": "empirical",
+      "held": true,
+      "label": "Piovano et al. 2026 (fake): LED shelves used 0.9 to 1.3 kWh per m2 per day.",
+      "name": null,
+      "path": "o/pub:sha2-256:owthalq6iygc36ptz4f53u4oyy4l252xi4pwmanjxswawi37y6na.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:shduqqsxwfgc4kh34o2ckqyzkicmpj56x6rrq52lmwatupj4tfva": {
+      "cid": "pub:sha2-256:shduqqsxwfgc4kh34o2ckqyzkicmpj56x6rrq52lmwatupj4tfva",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:shduqqsxwfgc4kh34o2ckqyzkicmpj56x6rrq52lmwatupj4tfva.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa": {
+      "cid": "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha": {
+      "cid": "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~2",
+      "name": "628.9~2",
+      "path": "o/pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra": {
+      "cid": "pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra",
+      "class": "empirical",
+      "held": true,
+      "label": "Gargaro et al. 2025 (fake): a vertical farm's LED shelves used 1.1 kWh per m2 per day.",
+      "name": null,
+      "path": "o/pub:sha2-256:z4rfpgcpp3c2tmqz2tw6lhf5mtq65dojj3cksid6joppaw6d4xra.json",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq": {
+      "cid": "pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation triage",
+      "name": null,
+      "path": "o/pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq.json",
+      "sort": null,
+      "type": "claim.annotation"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+      "how": "presupposes"
+    }
+  ],
+  "suggestions": [
+    "pub:sha2-256:zmodf4mywzvxy6swnizqlm5rfsnnfyy4prcqco2mi7agn4nunsoq"
+  ],
+  "summary": {
+    "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+    "class": "definitional",
+    "held": true,
+    "label": "628.9~1",
+    "name": "628.9~1",
+    "path": "o/pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a.json",
+    "sort": "concept",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa",
+      "how": "classifies annotation"
+    },
+    {
+      "cid": "pub:sha2-256:hobmk5fydkhviq4qluwd3jbjnoxieffxdu6qvd6qpla63p4azr5a",
+      "how": "supersedes relation"
+    },
+    {
+      "cid": "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha",
+      "how": "presupposed by"
+    }
+  ]
+}

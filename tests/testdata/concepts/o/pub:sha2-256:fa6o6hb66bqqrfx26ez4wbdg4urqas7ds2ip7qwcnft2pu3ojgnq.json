@@ -1,0 +1,169 @@
+{
+  "address": "https://pub.example.org/def/628.9",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+    "size": 400
+  },
+  "cid": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+  "classified_under": [
+    {
+      "by": "pub:sha2-256:asuvpoki5vochangb22dutnjren6wwgznhow5qvocka5wzq7xyha",
+      "concept": "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea"
+    }
+  ],
+  "closure": [],
+  "concept": {
+    "anchors": [
+      {
+        "cid": "pub:sha2-256:ivpg6vdefzslhsgqbigdkeejfvtswqppfw5as4gr7onjdblftzva",
+        "over": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+        "stewards": [
+          "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta",
+          "pub:sha2-256:mzfs2dzyrfsiillch4qigafcfjgpdqmffofsl6y3nvgqc64q4cjq"
+        ],
+        "threshold": 1
+      }
+    ],
+    "broader": [
+      "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea"
+    ],
+    "competing": [],
+    "form": "subject",
+    "members": [],
+    "narrower": [
+      {
+        "by": "pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa",
+        "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a"
+      },
+      {
+        "by": "pub:sha2-256:oca6hlwpx2y4whhtecvvdlaxnfmht6gxiakvimtvgu6yeua5pzpq",
+        "cid": "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha"
+      }
+    ],
+    "pdc": "628.9",
+    "solved_by": []
+  },
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+    "heads": [
+      "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq"
+    ],
+    "members": [
+      "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "class": "definitional",
+      "content": "628.9: Lighting. Illumination engineering",
+      "defines": {
+        "matches": [
+          {
+            "ref": "http://udcdata.info/048946",
+            "relation": "exact"
+          }
+        ],
+        "name": "Lighting. Illumination engineering",
+        "pdc": "628.9",
+        "sort": "concept"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa": {
+      "cid": "pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:25zhma2e2jammnt7l7hqnq7kyl742cjqq5g2dj6m2omw6nmy5yxa.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a": {
+      "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea": {
+      "cid": "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea",
+      "class": "definitional",
+      "held": true,
+      "label": "628",
+      "name": "628",
+      "path": "o/pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:asuvpoki5vochangb22dutnjren6wwgznhow5qvocka5wzq7xyha": {
+      "cid": "pub:sha2-256:asuvpoki5vochangb22dutnjren6wwgznhow5qvocka5wzq7xyha",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:asuvpoki5vochangb22dutnjren6wwgznhow5qvocka5wzq7xyha.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:oca6hlwpx2y4whhtecvvdlaxnfmht6gxiakvimtvgu6yeua5pzpq": {
+      "cid": "pub:sha2-256:oca6hlwpx2y4whhtecvvdlaxnfmht6gxiakvimtvgu6yeua5pzpq",
+      "class": null,
+      "held": true,
+      "label": "claim.annotation classifies",
+      "name": null,
+      "path": "o/pub:sha2-256:oca6hlwpx2y4whhtecvvdlaxnfmht6gxiakvimtvgu6yeua5pzpq.json",
+      "sort": null,
+      "type": "claim.annotation"
+    },
+    "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha": {
+      "cid": "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~2",
+      "name": "628.9~2",
+      "path": "o/pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq",
+    "class": "definitional",
+    "held": true,
+    "label": "628.9",
+    "name": "628.9",
+    "path": "o/pub:sha2-256:fa6o6hb66bqqrfx26ez4wbdg4urqas7ds2ip7qwcnft2pu3ojgnq.json",
+    "sort": "concept",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:asuvpoki5vochangb22dutnjren6wwgznhow5qvocka5wzq7xyha",
+      "how": "classifies annotation"
+    }
+  ]
+}

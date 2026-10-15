@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/631.3",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:nldfrhevrgl4htkcbymdirxocold722bqykng7n2dbfm2xs52taa"
+  ],
+  "name": "631.3",
+  "related": {
+    "pub:sha2-256:nldfrhevrgl4htkcbymdirxocold722bqykng7n2dbfm2xs52taa": {
+      "cid": "pub:sha2-256:nldfrhevrgl4htkcbymdirxocold722bqykng7n2dbfm2xs52taa",
+      "class": "definitional",
+      "held": true,
+      "label": "631.3",
+      "name": "631.3",
+      "path": "o/pub:sha2-256:nldfrhevrgl4htkcbymdirxocold722bqykng7n2dbfm2xs52taa.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "631.3"
+}

@@ -1,0 +1,128 @@
+{
+  "address": "https://pub.example.org/def/energy%20per%20area%20and%20time",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+    "size": 426
+  },
+  "cid": "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+  "classified_under": [],
+  "closure": [
+    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota"
+  ],
+  "concept": null,
+  "critiques": [],
+  "lineage": {
+    "genesis": "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+    "heads": [
+      "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra"
+    ],
+    "members": [
+      "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+    "body": {
+      "class": "definitional",
+      "content": "energy per area and time: energy used per growing area per day.",
+      "defines": {
+        "dimension": {
+          "g": 1,
+          "s": -3
+        },
+        "name": "energy per area and time",
+        "sort": "kind"
+      },
+      "depends": [
+        "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a": {
+      "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota": {
+      "cid": "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota.json",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq": {
+      "cid": "pub:sha2-256:bmu7mx5bbvuljeotbk66lrtnaejygfwcupdzoe3dv64znj4kk5qq",
+      "held": false
+    },
+    "pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq": {
+      "cid": "pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa": {
+      "cid": "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota",
+      "how": "presupposes"
+    }
+  ],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+    "class": "definitional",
+    "held": true,
+    "label": "energy per area and time",
+    "name": "energy per area and time",
+    "path": "o/pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra.json",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa",
+      "how": "presupposed by"
+    }
+  ]
+}

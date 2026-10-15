@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/energy%20per%20area%20and%20time",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra"
+  ],
+  "name": "energy per area and time",
+  "related": {
+    "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra": {
+      "cid": "pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra",
+      "class": "definitional",
+      "held": true,
+      "label": "energy per area and time",
+      "name": "energy per area and time",
+      "path": "o/pub:sha2-256:gjqcyge7423vwz2xxaiag4rkr5v7pm5xv6yxfghv4xnw3whmlsra.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "energy per area and time"
+}

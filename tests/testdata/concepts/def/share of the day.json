@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/share%20of%20the%20day",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq"
+  ],
+  "name": "share of the day",
+  "related": {
+    "pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq": {
+      "cid": "pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq",
+      "class": "definitional",
+      "held": true,
+      "label": "share of the day",
+      "name": "share of the day",
+      "path": "o/pub:sha2-256:ysrpkfnuuqwj5gjvdrvbsggldbc2ym5nw3mmiyph3m5q6tvjhckq.json",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "share of the day"
+}

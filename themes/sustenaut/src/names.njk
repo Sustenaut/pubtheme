@@ -8,7 +8,7 @@ title: Names
 {% call ui.panel() %}
 <ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(16rem,1fr))] gap-x-6 p-0">
   {%- for n in pub.names %}
-  <li class="border-b border-rule py-2"><a href="{{ ('/def/' + (n.name | encname) + '/') | url }}">{{ n.name }}</a>{% if n.definitions.length > 1 %} {{ ui.tag(n.definitions.length + " definitions", "warning") }}{% endif %}</li>
+  <li class="border-b border-rule py-2"><a href="{{ (n.name | defhref) | url }}">{{ n.name }}</a>{% if n.definitions.length > 1 %} {{ ui.tag(n.definitions.length + " definitions", "warning") }}{% endif %}</li>
   {%- endfor %}
 </ul>
 {% endcall %}

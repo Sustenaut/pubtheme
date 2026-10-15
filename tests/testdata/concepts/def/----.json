@@ -1,0 +1,21 @@
+{
+  "address": "https://pub.example.org/def/----",
+  "bundle": 1,
+  "definitions": [
+    "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq"
+  ],
+  "name": "----",
+  "related": {
+    "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq": {
+      "cid": "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq",
+      "class": "definitional",
+      "held": true,
+      "label": "----",
+      "name": "----",
+      "path": "o/pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq.json",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "segment": "----"
+}

@@ -81,6 +81,22 @@ that bundles concepts (schryer/publet#49). They hold:
 [pubkit](https://github.com/schryer/pubkit)'s setup: Gherkin features run
 by pytest-bdd, driving the program as a host would.
 
+## Releasing
+
+Releases are made with [pubrel](https://github.com/schryer/pubrel). A pull
+request that changes `bin/`, `lib/`, `themes/` or the npm manifests records
+what it changes, and CI's `pubrel check` fails one that does not:
+
+```sh
+pubrel add added "a new page"     # or changed, removed, fixed, security, internal
+```
+
+The rows wait in `corpus/publets/pkg.pubtheme/unreleased.json`. A release is
+cut on a clean main with `pubrel prepare`, which sets the version in
+`package.json`, publishes the signed package publet, regenerates
+`CHANGELOG.md` and opens the release pull request; merging it makes CI tag
+it.
+
 ## Licence
 
 Apache-2.0.

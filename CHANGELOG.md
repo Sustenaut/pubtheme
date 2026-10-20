@@ -12,3 +12,4 @@
 
 ### Security
 - Eleventy 3.1.7, which drops the vulnerable chokidar, gray-matter and nunjucks chains, and `@parcel/watcher` 2.6.0 under the Tailwind CLI, which drops braces. `npm audit` reports no vulnerabilities.
+- SonarCloud no longer analyses `tools/`, the hand-run test-data scripts.

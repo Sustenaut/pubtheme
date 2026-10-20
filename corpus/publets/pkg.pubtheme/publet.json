@@ -1,0 +1,127 @@
+{
+  "claims": {
+    "identity": {
+      "class": "archival",
+      "content": "pubtheme 0.1.0 is released as v0.1.0 from commit 9f818c28cedaebe2094ff85505c45bb233ed203c.",
+      "data": {
+        "columns": [
+          {
+            "name": "name"
+          },
+          {
+            "name": "version"
+          },
+          {
+            "name": "check"
+          },
+          {
+            "name": "expect"
+          },
+          {
+            "name": "tag"
+          },
+          {
+            "name": "commit"
+          }
+        ],
+        "rows": [
+          [
+            "pubtheme",
+            "0.1.0",
+            "",
+            "",
+            "v0.1.0",
+            "9f818c28cedaebe2094ff85505c45bb233ed203c"
+          ]
+        ]
+      },
+      "scope": "the published release v0.1.0 of pubtheme",
+      "sources": [
+        {
+          "ref": "pubtheme",
+          "revision": "9f818c28cedaebe2094ff85505c45bb233ed203c"
+        }
+      ]
+    },
+    "release": {
+      "class": "archival",
+      "content": "pubtheme 0.1.0 was released on 2026-10-20 from commit 9f818c28cedaebe2094ff85505c45bb233ed203c with these changes.",
+      "data": {
+        "columns": [
+          {
+            "name": "category"
+          },
+          {
+            "name": "change"
+          }
+        ],
+        "rows": [
+          [
+            "added",
+            "`pubtheme build` turns publet reading bundles (bundle version 1, from `pub bundle`) into a static website with a theme; `pubtheme themes` lists the themes."
+          ],
+          [
+            "added",
+            "The `sustenaut` theme: a page per object and per name, each with what it rests on and what uses it, values with null shown as \"not yet known\", the object's bytes and bundle beside it; Sustenaut's tokens and components ported from its React library."
+          ],
+          [
+            "added",
+            "Concept pages (publet spec Section 5.9.1) at `/def/<PDC code>/`. Each shows the concept's form, boundary, broader and narrower classes, members, the calculations that solve it, its versions, the expert group covering it, and a link to review it. A code claimed by more than one concept lineage is shown as contested."
+          ],
+          [
+            "added",
+            "`/pdc/`, the classification from the top tables down."
+          ],
+          [
+            "added",
+            "Object pages name the concepts the object is classified under, and link each suggestion naming it to the review service (`site.review`, by default https://review.sustenaut.eu)."
+          ],
+          [
+            "added",
+            "A name's bundle is read from the index's `name_paths`, so a name with a slash (the PDC code 631/635) is served at `/def/631_635/`."
+          ],
+          [
+            "security",
+            "Eleventy 3.1.7, which drops the vulnerable chokidar, gray-matter and nunjucks chains, and `@parcel/watcher` 2.6.0 under the Tailwind CLI, which drops braces. `npm audit` reports no vulnerabilities."
+          ],
+          [
+            "internal",
+            "Releases are made with pubrel: `release.json`, the unreleased rows, and the release job in CI."
+          ]
+        ]
+      },
+      "depends": [
+        "#identity"
+      ],
+      "scope": "the published release v0.1.0 of pubtheme",
+      "sources": [
+        {
+          "ref": "pubtheme",
+          "revision": "9f818c28cedaebe2094ff85505c45bb233ed203c"
+        }
+      ]
+    }
+  },
+  "created": "2026-10-20T00:00:00Z",
+  "sections": [
+    {
+      "heading": "Identity",
+      "items": [
+        {
+          "ref": "#identity"
+        }
+      ]
+    },
+    {
+      "heading": "Release",
+      "items": [
+        {
+          "ref": "#release"
+        }
+      ]
+    }
+  ],
+  "slug": "pkg.pubtheme",
+  "tag": "PKG-PUBTHM-10-2026",
+  "title": "pubtheme"
+}

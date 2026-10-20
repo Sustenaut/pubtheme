@@ -1,0 +1,18 @@
+{
+  "name": "pubtheme",
+  "package": "pkg.pubtheme",
+  "tag": "PKG-PUBTHM-10-2026",
+  "corpus": "corpus",
+  "manifest": {
+    "kind": "npm",
+    "path": "package.json"
+  },
+  "code": [
+    "bin/",
+    "lib/",
+    "themes/",
+    "package.json",
+    "package-lock.json"
+  ],
+  "install": "npm install github:schryer/pubtheme#{tag}"
+}

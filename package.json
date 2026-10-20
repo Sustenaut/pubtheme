@@ -11,10 +11,13 @@
     "build": "bin/pubtheme build"
   },
   "dependencies": {
-    "@11ty/eleventy": "3.1.6",
+    "@11ty/eleventy": "3.1.7",
     "@fontsource-variable/nunito": "5.3.0",
     "@fontsource-variable/nunito-sans": "5.3.0",
     "@tailwindcss/cli": "4.3.3",
     "tailwindcss": "4.3.3"
+  },
+  "overrides": {
+    "@parcel/watcher": "2.6.0"
   }
 }

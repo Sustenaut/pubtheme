@@ -5,7 +5,7 @@
   "parents": [
     {
       "alias": "base",
-      "path": "../publet-corpus"
+      "path": "../../publet-corpus"
     }
   ]
 }

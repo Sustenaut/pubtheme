@@ -6,7 +6,7 @@ on:
 
 jobs:
   ci:
-    uses: schryer/pubkit/.github/workflows/python-ci.yml@v0.11.2
+    uses: schryer/pubkit/.github/workflows/python-ci.yml@v0.12.1
     with:
       setup: make venv node
     secrets: inherit

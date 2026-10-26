@@ -1,3 +1,4 @@
 {
-  "kind": "utility"
+  "kind": "utility",
+  "protect": {"checks": ["ci / passed", "SonarCloud Code Analysis"]}
 }

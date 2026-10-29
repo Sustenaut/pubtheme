@@ -6,10 +6,11 @@ on:
 
 jobs:
   ci:
-    uses: schryer/pubkit/.github/workflows/python-ci.yml@v0.12.1
+    uses: schryer/pubkit/.github/workflows/python-ci.yml@v0.15.2
     with:
       setup: make venv node
-    secrets: inherit
+    # By name: secrets: inherit reaches no workflow of another owner.
+    secrets: { SONAR_TOKEN: '${{ secrets.SONAR_TOKEN }}' }
 
   # The shared release workflow: on a pull request, a code change records
   # what it changes with `pubrel add`, and a release is the bump those rows

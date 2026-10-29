@@ -6,7 +6,7 @@ on:
 
 jobs:
   ci:
-    uses: schryer/pubkit/.github/workflows/python-ci.yml@v0.15.2
+    uses: Sustenaut/pubkit/.github/workflows/python-ci.yml@f0984614ce18dd9f5eedfb7a39451c2bff89d232 # v0.17.0
     with:
       setup: make venv node
     # By name: secrets: inherit reaches no workflow of another owner.
@@ -19,7 +19,7 @@ jobs:
   # publet was published.
   release:
     needs: ci
-    uses: schryer/pubrel/.github/workflows/release.yml@v0.5.4
-    with: { pubrel-version: v0.5.4 }
+    uses: Sustenaut/pubrel/.github/workflows/release.yml@16c6c9731b3f41639d45160e8bb73d59d8562e04 # v0.5.5
+    with: { pubrel-version: v0.5.5 }
     permissions:
       contents: write

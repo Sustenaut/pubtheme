@@ -6,7 +6,7 @@ on:
 
 jobs:
   ci:
-    uses: Sustenaut/pubkit/.github/workflows/python-ci.yml@44056227327a7af7f344e008fb72106b2eae4eca # v0.16.0
+    uses: Sustenaut/pubkit/.github/workflows/python-ci.yml@f0984614ce18dd9f5eedfb7a39451c2bff89d232 # v0.17.0
     with:
       setup: make venv node
     # By name: secrets: inherit reaches no workflow of another owner.

@@ -3,10 +3,13 @@ name: ci
 on:
   push: { branches: [main] }
   pull_request:
+  # The merge queue's run of a pull request merged into main: the required
+  # checks must report on it too, or nothing leaves the queue.
+  merge_group:
 
 jobs:
   ci:
-    uses: Sustenaut/pubkit/.github/workflows/python-ci.yml@f0984614ce18dd9f5eedfb7a39451c2bff89d232 # v0.17.0
+    uses: Sustenaut/pubkit/.github/workflows/python-ci.yml@7914b2abb933747e303f5f981d8335d3704dcdb3 # v0.21.0
     with:
       setup: make venv node
     # By name: secrets: inherit reaches no workflow of another owner.

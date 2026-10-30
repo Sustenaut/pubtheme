@@ -1,0 +1,23 @@
+{
+  "uses": [
+    {
+      "plugin": "github.app-token",
+      "paths": [
+        ".github/workflows/ci.yml"
+      ]
+    },
+    {
+      "plugin": "sonarcloud.scan",
+      "paths": [
+        ".github/workflows/ci.yml",
+        "sonar-project.properties"
+      ]
+    }
+  ],
+  "exclude": [
+    {
+      "path": "tests/**",
+      "reason": "Fakes and test data"
+    }
+  ]
+}

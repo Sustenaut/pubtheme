@@ -1,0 +1,4 @@
+{
+  "category": "security",
+  "change": "minimatch 11.0.3 under Eleventy's @11ty/recursive-copy, past GHSA-g3hv-75wg-m249"
+}

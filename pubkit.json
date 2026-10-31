@@ -3,7 +3,8 @@
   "protect": {
     "checks": [
       "ci / passed",
-      "SonarCloud Code Analysis"
+      "SonarCloud Code Analysis",
+      "integrations / scan"
     ]
   }
 }

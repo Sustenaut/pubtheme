@@ -4,14 +4,16 @@
       "plugin": "github.app-token",
       "paths": [
         ".github/workflows/ci.yml"
-      ]
+      ],
+      "mode": "required"
     },
     {
       "plugin": "sonarcloud.scan",
       "paths": [
         ".github/workflows/ci.yml",
         "sonar-project.properties"
-      ]
+      ],
+      "mode": "required"
     }
   ],
   "exclude": [

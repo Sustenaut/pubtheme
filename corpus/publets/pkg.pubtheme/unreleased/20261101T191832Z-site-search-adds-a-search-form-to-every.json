@@ -1,0 +1,4 @@
+{
+  "category": "added",
+  "change": "site.search adds a search form to every page, for a site whose server answers /search"
+}

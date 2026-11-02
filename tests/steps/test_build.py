@@ -9,11 +9,12 @@ from __future__ import annotations
 import html
 import json
 import shutil
+import subprocess
 from pathlib import Path
 
 from pytest_bdd import given, parsers, scenarios, then, when
 
-scenarios("../features/build.feature", "../features/concepts.feature")
+scenarios("../features/build.feature", "../features/concepts.feature", "../features/external.feature")
 
 TESTDATA = Path(__file__).resolve().parent.parent / "testdata" / "publication-0"
 CONCEPTS = Path(__file__).resolve().parent.parent / "testdata" / "concepts"
@@ -245,3 +246,86 @@ def extract_suggestion(tmp_path, prefix: str):
 def no_script(tmp_path):
     for page in (_site(tmp_path) / "def").rglob("index.html"):
         assert "<script" not in page.read_text().lower(), page
+
+
+# --- objects kept elsewhere --------------------------------------------------
+
+
+def _rendered(tmp_path: Path, *ask: str) -> dict:
+    helper = Path(__file__).resolve().parent / "rendered.mjs"
+    out = subprocess.run(["node", str(helper), "elsewhere", "worker", "kept", *ask], cwd=tmp_path, check=True,
+                         capture_output=True, text=True).stdout
+    return json.loads(out)
+
+
+def _kept_objects(tmp_path: Path) -> list[str]:
+    index = json.loads((tmp_path / "kept" / "index.json").read_text())
+    return [o["cid"] for o in index["objects"] if o["held"]]
+
+
+@given("the same objects, bundled to be kept elsewhere")
+def kept(tmp_path):
+    shutil.copytree(_bundles(tmp_path), tmp_path / "kept")
+
+
+@when("I build another site with those objects kept elsewhere", target_fixture="result")
+def build_elsewhere(run, binary):
+    return run(binary("pubtheme"), "build", "--bundles=bundles", "--out=elsewhere", "--external=kept", "--worker-out=worker")
+
+
+@when("I build another site with --external alone", target_fixture="result")
+def build_external_alone(run, binary):
+    return run(binary("pubtheme"), "build", "--bundles=bundles", "--out=elsewhere", "--external=kept")
+
+
+@then("that site has no page, bundle or bytes for those objects")
+def no_object_files(tmp_path):
+    site = tmp_path / "elsewhere"
+    for cid in _kept_objects(tmp_path):
+        assert not (site / "o" / cid).exists(), cid
+        assert not (site / "o" / f"{cid}.json").exists(), cid
+        assert not (site / "pub" / "v1" / "object" / cid).exists(), cid
+
+
+@then("that site has no page for the names only they define")
+def no_name_files(tmp_path):
+    manifest = json.loads((tmp_path / "elsewhere" / "_external" / "manifest.json").read_text())
+    assert manifest["segments"]
+    for segment in manifest["segments"]:
+        assert not (tmp_path / "elsewhere" / "def" / segment / "index.html").exists(), segment
+
+
+@then("every name's rendered page is the page the whole site has")
+def names_same(tmp_path):
+    rendered = _rendered(tmp_path)["names"]
+    assert rendered
+    for segment, page in rendered.items():
+        assert page == (_site(tmp_path) / "def" / segment / "index.html").read_text(), segment
+
+
+@then("every object's rendered page is the page the whole site has")
+def objects_same(tmp_path):
+    rendered = _rendered(tmp_path)["objects"]
+    assert set(rendered) == set(_kept_objects(tmp_path))
+    for cid, page in rendered.items():
+        assert page == (_site(tmp_path) / "o" / cid / "index.html").read_text(), cid
+
+
+@then(parsers.parse('a search for "{query}" finds "{code}" first'))
+def search_first(tmp_path, query: str, code: str):
+    assert _rendered(tmp_path, f"--search={query}")["found"][0]["code"] == code
+
+
+@then(parsers.parse('a search for "{query}" finds nothing that lacks those words'))
+def search_words(tmp_path, query: str):
+    found = _rendered(tmp_path, f"--search={query}")["found"]
+    assert found
+    for entry in found:
+        text = f"{entry['code']} {entry['label']}".lower()
+        assert all(word in text for word in query.split()), entry
+
+
+@then(parsers.parse('a search page for "{query}" shows it escaped'))
+def search_escaped(tmp_path, query: str):
+    page = _rendered(tmp_path, f"--search={query}")["page"]
+    assert "<script>" not in page and html.escape(query, quote=False) in page

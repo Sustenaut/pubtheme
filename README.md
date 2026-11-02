@@ -17,7 +17,35 @@ pubtheme build --bundles=bundles --out=site --theme=sustenaut --site=site.json
 `site.json` holds the host's settings: `title`, `description`, `logo` (a
 path to an SVG, relative to the file), `footer` and `review` (the review
 service concepts and suggestions link to; the sustenaut theme defaults to
-`https://review.sustenaut.eu`). Each is optional.
+`https://review.sustenaut.eu`) and `search` (true: a search form on every page, for a site that answers
+`/search` itself, below). Each is optional.
+
+## Objects kept elsewhere
+
+A host limits how many files a site can have, and a classification is thousands of objects. `--external` leaves the
+objects of another bundle, and the names only they define, out of the site:
+
+```sh
+pub bundle --dir=all-objects --out=bundles --base=https://pub.example.org
+pub bundle --dir=classification-objects --out=kept --base=https://pub.example.org
+pubtheme build --bundles=bundles --out=site --site=site.json --external=kept --worker-out=worker
+```
+
+Bundle `kept` from those objects alone: it is what you can publish, while `bundles` knows what the rest of the site
+says about them. Your site's server, a Cloudflare Worker say, then renders their pages on request, reading the
+same as the static ones, with what the build wrote:
+
+| Where | What |
+|---|---|
+| `worker/render.js` | `renderer(site)` with `.name(entry, byCid)`, `.object(bundle, byCid)` and `.search(query, entries)`, each giving a page's HTML; `part(code)`; `objectNeeds(bundle)`; `search(entries, query)`. The theme's templates, compiled so nothing is evaluated at run time. |
+| `site/_external/manifest.json` | `{site, segments}`: the settings, and which part of the index each name's path segment is in. |
+| `site/_external/index/<part>.json` | `{names, byCid}`: the names of that part, and everything their pages show, including what the rest of the site says about them. A concept's `annotations` are the CIDs of what classifies it. Small enough to parse on a request. |
+| `site/_external/search.json` | Every name and object, `{code, label, href}`. |
+| `site/_external/bundles/<letter>.json` | Each kept object's bundle's SHA-256, by CID, in parts by the CID hash's first letter. |
+
+An object's page takes its bundle from `kept`, wherever you keep it, a `byCid` holding for a concept the `byCid` of
+`part(concept.pdc)`, and the bundles of the objects `objectNeeds` names.
+An object's bytes are those you already hold: a CID's hash is their SHA-256.
 
 ## The themes
 

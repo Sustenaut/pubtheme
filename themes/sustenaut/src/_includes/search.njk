@@ -1,0 +1,12 @@
+{#- A search's answers, rendered on request (lib/external.js): no script, the form is in base.njk. -#}
+{%- import "components.njk" as ui with context -%}
+{{ ui.page_heading("Search", "A PDC code, or words from a class or a claim." if not query else (results.length + " found for " + query + (", the first " + results.length if more else ""))) }}
+{% if query %}{% call ui.panel() %}
+<ul class="m-0 list-none p-0">
+  {%- for r in results %}
+  <li class="border-b border-rule py-2"><a href="{{ r.href | url }}">{% if r.code %}<code>{{ r.code }}</code> {% endif %}{{ r.label }}</a></li>
+  {%- else %}
+  <li class="py-2 text-muted">Nothing found.</li>
+  {%- endfor %}
+</ul>
+{% endcall %}{% endif %}

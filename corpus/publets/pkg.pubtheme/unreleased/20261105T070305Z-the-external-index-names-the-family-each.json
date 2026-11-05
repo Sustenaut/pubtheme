@@ -1,4 +1,0 @@
-{
-  "category": "added",
-  "change": "the --external index names the family each class's code is defined in, and objectPart(bundle) says which part of it an object's page reads"
-}

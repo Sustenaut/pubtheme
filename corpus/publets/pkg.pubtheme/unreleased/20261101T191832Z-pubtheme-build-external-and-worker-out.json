@@ -1,4 +1,0 @@
-{
-  "category": "added",
-  "change": "pubtheme build --external and --worker-out keep another bundle's objects out of the site, and write what a site's server needs to render their pages on request: an index in parts, what to search, each bundle's hash, and the theme's templates compiled for a Worker"
-}

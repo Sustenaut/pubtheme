@@ -5,15 +5,18 @@
   "license": "Apache-2.0",
   "type": "module",
   "private": true,
-  "bin": { "pubtheme": "bin/pubtheme" },
-  "engines": { "node": ">=20" },
+  "bin": {
+    "pubtheme": "bin/pubtheme"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "bin/pubtheme build"
   },
   "dependencies": {
     "@11ty/eleventy": "3.1.7",
-    "@fontsource-variable/nunito": "5.3.0",
-    "@fontsource-variable/nunito-sans": "5.3.0",
+    "@sustenaut/theme": "github:Sustenaut/theme#v0.1.0",
     "@tailwindcss/cli": "4.3.3",
     "esbuild": "0.28.2",
     "nunjucks": "3.2.4",
@@ -21,6 +24,8 @@
   },
   "overrides": {
     "@parcel/watcher": "2.6.0",
-    "@11ty/recursive-copy": { "minimatch": "11.0.3" }
+    "@11ty/recursive-copy": {
+      "minimatch": "11.0.3"
+    }
   }
 }

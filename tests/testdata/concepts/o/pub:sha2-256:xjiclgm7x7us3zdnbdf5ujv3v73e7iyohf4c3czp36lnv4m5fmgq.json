@@ -1,0 +1,121 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq",
+    "size": 501
+  },
+  "cid": "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": {
+    "anchors": [],
+    "broader": [
+      "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda"
+    ],
+    "classes": [
+      {
+        "auxiliary": false,
+        "children": true,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Public health engineering. Water. Sanitation. Illuminating engineering",
+        "narrower": [
+          "pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a"
+        ],
+        "pdc": "628"
+      }
+    ],
+    "grouping": 1,
+    "parent": "62"
+  },
+  "lineage": {
+    "genesis": "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq",
+    "heads": [
+      "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq"
+    ],
+    "members": [
+      "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "The PDC classes directly under 62 Engineering. Technology in general.",
+      "defines": {
+        "grouping": 1,
+        "members": [
+          {
+            "children": true,
+            "matches": [
+              {
+                "ref": "http://udcdata.info/048544",
+                "relation": "exact"
+              }
+            ],
+            "name": "Public health engineering. Water. Sanitation. Illuminating engineering",
+            "pdc": "628"
+          }
+        ],
+        "parent": "62",
+        "sort": "family"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a": {
+      "cid": "pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a",
+      "class": "definitional",
+      "held": true,
+      "label": "628",
+      "name": null,
+      "path": "o/pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda": {
+      "cid": "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda",
+      "class": "definitional",
+      "held": true,
+      "label": "6",
+      "name": null,
+      "path": "o/pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq",
+    "class": "definitional",
+    "held": true,
+    "label": "62",
+    "name": null,
+    "path": "o/pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq.json",
+    "signature": "missing",
+    "sort": "family",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

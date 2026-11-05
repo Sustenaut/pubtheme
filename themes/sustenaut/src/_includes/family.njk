@@ -1,0 +1,45 @@
+{#- A family's classes (publet spec Section 5.9.1): the classes directly
+    under one class, defined together and signed once. Each has an anchor
+    at its code, where its name's page lands; a class with children links
+    the family under it. -#}
+{%- import "components.njk" as ui with context -%}
+{%- set review = site.review or "https://review.sustenaut.eu" -%}
+{%- set f = b.family -%}
+{%- set defs = b.object.body.defines -%}
+{% call ui.panel("Classes · " + f.classes.length, ("Under " + f.parent if f.parent else "The top of the classification") + " · auxiliary grouping " + f.grouping) %}
+<ol class="m-0 flex list-none flex-col gap-0 p-0">
+  {%- for c in f.classes %}
+  {%- set d = (defs.members | bykey("pdc", c.pdc))[0] or (defs.auxiliaries | bykey("pdc", c.pdc))[0] %}
+  <li id="{{ c.pdc }}" class="flex scroll-mt-4 flex-col target:-mx-3 target:rounded-control target:bg-accent-soft target:px-3 gap-2 border-b border-rule py-3 last:border-0">
+    <div class="flex flex-wrap items-baseline gap-2.5">
+      <code class="font-bold">{{ c.pdc }}</code>
+      <span class="text-lg">{{ c.name }}</span>
+      {%- if c.auxiliary %} {{ ui.tag("special auxiliary") }}{% endif %}
+      {%- if c.form != "subject" %} {{ ui.tag(c.form + " concept", "success") }}{% endif %}
+      {%- if c.competing.length %} {{ ui.tag("contested", "warning") }}{% endif %}
+    </div>
+    {%- if d and d.boundary %}
+    <div class="flex flex-wrap gap-6 text-sm">
+      <div class="min-w-0 flex-[1_1_240px]">{{ ui.eyebrow("Includes") }}
+        <ul class="mt-1 mb-0">{% for l in d.boundary.includes %}<li>{{ l }}</li>{% else %}<li class="text-muted">Nothing stated.</li>{% endfor %}</ul></div>
+      <div class="min-w-0 flex-[1_1_240px]">{{ ui.eyebrow("Excludes") }}
+        <ul class="mt-1 mb-0">{% for l in d.boundary.excludes %}<li>{{ l }}</li>{% else %}<li class="text-muted">Nothing stated.</li>{% endfor %}</ul></div>
+    </div>
+    {%- endif %}
+    <div class="flex flex-wrap gap-x-7 gap-y-1 text-sm">
+      {%- for nf in c.narrower | heads(pub.byCid) %}<a href="{{ ("/o/" + nf.cid + "/") | url }}">Classes under {{ c.pdc }} · {{ nf.family.classes.length }}</a>{% else %}{% if c.children %}<span class="text-muted">Classes under it are not held here</span>{% endif %}{% endfor %}
+      {%- for m in c.members %}<span><span class="text-muted">Member</span> {{ ui.ref(m.cid, b.related) }}</span>{% endfor %}
+      {%- for x in c.competing %}<span><span class="text-muted">Also claims the code</span> {{ ui.ref(x, b.related) }}</span>{% endfor %}
+      {%- if d and d.matches %}{% for m in d.matches %}<span><span class="text-muted">{{ m.relation }} match</span> <a href="{{ m.ref }}" rel="nofollow noreferrer">{{ m.ref }}</a></span>{% endfor %}{% endif %}
+      <a href="{{ review }}/concept/{{ c.pdc | urlencode }}">Review this class</a>
+    </div>
+  </li>
+  {%- endfor %}
+</ol>
+{% endcall %}
+{%- for a in f.anchors %}
+{% call ui.panel("Expert group", "Stewards of " + ("the classes under " + pub.byCid[a.over].family.parent if pub.byCid[a.over] and pub.byCid[a.over].family and pub.byCid[a.over].family.parent else "these classes")) %}
+<p class="m-0 text-sm">{{ a.stewards.length }} steward{% if a.stewards.length != 1 %}s{% endif %}; a change needs {{ a.threshold }} of their signatures. Their choice is a recommendation, never a rule: anyone may still publish, review or dispute.</p>
+{%- if a.over != b.cid %}<p class="m-0 text-sm text-muted">The group covers {{ ui.ref(a.over, b.related) }} and the families under it.</p>{% endif %}
+{% endcall %}
+{%- endfor %}

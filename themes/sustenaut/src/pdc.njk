@@ -15,11 +15,27 @@ title: Classification
   {%- endif %}
 </li>
 {%- endmacro -%}
-{{ ui.page_heading("Classification", "The Extended Publet Decimal Classification (PDC): the UDC Summary's classes under their own codes, extended by narrower PDC classes, each a concept publet. From the top tables down.") }}
+{#- A family's classes, each with the concepts placed under it and the family below it. -#}
+{%- macro classes(fb) -%}
+{%- for c in fb.family.classes %}
+<li class="py-1" id="{{ c.pdc }}">
+  <a href="{{ (c.pdc | classhref(fb.cid)) | url }}"><code>{{ c.pdc }}</code> {{ c.name }}</a>
+  {%- if c.auxiliary %} {{ ui.tag("special auxiliary") }}{% endif %}
+  {%- if c.competing.length %} {{ ui.tag("contested", "warning") }}{% endif %}
+  {%- set placed = [] %}{% for m in c.members %}{% set mb = pub.byCid[m.cid] %}{% if mb and mb.concept and mb.lineage.heads.includes(mb.cid) %}{% set placed = (placed.push(mb), placed) %}{% endif %}{% endfor %}
+  {%- set below = c.narrower | heads(pub.byCid) %}
+  {%- if placed.length or below.length %}
+  <ul class="m-0 list-none border-l border-rule pl-5">{% for k in placed %}{{ branch(k, 1) }}{% endfor %}{% for nf in below %}{{ classes(nf) }}{% endfor %}</ul>
+  {%- endif %}
+</li>
+{%- endfor %}
+{%- endmacro -%}
+{{ ui.page_heading("Classification", "The Extended Publet Decimal Classification (PDC): the UDC Summary's classes under their own codes, extended by narrower PDC classes. Each family of classes, those directly under one class, is defined and signed together. From the top tables down.") }}
 {% call ui.panel() %}
+{%- set tops = pub.objects | familyroots %}
 {%- set roots = pub.objects | pdcroots %}
-{%- if roots.length %}
-<ul class="m-0 list-none p-0">{% for r in roots %}{{ branch(r, 0) }}{% endfor %}</ul>
+{%- if tops.length or roots.length %}
+<ul class="m-0 list-none p-0">{% for f in tops %}{{ classes(f) }}{% endfor %}{% for r in roots %}{{ branch(r, 0) }}{% endfor %}</ul>
 {%- else %}
 <p class="m-0 text-muted">No concepts here yet.</p>
 {%- endif %}

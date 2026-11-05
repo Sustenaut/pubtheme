@@ -1,40 +1,44 @@
 {
   "address": "https://pub.example.org/def/628.9~1",
   "bundle": 1,
+  "classes": [],
   "definitions": [
-    "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
-    "pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq",
-    "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa"
+    "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda",
+    "pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka",
+    "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa"
   ],
   "name": "628.9~1",
   "related": {
-    "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a": {
-      "cid": "pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a",
+    "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda": {
+      "cid": "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda",
       "class": "definitional",
       "held": true,
       "label": "628.9~1",
       "name": "628.9~1",
-      "path": "o/pub:sha2-256:4gzv5g4jszjpzu7jqxi4572e3n2bsejrp26tu4i4amenrungmj4a.json",
+      "path": "o/pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda.json",
+      "signature": "missing",
       "sort": "concept",
       "type": "claim.prose"
     },
-    "pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq": {
-      "cid": "pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq",
+    "pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka": {
+      "cid": "pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka",
       "class": "definitional",
       "held": true,
       "label": "628.9~1",
       "name": "628.9~1",
-      "path": "o/pub:sha2-256:sjtlizworsups76vbxav74v52kdj7sc67kwthcereg6db7jgrzhq.json",
+      "path": "o/pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka.json",
+      "signature": "missing",
       "sort": "concept",
       "type": "claim.prose"
     },
-    "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa": {
-      "cid": "pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa",
+    "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa": {
+      "cid": "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa",
       "class": "definitional",
       "held": true,
       "label": "628.9~1",
       "name": "628.9~1",
-      "path": "o/pub:sha2-256:t3sal7u3wffce3qsawt4htgtnus234mxxfynyi26l7m46wrfgdoa.json",
+      "path": "o/pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa.json",
+      "signature": "missing",
       "sort": "concept",
       "type": "claim.prose"
     }

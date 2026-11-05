@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if title and title != site.title %}{{ title }} · {% endif %}{{ site.title }}</title>
+{#- A code one family alone defines lands on its class, in its family's page. -#}
+{%- set landing = n | landing if n else "" %}
+{%- if landing %}<meta http-equiv="refresh" content="0; url={{ landing | url }}">{% endif %}
 <link rel="stylesheet" href="{{ '/style.css' | url }}">
 {%- if site.logo %}<link rel="icon" href="{{ '/logo.svg' | url }}" type="image/svg+xml">{% endif %}
 </head>

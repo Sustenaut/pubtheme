@@ -1,0 +1,111 @@
+{
+  "address": "https://pub.example.org/def/ucum",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+    "size": 329
+  },
+  "cid": "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": null,
+  "lineage": {
+    "genesis": "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+    "heads": [
+      "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q"
+    ],
+    "members": [
+      "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "UCUM: the Unified Code for Units of Measure, version 2.2.",
+      "defines": {
+        "name": "UCUM",
+        "sort": "system",
+        "version": "2.2"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:4qh5ua6c6pbxcj7l7injvmt2xtlv6ixlf6ulpeb5bdykghdym5zq": {
+      "cid": "pub:sha2-256:4qh5ua6c6pbxcj7l7injvmt2xtlv6ixlf6ulpeb5bdykghdym5zq",
+      "class": "definitional",
+      "held": true,
+      "label": "power per area",
+      "name": "power per area",
+      "path": "o/pub:sha2-256:4qh5ua6c6pbxcj7l7injvmt2xtlv6ixlf6ulpeb5bdykghdym5zq.json",
+      "signature": "missing",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba": {
+      "cid": "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba",
+      "class": "definitional",
+      "held": true,
+      "label": "share of the day",
+      "name": "share of the day",
+      "path": "o/pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba.json",
+      "signature": "missing",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq": {
+      "cid": "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq",
+      "class": "definitional",
+      "held": true,
+      "label": "energy per area and time",
+      "name": "energy per area and time",
+      "path": "o/pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq.json",
+      "signature": "missing",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+    "class": "definitional",
+    "held": true,
+    "label": "UCUM",
+    "name": "ucum",
+    "path": "o/pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q.json",
+    "signature": "missing",
+    "sort": "system",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:4qh5ua6c6pbxcj7l7injvmt2xtlv6ixlf6ulpeb5bdykghdym5zq",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba",
+      "how": "presupposed by"
+    },
+    {
+      "cid": "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq",
+      "how": "presupposed by"
+    }
+  ]
+}

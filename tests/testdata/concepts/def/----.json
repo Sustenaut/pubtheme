@@ -1,19 +1,26 @@
 {
   "address": "https://pub.example.org/def/----",
   "bundle": 1,
+  "classes": [
+    {
+      "code": "----",
+      "family": "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq"
+    }
+  ],
   "definitions": [
-    "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq"
+    "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq"
   ],
   "name": "----",
   "related": {
-    "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq": {
-      "cid": "pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq",
+    "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq": {
+      "cid": "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq",
       "class": "definitional",
       "held": true,
-      "label": "----",
-      "name": "----",
-      "path": "o/pub:sha2-256:4sta3ajvqlsskxsimcjqojyonvz2upmh66gydbojezglotavq2nq.json",
-      "sort": "concept",
+      "label": "top family",
+      "name": null,
+      "path": "o/pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq.json",
+      "signature": "missing",
+      "sort": "family",
       "type": "claim.prose"
     }
   },

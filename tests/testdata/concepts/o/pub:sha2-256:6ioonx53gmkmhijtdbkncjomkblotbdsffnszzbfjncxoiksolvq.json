@@ -1,0 +1,107 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq",
+    "size": 421
+  },
+  "cid": "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": {
+    "anchors": [],
+    "broader": [],
+    "classes": [
+      {
+        "auxiliary": false,
+        "children": true,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "MAIN TABLES",
+        "narrower": [
+          "pub:sha2-256:x4umnrcdkzavkhydjfzwunzy2rcxtab2wurfco36w73yiu7w6qfq"
+        ],
+        "pdc": "----"
+      }
+    ],
+    "grouping": 1,
+    "parent": null
+  },
+  "lineage": {
+    "genesis": "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq",
+    "heads": [
+      "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq"
+    ],
+    "members": [
+      "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "The PDC classes directly at the top of the classification.",
+      "defines": {
+        "grouping": 1,
+        "members": [
+          {
+            "children": true,
+            "matches": [
+              {
+                "ref": "http://udcdata.info/078887",
+                "relation": "exact"
+              }
+            ],
+            "name": "MAIN TABLES",
+            "pdc": "----"
+          }
+        ],
+        "sort": "family"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:x4umnrcdkzavkhydjfzwunzy2rcxtab2wurfco36w73yiu7w6qfq": {
+      "cid": "pub:sha2-256:x4umnrcdkzavkhydjfzwunzy2rcxtab2wurfco36w73yiu7w6qfq",
+      "class": "definitional",
+      "held": true,
+      "label": "----",
+      "name": null,
+      "path": "o/pub:sha2-256:x4umnrcdkzavkhydjfzwunzy2rcxtab2wurfco36w73yiu7w6qfq.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq",
+    "class": "definitional",
+    "held": true,
+    "label": "top family",
+    "name": null,
+    "path": "o/pub:sha2-256:6ioonx53gmkmhijtdbkncjomkblotbdsffnszzbfjncxoiksolvq.json",
+    "signature": "missing",
+    "sort": "family",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

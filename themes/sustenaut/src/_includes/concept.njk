@@ -5,16 +5,37 @@
 {%- import "components.njk" as ui with context -%}
 {%- set review = site.review or "https://review.sustenaut.eu" -%}
 {%- set lines = n.definitions | lineages(pub.byCid) -%}
-{%- if lines.length > 1 %}
-{% call ui.callout("warning") %}<strong>Contested code.</strong> {{ lines.length }} concepts claim {{ n.name }}. Each is shown; which one a PDC edition or the code's expert group recommends is theirs to say, and a claim citing one means that one.{% endcall %}
+{%- set classes = n.classes or [] -%}
+{%- set claimants = lines.length + classes.length -%}
+{%- if claimants > 1 %}
+{% call ui.callout("warning") %}<strong>Contested code.</strong> {{ claimants }} definitions claim {{ n.name }}. Each is shown; which one a PDC edition or the code's expert group recommends is theirs to say, and a claim citing one means that one.{% endcall %}
 {%- endif %}
+
+{%- for cl in classes %}
+{%- set fb = pub.byCid[cl.family] %}
+{%- set c = (fb.family.classes | bykey("pdc", cl.code))[0] if fb and fb.family else null %}
+{% call ui.panel(c.name if c else n.name, "Class" + (" · " + loop.index + " of " + claimants if claimants > 1 else ""), true) %}
+{%- if fb and fb.family %}
+<nav class="text-sm text-muted" aria-label="Broader classes"><a href="{{ '/pdc/' | url }}">Classification</a>
+  {%- for x in fb | crumbs(pub.byCid) %} › {% if x.family %}<a href="{{ (x.code | classhref(x.family)) | url }}"><code>{{ x.code }}</code> {{ x.name }}</a>{% else %}<code>{{ x.code }}</code>{% endif %}{% endfor %} › <code>{{ cl.code }}</code></nav>
+{%- endif %}
+<div class="flex flex-wrap gap-2">{{ ui.tag("class", "success") }}{% if c and c.auxiliary %} {{ ui.tag("special auxiliary") }}{% endif %}{% if claimants > 1 %} {{ ui.tag("contested", "warning") }}{% endif %} {{ ui.signed(fb.summary.signature if fb else (n.related[cl.family].signature if n.related[cl.family] else "")) }}</div>
+<p class="m-0 text-lg">Defined with the classes beside it, in <a href="{{ (cl.code | classhref(cl.family)) | url }}">{{ fb.object.body.content if fb else "its family" }}</a></p>
+<div class="flex flex-wrap gap-x-7 gap-y-2 text-sm">
+  <span><span class="text-muted">PDC code</span> <code>{{ cl.code }}</code></span>
+  {%- if c %}{% for nf in c.narrower | heads(pub.byCid) %}<a href="{{ ('/o/' + nf.cid + '/') | url }}">Classes under it · {{ nf.family.classes.length }}</a>{% endfor %}{% endif %}
+  <span><span class="text-muted">Family</span> <a href="{{ ('/o/' + cl.family + '/') | url }}"><code>{{ cl.family | short }}</code></a></span>
+  <a href="{{ review }}/concept/{{ cl.code | urlencode }}">Review this class</a>
+</div>
+{% endcall %}
+{%- endfor %}
 
 {%- for line in lines %}
 {%- set b = pub.byCid[line.head] %}
 {%- set c = b.concept %}
 {%- set d = b.object.body.defines %}
-{% call ui.panel(d.name, (c.form | capitalize) + " concept" + (" · " + loop.index + " of " + lines.length if lines.length > 1 else ""), true) %}
-<div class="flex flex-wrap gap-2">{{ ui.tag(c.form + " concept", "success") }}{% if lines.length > 1 %} {{ ui.tag("contested", "warning") }}{% endif %}</div>
+{% call ui.panel(d.name, (c.form | capitalize) + " concept" + (" · " + (loop.index + classes.length) + " of " + claimants if claimants > 1 else ""), true) %}
+<div class="flex flex-wrap gap-2">{{ ui.tag(c.form + " concept", "success") }}{% if claimants > 1 %} {{ ui.tag("contested", "warning") }}{% endif %} {{ ui.signed(b.summary.signature) }}</div>
 <p class="m-0 text-lg">{{ b.object.body.content }}</p>
 <div class="flex flex-wrap gap-x-7 gap-y-2 text-sm">
   <span><span class="text-muted">PDC code</span> <code>{{ c.pdc }}</code></span>
@@ -50,8 +71,10 @@
   <div class="flex min-w-0 flex-[999_1_480px] flex-col gap-6">
     {% call ui.panel("Where it sits in the classification") %}
     <div class="flex flex-col gap-2">
-      {{ ui.eyebrow("Broader · " + c.broader.length) }}
-      {%- for p in c.broader %}{% set r = b.related[p] %}<a href="{{ ((r.name if r and r.name else p) | defhref) | url }}">{% if r and r.name %}<code>{{ r.name }}</code>{% endif %} {{ pub.byCid[p].object.body.defines.name if pub.byCid[p] else p }}</a>{% else %}<span class="text-muted">None: a top class.</span>{% endfor %}
+      {%- set placed = b | placed %}
+      {{ ui.eyebrow("Broader · " + (c.broader.length + placed.length)) }}
+      {%- for u in placed %}<a href="{{ (u.code | classhref(u.family)) | url }}"><code>{{ u.code }}</code> {% set fb = pub.byCid[u.family] %}{{ (fb.family.classes | bykey("pdc", u.code))[0].name if fb and fb.family else "" }}</a>{% endfor %}
+      {%- for p in c.broader %}{% set r = b.related[p] %}<a href="{{ ((r.name if r and r.name else p) | defhref) | url }}">{% if r and r.name %}<code>{{ r.name }}</code>{% endif %} {{ pub.byCid[p].object.body.defines.name if pub.byCid[p] else p }}</a>{% else %}{% if not placed.length %}<span class="text-muted">None: a top class.</span>{% endif %}{% endfor %}
       <span class="mt-2">{{ ui.eyebrow("Narrower · " + c.narrower.length) }}</span>
       {%- for x in b | narrower(pub.byCid) %}<a href="{{ (x.concept.pdc | defhref) | url }}"><code>{{ x.concept.pdc }}</code> {{ x.object.body.defines.name }}</a>{% else %}<span class="text-muted">None yet.</span>{% endfor %}
     </div>
@@ -80,10 +103,10 @@
   </div>
 
   <aside class="flex min-w-0 flex-[1_1_280px] flex-col gap-4">
-    {%- for a in c.anchors %}
-    {% call ui.panel("Expert group", "Stewards of " + (b.related[a.over].name if b.related[a.over] and b.related[a.over].name else "this concept")) %}
+    {%- for a in b | anchorsof(pub.byCid) %}
+    {% call ui.panel("Expert group", "Stewards of " + (b.related[a.over].name if b.related[a.over] and b.related[a.over].name else ("the classes under " + pub.byCid[a.over].family.parent if pub.byCid[a.over] and pub.byCid[a.over].family else "this concept"))) %}
     <p class="m-0 text-sm">{{ a.stewards.length }} steward{% if a.stewards.length != 1 %}s{% endif %}; a change needs {{ a.threshold }} of their signatures. Their choice is a recommendation, never a rule: anyone may still publish, review or dispute.</p>
-    {%- if a.over != b.cid %}<p class="m-0 text-sm text-muted">The group covers <a href="{{ ((b.related[a.over].name or a.over) | defhref) | url }}">{{ b.related[a.over].name }}</a> and the codes under it.</p>{% endif %}
+    {%- if a.over != b.cid %}<p class="m-0 text-sm text-muted">The group covers {% if b.related[a.over] and b.related[a.over].name %}<a href="{{ (b.related[a.over].name | defhref) | url }}">{{ b.related[a.over].name }}</a>{% else %}{{ ui.ref(a.over, b.related) }}{% endif %} and the codes under it.</p>{% endif %}
     {% endcall %}
     {%- endfor %}
     {% call ui.panel("Versions · " + line.versions.length) %}

@@ -37,14 +37,15 @@ same as the static ones, with what the build wrote:
 
 | Where | What |
 |---|---|
-| `worker/render.js` | `renderer(site)` with `.name(entry, byCid)`, `.object(bundle, byCid)` and `.search(query, entries)`, each giving a page's HTML; `part(code)`; `objectNeeds(bundle)`; `search(entries, query)`. The theme's templates, compiled so nothing is evaluated at run time. |
+| `worker/render.js` | `renderer(site)` with `.name(entry, byCid)`, `.object(bundle, byCid)` and `.search(query, entries)`, each giving a page's HTML; `part(code)`; `objectPart(bundle)`; `objectNeeds(bundle)`; `search(entries, query)`. The theme's templates, compiled so nothing is evaluated at run time. |
 | `site/_external/manifest.json` | `{site, segments}`: the settings, and which part of the index each name's path segment is in. |
-| `site/_external/index/<part>.json` | `{names, byCid}`: the names of that part, and everything their pages show, including what the rest of the site says about them. A concept's `annotations` are the CIDs of what classifies it. Small enough to parse on a request. |
+| `site/_external/index/<part>.json` | `{names, byCid}`: the names of that part, and everything their pages show, including what the rest of the site says about them. A name a family defines has `classes: [{code, family}]`, the family's CID for its code. A concept's `annotations` are the CIDs of what classifies it. Small enough to parse on a request. |
 | `site/_external/search.json` | Every name and object, `{code, label, href}`. |
 | `site/_external/bundles/<letter>.json` | Each kept object's bundle's SHA-256, by CID, in parts by the CID hash's first letter. |
 
-An object's page takes its bundle from `kept`, wherever you keep it, a `byCid` holding for a concept the `byCid` of
-`part(concept.pdc)`, and the bundles of the objects `objectNeeds` names.
+An object's page takes its bundle from `kept`, wherever you keep it, a `byCid` holding the `byCid` of
+`objectPart(bundle)` for a concept or a family (null for anything else), and the bundles of the objects `objectNeeds`
+names.
 An object's bytes are those you already hold: a CID's hash is their SHA-256.
 
 ## The themes
@@ -69,6 +70,14 @@ or built in a package of their own against the same bundles.
 - **A page per name** at `/def/<name>/`, the address spec Section 5.9.1
   describes; a name two definitions share lists both. A `/` in a name is
   `_` in its address (`/def/631_635/`), as `pub bundle` writes it.
+- **A family's page** at `/o/<CID>/`: the classes directly under one class,
+  defined and signed together (publet spec Section 5.9.1). It names the
+  classes above it, from the top down by their `parent` codes, and has a
+  place for each class at its code (`/o/<CID>/#<code>`), with its boundary,
+  what is placed under it, what else claims its code, and a link to the
+  family under it.
+- **A class's code**, `/def/<code>/`, lands on its place in its family's
+  page; a code more than one definition claims shows each of them.
 - **A concept's page** at its PDC code, `/def/<code>/`. It shows:
   - its form (subject, quantity or relation) and its boundary;
   - its broader and narrower classes, and the claims classified under it;
@@ -79,8 +88,11 @@ or built in a package of their own against the same bundles.
 
   A code that more than one concept lineage claims is shown as contested,
   with every concept that claims it.
-- **The classification** at `/pdc/`: every subject concept from the top
-  tables down.
+- **The classification** at `/pdc/`: every class from the top tables down,
+  family by family, with the concepts placed under each.
+- **Whether its author signed it**, on every object's page and each class:
+  `pub bundle` gives each object's signature status, and only what its
+  author signed counts.
 - **Concepts on every page**: an object's page names the concepts it is
   classified under and links each machine suggestion naming it to the
   review service.
@@ -99,9 +111,10 @@ make example       # build the sustenaut theme from the test bundles into _site/
 
 The test bundles in `tests/testdata/publication-0` are `pub bundle`'s output
 for publication 0 (schryer/business-plan). Those in `tests/testdata/concepts`
-are fake test data, made by `tools/concept-testdata.py --pub=PATH` with a pub
-that bundles concepts (schryer/publet#49). They hold:
-- 20 classes of the UDC Summary, from schryer/publet-decimal-classification;
+are fake test data, made by `tools/concept-testdata.py --pub=PATH` with pub
+from publet's v0.4.0 release (the tool names the release it needs). They hold:
+- 20 classes of the UDC Summary, from schryer/publet-decimal-classification,
+  in 11 families;
 - a quantity concept with two members and two versions, and a competing
   concept at the same code;
 - a relation concept and a calculation that solves it;

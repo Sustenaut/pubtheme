@@ -1,19 +1,26 @@
 {
   "address": "https://pub.example.org/def/635",
   "bundle": 1,
+  "classes": [
+    {
+      "code": "635",
+      "family": "pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq"
+    }
+  ],
   "definitions": [
-    "pub:sha2-256:aevhzr3ory7zedrvvslbst7vige6jjsdzsuxzofjyw2wmhpgdsgq"
+    "pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq"
   ],
   "name": "635",
   "related": {
-    "pub:sha2-256:aevhzr3ory7zedrvvslbst7vige6jjsdzsuxzofjyw2wmhpgdsgq": {
-      "cid": "pub:sha2-256:aevhzr3ory7zedrvvslbst7vige6jjsdzsuxzofjyw2wmhpgdsgq",
+    "pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq": {
+      "cid": "pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq",
       "class": "definitional",
       "held": true,
-      "label": "635",
-      "name": "635",
-      "path": "o/pub:sha2-256:aevhzr3ory7zedrvvslbst7vige6jjsdzsuxzofjyw2wmhpgdsgq.json",
-      "sort": "concept",
+      "label": "633/635",
+      "name": null,
+      "path": "o/pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq.json",
+      "signature": "missing",
+      "sort": "family",
       "type": "claim.prose"
     }
   },

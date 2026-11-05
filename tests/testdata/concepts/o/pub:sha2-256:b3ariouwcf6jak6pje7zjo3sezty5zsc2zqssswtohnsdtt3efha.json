@@ -1,0 +1,80 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:b3ariouwcf6jak6pje7zjo3sezty5zsc2zqssswtohnsdtt3efha",
+    "size": 334
+  },
+  "cid": "pub:sha2-256:b3ariouwcf6jak6pje7zjo3sezty5zsc2zqssswtohnsdtt3efha",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": null,
+  "lineage": {
+    "genesis": "pub:sha2-256:b3ariouwcf6jak6pje7zjo3sezty5zsc2zqssswtohnsdtt3efha",
+    "heads": [
+      "pub:sha2-256:b3ariouwcf6jak6pje7zjo3sezty5zsc2zqssswtohnsdtt3efha"
+    ],
+    "members": [
+      "pub:sha2-256:b3ariouwcf6jak6pje7zjo3sezty5zsc2zqssswtohnsdtt3efha"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "from": "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda",
+      "kind": "supersedes",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      },
+      "to": "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa"
+    },
+    "created": "2026-10-14T13:00:00Z",
+    "type": "claim.relation"
+  },
+  "parameters": null,
+  "related": {
+    "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda": {
+      "cid": "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda.json",
+      "signature": "missing",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa": {
+      "cid": "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa.json",
+      "signature": "missing",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:b3ariouwcf6jak6pje7zjo3sezty5zsc2zqssswtohnsdtt3efha",
+    "class": null,
+    "held": true,
+    "label": "claim.relation supersedes",
+    "name": null,
+    "path": "o/pub:sha2-256:b3ariouwcf6jak6pje7zjo3sezty5zsc2zqssswtohnsdtt3efha.json",
+    "signature": "missing",
+    "sort": null,
+    "type": "claim.relation"
+  },
+  "used_by": []
+}

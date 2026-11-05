@@ -1,0 +1,85 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:jpf72zdz7nxkrl5ahdulagdx3kd2dmism4l2nwqil3niiujfjbyq",
+    "size": 510
+  },
+  "cid": "pub:sha2-256:jpf72zdz7nxkrl5ahdulagdx3kd2dmism4l2nwqil3niiujfjbyq",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": null,
+  "lineage": {
+    "genesis": "pub:sha2-256:jpf72zdz7nxkrl5ahdulagdx3kd2dmism4l2nwqil3niiujfjbyq",
+    "heads": [
+      "pub:sha2-256:jpf72zdz7nxkrl5ahdulagdx3kd2dmism4l2nwqil3niiujfjbyq"
+    ],
+    "members": [
+      "pub:sha2-256:jpf72zdz7nxkrl5ahdulagdx3kd2dmism4l2nwqil3niiujfjbyq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta",
+    "body": {
+      "current": "pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a",
+      "lineage": "pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a",
+      "rationale": "pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa",
+      "stewards": [
+        "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta",
+        "pub:sha2-256:mzfs2dzyrfsiillch4qigafcfjgpdqmffofsl6y3nvgqc64q4cjq"
+      ],
+      "threshold": 1
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "anchor"
+  },
+  "parameters": null,
+  "related": {
+    "pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a": {
+      "cid": "pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a",
+      "class": "definitional",
+      "held": true,
+      "label": "628",
+      "name": null,
+      "path": "o/pub:sha2-256:5usebhlvbsvdjnga342pipavaj2c67ntlcg7riq4b3gvcp6hqy4a.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:mzfs2dzyrfsiillch4qigafcfjgpdqmffofsl6y3nvgqc64q4cjq": {
+      "cid": "pub:sha2-256:mzfs2dzyrfsiillch4qigafcfjgpdqmffofsl6y3nvgqc64q4cjq",
+      "held": false
+    },
+    "pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa": {
+      "cid": "pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa",
+      "class": "procedural",
+      "held": true,
+      "label": "Read the electricity figure from the paper's table (fake).",
+      "name": null,
+      "path": "o/pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa.json",
+      "signature": "missing",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta": {
+      "cid": "pub:sha2-256:vyqxuhq7ly2euttqropprtclgi2kk54yvr5ybebjaubuwueh47ta",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:jpf72zdz7nxkrl5ahdulagdx3kd2dmism4l2nwqil3niiujfjbyq",
+    "class": null,
+    "held": true,
+    "label": "anchor",
+    "name": null,
+    "path": "o/pub:sha2-256:jpf72zdz7nxkrl5ahdulagdx3kd2dmism4l2nwqil3niiujfjbyq.json",
+    "signature": "missing",
+    "sort": null,
+    "type": "anchor"
+  },
+  "used_by": []
+}

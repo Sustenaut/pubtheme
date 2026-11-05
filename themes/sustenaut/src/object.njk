@@ -16,6 +16,12 @@ eleventyComputed:
 {%- set docs = [] -%}
 {%- for e in b.used_by %}{% if e.how.startsWith("cited in document") %}{% set docs = (docs.push(e), docs) %}{% endif %}{% endfor -%}
 
+{%- if b.family %}
+<nav class="m-0 text-sm text-muted" aria-label="Broader classes"><a href="{{ '/pdc/' | url }}">Classification</a>
+  {%- for c in b | crumbs(pub.byCid) %} › {% if c.family %}<a href="{{ (c.code | classhref(c.family)) | url }}"><code>{{ c.code }}</code> {{ c.name }}</a>{% else %}<code>{{ c.code }}</code>{% endif %}{% endfor -%}
+</nav>
+{%- endif %}
+
 {%- if docs.length %}
 <p class="m-0 text-sm text-muted">
   {%- for e in docs %}In {{ ui.ref(e.cid, b.related) }}{% if not loop.last %} · {% endif %}{% endfor -%}
@@ -26,11 +32,11 @@ eleventyComputed:
   <div class="flex flex-wrap gap-2">
     {%- if s.class %}{{ ui.tag(s.class + (" " + s.sort if s.sort else " claim")) }}{% else %}{{ ui.tag(s.type) }}{% endif %}
     {%- if body.data and body.data.rows | hasnull %} {{ ui.tag("values not yet gathered", "warning") }}{% endif %}
-    {%- if not signatures.length %} {{ ui.tag("unsigned") }}{% endif %}
+    {%- if s.signature %} {{ ui.signed(s.signature) }}{% elif not signatures.length %} {{ ui.tag("unsigned") }}{% endif %}
     {%- if b.lineage.heads.length > 1 %} {{ ui.tag("branched", "warning") }}{% endif %}
   </div>
-  <h1 class="m-0 max-w-4xl font-display text-3xl leading-tight font-extrabold">{% if s.sort %}{{ s.label }}{% elif body.title %}{{ body.title }}{% elif body.content %}{{ body.content }}{% else %}{{ s.label }}{% endif %}</h1>
-  {%- if s.sort and body.content %}<p class="m-0 max-w-3xl text-lg">{{ body.content }}</p>{% endif %}
+  <h1 class="m-0 max-w-4xl font-display text-3xl leading-tight font-extrabold">{% if b.family and body.content %}{{ body.content }}{% elif s.sort %}{{ s.label }}{% elif body.title %}{{ body.title }}{% elif body.content %}{{ body.content }}{% else %}{{ s.label }}{% endif %}</h1>
+  {%- if s.sort and body.content and not b.family %}<p class="m-0 max-w-3xl text-lg">{{ body.content }}</p>{% endif %}
   {%- if body.scope %}
   <p class="m-0 text-muted">Asserted under: <strong class="text-ink">{{ body.scope.domain }}</strong>
     {%- if body.scope.precision %} · precision {{ body.scope.precision }}{% endif %}
@@ -50,7 +56,12 @@ eleventyComputed:
 {%- endif %}
 {%- for u in b.classified_under or [] %}
 {%- set r = b.related[u.concept] %}
+{%- set fb = pub.byCid[u.concept] %}
+{%- if u.code %}
+<p class="m-0">Member of <a href="{{ (u.code | classhref(u.concept)) | url }}"><code>{{ u.code }}</code> {{ (fb.family.classes | bykey("pdc", u.code))[0].name if fb and fb.family else "" }}</a> <span class="text-sm text-muted">placed by {{ ui.ref(u.by, b.related) }}</span></p>
+{%- else %}
 <p class="m-0">Member of <a href="{{ ((r.name if r and r.name else u.concept) | defhref) | url }}">{% if r and r.name %}<code>{{ r.name }}</code> {% endif %}{{ pub.byCid[u.concept].object.body.defines.name if pub.byCid[u.concept] else u.concept }}</a> <span class="text-sm text-muted">placed by {{ ui.ref(u.by, b.related) }}</span></p>
+{%- endif %}
 {%- endfor %}
 {%- for t in b.suggestions or [] %}
 {%- set tb = pub.byCid[t] %}
@@ -58,6 +69,8 @@ eleventyComputed:
 {%- endfor %}
 {% endcall %}
 {%- endif %}
+
+{%- if b.family %}{% include "family.njk" %}{% endif %}
 
 {%- if b.critiques.length %}
 {% call ui.callout("warning") %}<strong>{{ b.critiques.length }} critique{% if b.critiques.length > 1 %}s{% endif %}.</strong>
@@ -95,7 +108,7 @@ eleventyComputed:
 
 <div class="flex flex-wrap items-start gap-6">
   <div class="flex min-w-0 flex-[999_1_560px] flex-col gap-6">
-    {%- if body.defines %}
+    {%- if body.defines and not b.family %}
     {% call ui.panel("What it defines") %}
     {%- set d = body.defines %}
     <dl class="m-0 grid grid-cols-[max-content_1fr] gap-x-4 gap-y-1">
@@ -165,7 +178,7 @@ eleventyComputed:
     <div><span class="text-muted">Type</span><br>{{ s.type }}</div>
     <div><span class="text-muted">Author</span><br>{{ ui.ref(b.object.author, b.related) }}</div>
     <div><span class="text-muted">Created</span><br>{{ b.object.created }}</div>
-    <div><span class="text-muted">Signatures</span><br>{% if signatures.length %}{{ signatures.length }} held; check them with <code>pub why</code>{% else %}none: an unsigned object{% endif %}</div>
+    <div><span class="text-muted">Signatures</span><br>{% if s.signature %}{{ ui.signedtext(s.signature) }}{% if signatures.length %} {{ signatures.length }} held; check them with <code>pub why</code>.{% endif %}{% elif signatures.length %}{{ signatures.length }} held; check them with <code>pub why</code>{% else %}none: an unsigned object{% endif %}</div>
     <div class="flex flex-wrap gap-3"><a href="{{ ('/' + b.bytes.path) | url }}">Canonical bytes</a><a href="{{ ('/o/' + b.cid + '.json') | url }}">Reading bundle</a></div>
   </aside>
 </div>

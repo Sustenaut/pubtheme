@@ -1,0 +1,227 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq",
+    "size": 1199
+  },
+  "cid": "pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": {
+    "anchors": [],
+    "broader": [
+      "pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq"
+    ],
+    "classes": [
+      {
+        "auxiliary": false,
+        "children": false,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Farm management and organization",
+        "narrower": [],
+        "pdc": "631.1"
+      },
+      {
+        "auxiliary": false,
+        "children": false,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Farm buildings, structures and installations. Buildings for livestock, produce, machinery and equipment",
+        "narrower": [],
+        "pdc": "631.2"
+      },
+      {
+        "auxiliary": false,
+        "children": false,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Agricultural machines, implements and equipment",
+        "narrower": [],
+        "pdc": "631.3"
+      },
+      {
+        "auxiliary": false,
+        "children": false,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Soil science. Pedology. Soil research",
+        "narrower": [],
+        "pdc": "631.4"
+      },
+      {
+        "auxiliary": false,
+        "children": false,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Agricultural operations",
+        "narrower": [],
+        "pdc": "631.5"
+      },
+      {
+        "auxiliary": false,
+        "children": false,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Rural engineering",
+        "narrower": [],
+        "pdc": "631.6"
+      },
+      {
+        "auxiliary": false,
+        "children": false,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Fertilizers, manures and soil enrichment. Promotion of growth. Plant stimulants",
+        "narrower": [],
+        "pdc": "631.8"
+      }
+    ],
+    "grouping": 1,
+    "parent": "631"
+  },
+  "lineage": {
+    "genesis": "pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq",
+    "heads": [
+      "pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq"
+    ],
+    "members": [
+      "pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "The PDC classes directly under 631 Agriculture in general.",
+      "defines": {
+        "grouping": 1,
+        "members": [
+          {
+            "matches": [
+              {
+                "ref": "http://udcdata.info/050936",
+                "relation": "exact"
+              }
+            ],
+            "name": "Farm management and organization",
+            "pdc": "631.1"
+          },
+          {
+            "matches": [
+              {
+                "ref": "http://udcdata.info/051014",
+                "relation": "exact"
+              }
+            ],
+            "name": "Farm buildings, structures and installations. Buildings for livestock, produce, machinery and equipment",
+            "pdc": "631.2"
+          },
+          {
+            "matches": [
+              {
+                "ref": "http://udcdata.info/051034",
+                "relation": "exact"
+              }
+            ],
+            "name": "Agricultural machines, implements and equipment",
+            "pdc": "631.3"
+          },
+          {
+            "matches": [
+              {
+                "ref": "http://udcdata.info/051194",
+                "relation": "exact"
+              }
+            ],
+            "name": "Soil science. Pedology. Soil research",
+            "pdc": "631.4"
+          },
+          {
+            "matches": [
+              {
+                "ref": "http://udcdata.info/051317",
+                "relation": "exact"
+              }
+            ],
+            "name": "Agricultural operations",
+            "pdc": "631.5"
+          },
+          {
+            "matches": [
+              {
+                "ref": "http://udcdata.info/051465",
+                "relation": "exact"
+              }
+            ],
+            "name": "Rural engineering",
+            "pdc": "631.6"
+          },
+          {
+            "matches": [
+              {
+                "ref": "http://udcdata.info/051489",
+                "relation": "exact"
+              }
+            ],
+            "name": "Fertilizers, manures and soil enrichment. Promotion of growth. Plant stimulants",
+            "pdc": "631.8"
+          }
+        ],
+        "parent": "631",
+        "sort": "family"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq": {
+      "cid": "pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq",
+      "class": "definitional",
+      "held": true,
+      "label": "631/635",
+      "name": null,
+      "path": "o/pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq",
+    "class": "definitional",
+    "held": true,
+    "label": "631",
+    "name": null,
+    "path": "o/pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq.json",
+    "signature": "missing",
+    "sort": "family",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

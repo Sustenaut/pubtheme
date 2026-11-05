@@ -1,0 +1,138 @@
+{
+  "address": "https://pub.example.org/def/628.9~1",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka",
+    "size": 578
+  },
+  "cid": "pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka",
+  "classified_under": [],
+  "closure": [
+    "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq",
+    "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q"
+  ],
+  "concept": {
+    "anchors": [],
+    "broader": [],
+    "competing": [
+      "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda",
+      "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa"
+    ],
+    "form": "quantity",
+    "members": [],
+    "narrower": [],
+    "pdc": "628.9~1",
+    "solved_by": []
+  },
+  "critiques": [],
+  "family": null,
+  "lineage": {
+    "genesis": "pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka",
+    "heads": [
+      "pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka"
+    ],
+    "members": [
+      "pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "Indoor lighting electricity: any electric light for plants indoors.",
+      "defines": {
+        "boundary": {
+          "excludes": [],
+          "includes": [
+            "Any electric light for plants indoors"
+          ]
+        },
+        "kind": "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq",
+        "name": "Indoor plant lighting electricity",
+        "pdc": "628.9~1",
+        "sort": "concept"
+      },
+      "depends": [
+        "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda": {
+      "cid": "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda.json",
+      "signature": "missing",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa": {
+      "cid": "pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:kkh5c3iwu7d6mfef3c3plhtoxlyqqcm3nnpbovylexg2ejjtktxa.json",
+      "signature": "missing",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q": {
+      "cid": "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q.json",
+      "signature": "missing",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq": {
+      "cid": "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq",
+      "class": "definitional",
+      "held": true,
+      "label": "energy per area and time",
+      "name": "energy per area and time",
+      "path": "o/pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq.json",
+      "signature": "missing",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq",
+      "how": "presupposes"
+    }
+  ],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka",
+    "class": "definitional",
+    "held": true,
+    "label": "628.9~1",
+    "name": "628.9~1",
+    "path": "o/pub:sha2-256:ki32ncbl7fdmeiupsmnz6dg5akg7xg4hasutcv2onf6h77ga66ka.json",
+    "signature": "missing",
+    "sort": "concept",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

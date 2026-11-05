@@ -1,19 +1,26 @@
 {
   "address": "https://pub.example.org/def/64",
   "bundle": 1,
+  "classes": [
+    {
+      "code": "64",
+      "family": "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda"
+    }
+  ],
   "definitions": [
-    "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a"
+    "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda"
   ],
   "name": "64",
   "related": {
-    "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a": {
-      "cid": "pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a",
+    "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda": {
+      "cid": "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda",
       "class": "definitional",
       "held": true,
-      "label": "64",
-      "name": "64",
-      "path": "o/pub:sha2-256:3sionmc7amepvyhqai4beqhglhypps4vlwdk3q4gurabt7z74k3a.json",
-      "sort": "concept",
+      "label": "6",
+      "name": null,
+      "path": "o/pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda.json",
+      "signature": "missing",
+      "sort": "family",
       "type": "claim.prose"
     }
   },

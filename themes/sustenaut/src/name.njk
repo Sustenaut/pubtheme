@@ -16,7 +16,7 @@ eleventyComputed:
   <p class="m-0 font-mono text-sm text-muted">{{ n.address }}</p>
 </div>
 {%- set first = pub.byCid[n.definitions[0]] %}
-{%- if first and first.concept %}
+{%- if first and first.concept or n.classes and n.classes.length %}
 {%- include "concept.njk" %}
 {%- else %}
 {%- if n.definitions.length > 1 %}

@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const [site, workerOut, external, ask] = process.argv.slice(2);
-const { objectNeeds, renderer, part, search } = await import(path.resolve(workerOut, "render.js"));
+const { objectNeeds, objectPart, renderer, part, search } = await import(path.resolve(workerOut, "render.js"));
 const read = (...p) => JSON.parse(fs.readFileSync(path.join(...p), "utf8"));
 const manifest = read(site, "_external", "manifest.json");
 const render = renderer(manifest.site);
@@ -20,7 +20,8 @@ if (ask?.startsWith("--search=")) {
   const objects = {};
   for (const o of read(external, "index.json").objects.filter((x) => x.held)) {
     const b = read(external, o.path);
-    const byCid = { ...(b.concept ? shard(part(b.concept.pdc)).byCid : {}) };
+    const key = objectPart(b);
+    const byCid = { ...(key ? shard(key).byCid : {}) };
     for (const cid of objectNeeds(b)) {
       if (fs.existsSync(path.join(external, "o", `${cid}.json`))) byCid[cid] = read(external, "o", `${cid}.json`);
     }

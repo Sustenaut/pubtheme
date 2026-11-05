@@ -1,0 +1,172 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:rohexka6jjg3u6d4jilfef26wnrlhrzi66bc45ynzbthvrtgqvdq",
+    "size": 584
+  },
+  "cid": "pub:sha2-256:rohexka6jjg3u6d4jilfef26wnrlhrzi66bc45ynzbthvrtgqvdq",
+  "classified_under": [],
+  "closure": [
+    "pub:sha2-256:hdlfozop3uqw3kkumzdqhtjwuthd4fbw3rjtrjbhddhqvg3hj7yq",
+    "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza",
+    "pub:sha2-256:4qh5ua6c6pbxcj7l7injvmt2xtlv6ixlf6ulpeb5bdykghdym5zq",
+    "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda",
+    "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba",
+    "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+    "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq"
+  ],
+  "concept": null,
+  "critiques": [],
+  "family": null,
+  "lineage": {
+    "genesis": "pub:sha2-256:rohexka6jjg3u6d4jilfef26wnrlhrzi66bc45ynzbthvrtgqvdq",
+    "heads": [
+      "pub:sha2-256:rohexka6jjg3u6d4jilfef26wnrlhrzi66bc45ynzbthvrtgqvdq"
+    ],
+    "members": [
+      "pub:sha2-256:rohexka6jjg3u6d4jilfef26wnrlhrzi66bc45ynzbthvrtgqvdq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "procedural",
+      "computes": {
+        "solves": {
+          "concept": "628.9~2",
+          "optional": [
+            {
+              "default": "pub:sha2-256:hdlfozop3uqw3kkumzdqhtjwuthd4fbw3rjtrjbhddhqvg3hj7yq",
+              "role": "lit"
+            }
+          ],
+          "requires": [
+            "power"
+          ],
+          "target": "energy"
+        }
+      },
+      "content": "Multiply lamp power per area by the share of the day lit (fake).",
+      "depends": [
+        "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza",
+        "pub:sha2-256:hdlfozop3uqw3kkumzdqhtjwuthd4fbw3rjtrjbhddhqvg3hj7yq"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:4qh5ua6c6pbxcj7l7injvmt2xtlv6ixlf6ulpeb5bdykghdym5zq": {
+      "cid": "pub:sha2-256:4qh5ua6c6pbxcj7l7injvmt2xtlv6ixlf6ulpeb5bdykghdym5zq",
+      "class": "definitional",
+      "held": true,
+      "label": "power per area",
+      "name": "power per area",
+      "path": "o/pub:sha2-256:4qh5ua6c6pbxcj7l7injvmt2xtlv6ixlf6ulpeb5bdykghdym5zq.json",
+      "signature": "missing",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda": {
+      "cid": "pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~1",
+      "name": "628.9~1",
+      "path": "o/pub:sha2-256:5y76coj7e7btcp73yfsfhibeymnjr27ghzrsnpz3qsutjco6unda.json",
+      "signature": "missing",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hdlfozop3uqw3kkumzdqhtjwuthd4fbw3rjtrjbhddhqvg3hj7yq": {
+      "cid": "pub:sha2-256:hdlfozop3uqw3kkumzdqhtjwuthd4fbw3rjtrjbhddhqvg3hj7yq",
+      "class": "normative",
+      "held": true,
+      "label": "Without a stated photoperiod, assume 16 hours of light a day (fake).",
+      "name": null,
+      "path": "o/pub:sha2-256:hdlfozop3uqw3kkumzdqhtjwuthd4fbw3rjtrjbhddhqvg3hj7yq.json",
+      "signature": "missing",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba": {
+      "cid": "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba",
+      "class": "definitional",
+      "held": true,
+      "label": "share of the day",
+      "name": "share of the day",
+      "path": "o/pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba.json",
+      "signature": "missing",
+      "sort": "kind",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q": {
+      "cid": "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q.json",
+      "signature": "missing",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza": {
+      "cid": "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~2",
+      "name": "628.9~2",
+      "path": "o/pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza.json",
+      "signature": "missing",
+      "sort": "concept",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq": {
+      "cid": "pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq",
+      "class": "definitional",
+      "held": true,
+      "label": "energy per area and time",
+      "name": "energy per area and time",
+      "path": "o/pub:sha2-256:z5nou5eum6kpyoyoe6h57uwsd3wi3kx7vo5blkjnatfeppna4ciq.json",
+      "signature": "missing",
+      "sort": "kind",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:hdlfozop3uqw3kkumzdqhtjwuthd4fbw3rjtrjbhddhqvg3hj7yq",
+      "how": "presupposes"
+    },
+    {
+      "cid": "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza",
+      "how": "presupposes"
+    }
+  ],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:rohexka6jjg3u6d4jilfef26wnrlhrzi66bc45ynzbthvrtgqvdq",
+    "class": "procedural",
+    "held": true,
+    "label": "Multiply lamp power per area by the share of the day lit (fake).",
+    "name": null,
+    "path": "o/pub:sha2-256:rohexka6jjg3u6d4jilfef26wnrlhrzi66bc45ynzbthvrtgqvdq.json",
+    "signature": "missing",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

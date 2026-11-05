@@ -95,3 +95,19 @@
 <p class="m-0">A file: {{ data.media }}, {{ data.size }} bytes.</p>
 {%- endif -%}
 {%- endmacro %}
+
+
+{#- Whether an object's author signed it (publet spec Section 4.4), as its
+    bundle says: only what its author signed counts towards a standing. -#}
+{% macro signed(status) -%}
+{%- if status == "verified" %}{{ tag("signed by its author", "success") }}
+{%- elif status == "invalid" %}{{ tag("signature does not verify", "danger") }}
+{%- elif status == "missing" %}{{ tag("unsigned") }}{% endif -%}
+{%- endmacro %}
+
+{% macro signedtext(status) -%}
+{%- if status == "verified" %}Signed by its author, and the signature verifies: it counts.
+{%- elif status == "invalid" %}A signature by its author is held, and it does not verify: it counts for nothing.
+{%- elif status == "missing" %}None by its author: an unsigned object counts for nothing until its author signs it.
+{%- else %}Not applicable: signatures and keys are not themselves signed.{% endif -%}
+{%- endmacro %}

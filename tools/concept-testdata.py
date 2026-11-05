@@ -3,19 +3,23 @@
 
     tools/concept-testdata.py --pub=PATH/TO/pub
 
-Needs a pub that knows the concept sort and bundles concepts (publet spec
-Section 5.9.1; schryer/publet#49). Composes in a throwaway workspace:
+Needs pub from publet's release PUBLET below: it composes families and
+bundles each object's signature status (publet spec Sections 4.4 and
+5.9.1). Composes in a throwaway workspace:
 
 - 20 classes of the UDC Summary (tests/testdata/concepts-src/pdc-sample.json)
-  as subject concepts, each placed under its broader classes;
+  in 11 families, each family the classes directly under one class, as the
+  PDC publishes them;
 - a quantity concept, LED shelf electricity per growing area and day, at
   628.9~1, with two extracts classified under it, then revised once;
 - a competing concept at the same code, so the code is contested;
 - a relation concept at 628.9~2 and a calculation that solves it;
-- an anchor (an expert group) over 628.9, and a triage suggestion.
+- an anchor (an expert group) over the family under 628, and a triage
+  suggestion.
 
 `pub` has no command for anchors or triage, so those two are built here as
-canonical CBOR, unsigned like the rest. Everything is fake test data.
+canonical CBOR, unsigned like the rest, so every object's signature status
+is `missing`. Everything is fake test data.
 """
 
 from __future__ import annotations
@@ -34,6 +38,9 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "tests" / "testdata" / "concepts-src" / "pdc-sample.json"
 OUT = ROOT / "tests" / "testdata" / "concepts"
 AT = "2026-10-14T12:00:00Z"
+# The publet release whose pub made the test bundles: install it with
+#   cargo install --locked --git https://github.com/Sustenaut/publet --tag v0.4.0 publet-cli pub-store
+PUBLET = "0.4.0"
 
 
 # --- canonical CBOR, for the two objects pub has no command for -------------
@@ -89,9 +96,22 @@ class Pub:
         return self("compose", f"--created={AT}", f"--class={cls}", f"--content={content}",
                     "--scope=unconditional", f"--defines={path}", *[f"--depends={d}" for d in depends])
 
-    def classify(self, member: str, subject: str) -> str:
+    def classify(self, member: str, subject: str, aspect: str = "") -> str:
         return self("annotate", f"--created={AT}", "--kind=classifies", f"--target={member}",
-                    f"--subject={subject}", "--scope=unconditional")
+                    f"--subject={subject}", "--scope=unconditional", *([f"--aspect={aspect}"] if aspect else []))
+
+
+def families(classes: list[dict]) -> list[tuple[str | None, list[dict]]]:
+    """The sample's classes as families: by parent code, in the sample's order, the top family first."""
+    out: dict[str | None, list[dict]] = {}
+    for c in classes:
+        out.setdefault(c["broader"][0] if c["broader"] else None, []).append(c)
+    return list(out.items())
+
+
+def member(c: dict, heads: set[str]) -> dict:
+    d = {k: v for k, v in c["claim"]["defines"].items() if k != "sort"}
+    return {**d, "children": True} if c["pdc"] in heads else d
 
 
 def main() -> int:
@@ -100,17 +120,22 @@ def main() -> int:
     args = parser.parse_args()
     ws = Path(tempfile.mkdtemp(prefix="pubtheme-concepts-"))
     pub = Pub(args.pub, ws)
+    version = subprocess.run([args.pub, "--version"], capture_output=True, text=True).stdout.split()
+    if version[1:2] != [PUBLET]:
+        raise SystemExit(f"{args.pub} is {' '.join(version)}; the test bundles are made with pub {PUBLET}")
     pub("init")
 
-    # The PDC sample: subject concepts, placed under their broader classes.
+    # The PDC sample: a family per class with classes under it, as the PDC publishes them.
     sample = json.loads(SRC.read_text())
-    code = {}
-    for c in sample["classes"]:
-        code[c["pdc"]] = pub.define(c["claim"]["content"], c["claim"]["defines"])
-    for c in sample["classes"]:
-        for parent in c["broader"]:
-            if parent in code:
-                pub.classify(code[c["pdc"]], code[parent])
+    heads = {c["broader"][0] for c in sample["classes"] if c["broader"]}
+    names = {c["pdc"]: c["claim"]["defines"]["name"] for c in sample["classes"]}
+    family = {}
+    for parent, members in families(sample["classes"]):
+        defines = {"sort": "family", "grouping": 1, "members": [member(c, heads) for c in members]}
+        if parent:
+            defines["parent"] = parent
+        under = f"under {parent} {names[parent]}" if parent else "at the top of the classification"
+        family[parent] = pub.define(f"The PDC classes directly {under}.", defines)
 
     # Units and kinds.
     ucum = pub.define("UCUM: the Unified Code for Units of Measure, version 2.2.",
@@ -133,7 +158,7 @@ def main() -> int:
     revised = pub("revise", first, f"--created=2026-10-14T13:00:00Z",
                   "--content=LED shelf electricity per growing area and day: what LED shelves use, with fans and pumps.",
                   f"--defines={defines2}")
-    pub.classify(revised, code["628.9"])
+    pub.classify(revised, family["628"], "628.9")
     competitor = pub.define("Indoor lighting electricity: any electric light for plants indoors.",
                             {"sort": "concept", "pdc": "628.9~1", "name": "Indoor plant lighting electricity",
                              "kind": energy, "boundary": {"includes": ["Any electric light for plants indoors"],
@@ -158,7 +183,7 @@ def main() -> int:
                       "form": {"product": {"coefficient": "1",
                                            "exponents": {"energy": 1, "power": -1, "lit": -1}}}}},
         revised)
-    pub.classify(relation, code["628.9"])
+    pub.classify(relation, family["628"], "628.9")
     default = pub("compose", f"--created={AT}", "--class=normative", "--scope=unconditional",
                   "--content=Without a stated photoperiod, assume 16 hours of light a day (fake).")
     computes = ws / "computes.json"
@@ -177,7 +202,7 @@ def main() -> int:
         (objects / (f.name.replace(":", "_") + ".cbor")).write_bytes(f.read_bytes())
     steward = cid_of(b"a steward key (fake)")
     anchor = obj("anchor", steward, {
-        "lineage": code["628.9"], "current": code["628.9"], "rationale": method,
+        "lineage": family["628"], "current": family["628"], "rationale": method,
         "stewards": [steward, cid_of(b"a second steward key (fake)")], "threshold": 1})
     suggester = cid_of(b"a suggester key (fake)")
     triage = obj("claim.annotation", suggester, {

@@ -1,0 +1,91 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa",
+    "size": 285
+  },
+  "cid": "pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": null,
+  "lineage": {
+    "genesis": "pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa",
+    "heads": [
+      "pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa"
+    ],
+    "members": [
+      "pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "procedural",
+      "content": "Read the electricity figure from the paper's table (fake).",
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:gugvsduem7r2bwrpgj2todx44efoeimt3nzm6s5kefsenrppp3gq": {
+      "cid": "pub:sha2-256:gugvsduem7r2bwrpgj2todx44efoeimt3nzm6s5kefsenrppp3gq",
+      "class": "empirical",
+      "held": true,
+      "label": "Gargaro et al. 2025 (fake): a vertical farm's LED shelves used 1.1 kWh per m2 per day.",
+      "name": null,
+      "path": "o/pub:sha2-256:gugvsduem7r2bwrpgj2todx44efoeimt3nzm6s5kefsenrppp3gq.json",
+      "signature": "missing",
+      "sort": null,
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:hvauixf2ozh7zwo2gcy7ljju4dderz56jf3aeic5gpiql2fkom4q": {
+      "cid": "pub:sha2-256:hvauixf2ozh7zwo2gcy7ljju4dderz56jf3aeic5gpiql2fkom4q",
+      "class": "empirical",
+      "held": true,
+      "label": "Piovano et al. 2026 (fake): LED shelves used 0.9 to 1.3 kWh per m2 per day.",
+      "name": null,
+      "path": "o/pub:sha2-256:hvauixf2ozh7zwo2gcy7ljju4dderz56jf3aeic5gpiql2fkom4q.json",
+      "signature": "missing",
+      "sort": null,
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa",
+    "class": "procedural",
+    "held": true,
+    "label": "Read the electricity figure from the paper's table (fake).",
+    "name": null,
+    "path": "o/pub:sha2-256:v6sktobeo4e44kjb4uyixog6wvlruwn64atac4dgf7ofldrpz2sa.json",
+    "signature": "missing",
+    "sort": null,
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:gugvsduem7r2bwrpgj2todx44efoeimt3nzm6s5kefsenrppp3gq",
+      "how": "method of"
+    },
+    {
+      "cid": "pub:sha2-256:hvauixf2ozh7zwo2gcy7ljju4dderz56jf3aeic5gpiql2fkom4q",
+      "how": "method of"
+    }
+  ]
+}

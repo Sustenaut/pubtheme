@@ -1,18 +1,20 @@
 {
   "address": "https://pub.example.org/def/ucum",
   "bundle": 1,
+  "classes": [],
   "definitions": [
-    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota"
+    "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q"
   ],
   "name": "ucum",
   "related": {
-    "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota": {
-      "cid": "pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota",
+    "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q": {
+      "cid": "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
       "class": "definitional",
       "held": true,
       "label": "UCUM",
       "name": "ucum",
-      "path": "o/pub:sha2-256:56lpvxhrhu3ovmeesi7v2y6dn6lkvdioyw3f6q3v3azfzvyi4ota.json",
+      "path": "o/pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q.json",
+      "signature": "missing",
       "sort": "system",
       "type": "claim.prose"
     }

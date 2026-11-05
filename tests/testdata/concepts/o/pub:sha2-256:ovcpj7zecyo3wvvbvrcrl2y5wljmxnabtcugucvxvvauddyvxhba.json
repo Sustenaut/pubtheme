@@ -1,0 +1,101 @@
+{
+  "address": "https://pub.example.org/def/share%20of%20the%20day",
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba",
+    "size": 406
+  },
+  "cid": "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba",
+  "classified_under": [],
+  "closure": [
+    "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q"
+  ],
+  "concept": null,
+  "critiques": [],
+  "family": null,
+  "lineage": {
+    "genesis": "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba",
+    "heads": [
+      "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba"
+    ],
+    "members": [
+      "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "share of the day: the fraction of a day the lights are on.",
+      "defines": {
+        "dimension": {},
+        "name": "share of the day",
+        "sort": "kind"
+      },
+      "depends": [
+        "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q"
+      ],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q": {
+      "cid": "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+      "class": "definitional",
+      "held": true,
+      "label": "UCUM",
+      "name": "ucum",
+      "path": "o/pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q.json",
+      "signature": "missing",
+      "sort": "system",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza": {
+      "cid": "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza",
+      "class": "definitional",
+      "held": true,
+      "label": "628.9~2",
+      "name": "628.9~2",
+      "path": "o/pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza.json",
+      "signature": "missing",
+      "sort": "concept",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [
+    {
+      "cid": "pub:sha2-256:qexh6rmjjqwpswd6ptcsa2z4zt4sao6xi5jewj2u56qwrdilsd6q",
+      "how": "presupposes"
+    }
+  ],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba",
+    "class": "definitional",
+    "held": true,
+    "label": "share of the day",
+    "name": "share of the day",
+    "path": "o/pub:sha2-256:ovcpj7zecyo3wvvbvrcrl2y5wljmxnabtcugucvxvvauddyvxhba.json",
+    "signature": "missing",
+    "sort": "kind",
+    "type": "claim.prose"
+  },
+  "used_by": [
+    {
+      "cid": "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza",
+      "how": "presupposed by"
+    }
+  ]
+}

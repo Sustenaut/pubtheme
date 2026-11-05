@@ -1,0 +1,195 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda",
+    "size": 1023
+  },
+  "cid": "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": {
+    "anchors": [],
+    "broader": [
+      "pub:sha2-256:x4umnrcdkzavkhydjfzwunzy2rcxtab2wurfco36w73yiu7w6qfq"
+    ],
+    "classes": [
+      {
+        "auxiliary": false,
+        "children": true,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Engineering. Technology in general",
+        "narrower": [
+          "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq"
+        ],
+        "pdc": "62"
+      },
+      {
+        "auxiliary": false,
+        "children": true,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Agriculture and related sciences and techniques. Forestry. Farming. Wildlife exploitation",
+        "narrower": [
+          "pub:sha2-256:2purgjzshyvll5rdlslmjyxdib66zpxemaptdlhtpnjciq6fwt5q"
+        ],
+        "pdc": "63"
+      },
+      {
+        "auxiliary": false,
+        "children": true,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Home economics. Domestic science. Housekeeping",
+        "narrower": [
+          "pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa"
+        ],
+        "pdc": "64"
+      }
+    ],
+    "grouping": 1,
+    "parent": "6"
+  },
+  "lineage": {
+    "genesis": "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda",
+    "heads": [
+      "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda"
+    ],
+    "members": [
+      "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "The PDC classes directly under 6 APPLIED SCIENCES. MEDICINE. TECHNOLOGY.",
+      "defines": {
+        "grouping": 1,
+        "members": [
+          {
+            "children": true,
+            "matches": [
+              {
+                "ref": "http://udcdata.info/040488",
+                "relation": "exact"
+              }
+            ],
+            "name": "Engineering. Technology in general",
+            "pdc": "62"
+          },
+          {
+            "children": true,
+            "matches": [
+              {
+                "ref": "http://udcdata.info/050820",
+                "relation": "exact"
+              }
+            ],
+            "name": "Agriculture and related sciences and techniques. Forestry. Farming. Wildlife exploitation",
+            "pdc": "63"
+          },
+          {
+            "boundary": {
+              "excludes": [],
+              "includes": [
+                "Class here information about the household, including household articles from the point of view of their use; housekeeping operations and domestic work on a commercial scale (e.g. hotel-keeping, catering, cleaning, laundering)"
+              ]
+            },
+            "children": true,
+            "matches": [
+              {
+                "ref": "http://udcdata.info/053117",
+                "relation": "exact"
+              }
+            ],
+            "name": "Home economics. Domestic science. Housekeeping",
+            "pdc": "64"
+          }
+        ],
+        "parent": "6",
+        "sort": "family"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:2purgjzshyvll5rdlslmjyxdib66zpxemaptdlhtpnjciq6fwt5q": {
+      "cid": "pub:sha2-256:2purgjzshyvll5rdlslmjyxdib66zpxemaptdlhtpnjciq6fwt5q",
+      "class": "definitional",
+      "held": true,
+      "label": "63",
+      "name": null,
+      "path": "o/pub:sha2-256:2purgjzshyvll5rdlslmjyxdib66zpxemaptdlhtpnjciq6fwt5q.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa": {
+      "cid": "pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa",
+      "class": "definitional",
+      "held": true,
+      "label": "64",
+      "name": null,
+      "path": "o/pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:x4umnrcdkzavkhydjfzwunzy2rcxtab2wurfco36w73yiu7w6qfq": {
+      "cid": "pub:sha2-256:x4umnrcdkzavkhydjfzwunzy2rcxtab2wurfco36w73yiu7w6qfq",
+      "class": "definitional",
+      "held": true,
+      "label": "----",
+      "name": null,
+      "path": "o/pub:sha2-256:x4umnrcdkzavkhydjfzwunzy2rcxtab2wurfco36w73yiu7w6qfq.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq": {
+      "cid": "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq",
+      "class": "definitional",
+      "held": true,
+      "label": "62",
+      "name": null,
+      "path": "o/pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda",
+    "class": "definitional",
+    "held": true,
+    "label": "6",
+    "name": null,
+    "path": "o/pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda.json",
+    "signature": "missing",
+    "sort": "family",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

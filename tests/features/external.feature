@@ -16,6 +16,10 @@ Feature: Objects kept elsewhere are rendered on request
     And every name's rendered page is the page the whole site has
     And every object's rendered page is the page the whole site has
 
+  Scenario: The index names the family each class's code is defined in
+    When I build another site with those objects kept elsewhere
+    Then the index entry for "631" names the family under "631/635"
+
   Scenario: A code's class comes first when searching, and words find classes
     When I build another site with those objects kept elsewhere
     Then a search for "628.9" finds "628.9" first

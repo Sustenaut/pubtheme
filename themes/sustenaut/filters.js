@@ -37,7 +37,7 @@ export const filters = {
     const groups = new Map();
     for (const cid of cids || []) {
       const b = byCid[cid];
-      if (!b) continue;
+      if (!b || !b.concept) continue;
       const genesis = b.lineage.genesis;
       if (!groups.has(genesis)) {
         const heads = b.lineage.heads.filter((h) => byCid[h]);
@@ -51,6 +51,7 @@ export const filters = {
   pdcroots: (objects) =>
     (objects || [])
       .filter((b) => b.concept && b.concept.form === "subject" && !b.concept.broader.length)
+      .filter((b) => !(b.classified_under || []).some((u) => u.code))
       .filter((b) => b.lineage.heads.includes(b.cid))
       .sort((x, y) => x.concept.pdc.localeCompare(y.concept.pdc, "en", { numeric: true })),
   // Narrower concepts by code, each the head of its lineage.
@@ -59,6 +60,44 @@ export const filters = {
       .map((n) => byCid[n.cid])
       .filter((n) => n && n.lineage.heads.includes(n.cid))
       .sort((x, y) => x.concept.pdc.localeCompare(y.concept.pdc, "en", { numeric: true })),
+  // Families (publet spec Section 5.9.1): the classes directly under one class, defined together.
+  // The head of each lineage among `cids`, in the order given.
+  heads: (cids, byCid) => (cids || []).map((c) => byCid[c]).filter((b) => b && b.lineage.heads.includes(b.cid)),
+  // The families at the top of the classification: those with no parent, each the head of its lineage.
+  familyroots: (objects) => (objects || []).filter((b) => b.family && !b.family.parent && b.lineage.heads.includes(b.cid)),
+  // The classes above a family, from the top down, found by walking parent codes: each {code, name, family}.
+  // It stops where this site holds no family defining the next code up.
+  crumbs: (b, byCid) => {
+    const out = [];
+    const seen = new Set();
+    let at = b;
+    while (at && at.family && at.family.parent && !seen.has(at.cid)) {
+      seen.add(at.cid);
+      const code = at.family.parent;
+      const above = at.family.broader.map((c) => byCid[c]).find((x) => x && x.family);
+      const cls = above && above.family.classes.find((c) => c.pdc === code);
+      out.unshift({ code, name: cls ? cls.name : "", family: above ? above.cid : "" });
+      at = above;
+    }
+    return out;
+  },
+  // Where a code's class is on its family's page.
+  classhref: (code, family) => `/o/${family}/#${encodeName(code)}`,
+  // Where a name's page lands: the class in its family, when one family alone defines it.
+  landing: (n) => (n && n.classes && n.classes.length === 1 && n.definitions.length === 1
+    ? `/o/${n.classes[0].family}/#${encodeName(n.classes[0].code)}` : ""),
+  // The families a concept is placed under, by the class each names: {code, family}.
+  placed: (b) => ((b && b.classified_under) || []).filter((u) => u.code).map((u) => ({ code: u.code, family: u.concept })),
+  // The expert groups covering a concept: its own, and those of the families it is placed under.
+  anchorsof: (b, byCid) => {
+    const out = [...((b.concept && b.concept.anchors) || [])];
+    for (const u of (b.classified_under || []).filter((x) => x.code)) {
+      const f = byCid[u.concept];
+      for (const a of (f && f.family && f.family.anchors) || []) if (!out.some((x) => x.cid === a.cid)) out.push(a);
+    }
+    return out;
+  },
+
   // A quantity cell's keys in its measure's order.
   ordered: (cell, order) => {
     const keys = (order || []).filter((k) => k in cell);

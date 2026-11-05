@@ -1,0 +1,121 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa",
+    "size": 475
+  },
+  "cid": "pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": {
+    "anchors": [],
+    "broader": [
+      "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda"
+    ],
+    "classes": [
+      {
+        "auxiliary": false,
+        "children": true,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Food. Cooking. Dishes. Meals",
+        "narrower": [
+          "pub:sha2-256:72ltkuszuufbmonlpdoqxsqninxzw3fetq7ipuup34cv3mmwewfq"
+        ],
+        "pdc": "641/642"
+      }
+    ],
+    "grouping": 1,
+    "parent": "64"
+  },
+  "lineage": {
+    "genesis": "pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa",
+    "heads": [
+      "pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa"
+    ],
+    "members": [
+      "pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "The PDC classes directly under 64 Home economics. Domestic science. Housekeeping.",
+      "defines": {
+        "grouping": 1,
+        "members": [
+          {
+            "children": true,
+            "matches": [
+              {
+                "ref": "http://udcdata.info/053166",
+                "relation": "exact"
+              }
+            ],
+            "name": "Food. Cooking. Dishes. Meals",
+            "pdc": "641/642"
+          }
+        ],
+        "parent": "64",
+        "sort": "family"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:72ltkuszuufbmonlpdoqxsqninxzw3fetq7ipuup34cv3mmwewfq": {
+      "cid": "pub:sha2-256:72ltkuszuufbmonlpdoqxsqninxzw3fetq7ipuup34cv3mmwewfq",
+      "class": "definitional",
+      "held": true,
+      "label": "641/642",
+      "name": null,
+      "path": "o/pub:sha2-256:72ltkuszuufbmonlpdoqxsqninxzw3fetq7ipuup34cv3mmwewfq.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    },
+    "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda": {
+      "cid": "pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda",
+      "class": "definitional",
+      "held": true,
+      "label": "6",
+      "name": null,
+      "path": "o/pub:sha2-256:jvr4zlr3mm25mn7mnoyfhdvpg46w37ugjpx2zsnusgxls5qfyjda.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa",
+    "class": "definitional",
+    "held": true,
+    "label": "64",
+    "name": null,
+    "path": "o/pub:sha2-256:utvlhrzmuuwwyj73uhsketkdgbyrbfkuydhcyrhppxh7i62u5voa.json",
+    "signature": "missing",
+    "sort": "family",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

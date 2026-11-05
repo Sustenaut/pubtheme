@@ -1,18 +1,20 @@
 {
   "address": "https://pub.example.org/def/628.9~2",
   "bundle": 1,
+  "classes": [],
   "definitions": [
-    "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha"
+    "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza"
   ],
   "name": "628.9~2",
   "related": {
-    "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha": {
-      "cid": "pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha",
+    "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza": {
+      "cid": "pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza",
       "class": "definitional",
       "held": true,
       "label": "628.9~2",
       "name": "628.9~2",
-      "path": "o/pub:sha2-256:ybaymkjitsi6ve3366vqjadnv32ypy5dfma7zzlbigzjlpulvuha.json",
+      "path": "o/pub:sha2-256:vdwsrkeprn5m4omyrycqgokisdoaq22b4kfd5uzywmmyjovtcoza.json",
+      "signature": "missing",
       "sort": "concept",
       "type": "claim.prose"
     }

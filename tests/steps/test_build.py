@@ -242,6 +242,72 @@ def extract_suggestion(tmp_path, prefix: str):
     assert f'href="{prefix}pub%3Asha2-256%3A' in page, page[:3000]
 
 
+def _families(tmp_path: Path) -> dict[str, str]:
+    """Each family by its parent code."""
+    index = json.loads((_bundles(tmp_path) / "index.json").read_text())
+    return {o["label"]: o["cid"] for o in index["objects"] if o.get("sort") == "family"}
+
+
+def _family_page(tmp_path: Path, parent: str) -> str:
+    return _page(tmp_path, "o", _families(tmp_path)[parent])
+
+
+def _encoded(code: str) -> str:
+    return "".join(c if c.isalnum() or c in "-._~" else f"%{ord(c):02X}" for c in code)
+
+
+@given(parsers.parse('the family under "{parent}" has the signature status "{status}"'))
+def family_signature(tmp_path, parent: str, status: str):
+    cid = _families(tmp_path)[parent]
+    _edit(_object_bundle(tmp_path, cid), lambda b: b["summary"].update(signature=status))
+    for name in (_bundles(tmp_path) / "def").glob("*.json"):
+        def change(n):
+            if cid in n["related"]:
+                n["related"][cid]["signature"] = status
+        _edit(name, change)
+
+
+@then(parsers.parse('the page for "{code}" lands on "{at}" in the family under "{parent}"'))
+def lands(tmp_path, code: str, at: str, parent: str):
+    page = _concept_page(tmp_path, code)
+    href = f"/o/{_families(tmp_path)[parent]}/#{_encoded(at)}"
+    assert f'<meta http-equiv="refresh" content="0; url={href}">' in page, page[:800]
+    assert f'href="{href}"' in page, page
+
+
+@then(parsers.parse('the family under "{parent}" has a place for "{code}"'))
+def family_place(tmp_path, parent: str, code: str):
+    assert f'id="{html.escape(code)}"' in _family_page(tmp_path, parent)
+
+
+@then(parsers.parse('the family under "{parent}" names {codes} above it in that order'))
+def family_crumbs(tmp_path, parent: str, codes: str):
+    page = _family_page(tmp_path, parent)
+    nav = page[page.index('aria-label="Broader classes"'):]
+    nav = nav[:nav.index("</nav>")]
+    wanted = [c.strip().strip('"') for c in codes.replace(" and ", ", ").split(",")]
+    at = [nav.index(f"<code>{c}</code>") for c in wanted]
+    assert at == sorted(at), (wanted, nav)
+
+
+@then(parsers.parse('the family under "{parent}" links the family under "{code}"'))
+def family_links(tmp_path, parent: str, code: str):
+    page = _family_page(tmp_path, parent)
+    assert f'href="/o/{_families(tmp_path)[code]}/"' in page and f"Classes under {code}" in page, page
+
+
+@then(parsers.parse('the page for "{code}" links "{at}" in the family under "{parent}"'))
+def concept_broader(tmp_path, code: str, at: str, parent: str):
+    page = _concept_page(tmp_path, code)
+    assert f'href="/o/{_families(tmp_path)[parent]}/#{_encoded(at)}"' in page, page
+
+
+@then(parsers.parse('the family under "{parent}" says "{text}"'))
+def family_says(tmp_path, parent: str, text: str):
+    page = _family_page(tmp_path, parent)
+    assert text in page or html.escape(text, quote=False) in page, page
+
+
 @then("no page for a concept holds a script")
 def no_script(tmp_path):
     for page in (_site(tmp_path) / "def").rglob("index.html"):
@@ -309,6 +375,14 @@ def objects_same(tmp_path):
     assert set(rendered) == set(_kept_objects(tmp_path))
     for cid, page in rendered.items():
         assert page == (_site(tmp_path) / "o" / cid / "index.html").read_text(), cid
+
+
+@then(parsers.parse('the index entry for "{code}" names the family under "{parent}"'))
+def index_family(tmp_path, code: str, parent: str):
+    manifest = json.loads((tmp_path / "elsewhere" / "_external" / "manifest.json").read_text())
+    segment = code.replace("/", "_")
+    shard = json.loads((tmp_path / "elsewhere" / "_external" / "index" / f"{manifest['segments'][segment]}.json").read_text())
+    assert shard["names"][segment]["classes"] == [{"code": code, "family": _families(tmp_path)[parent]}]
 
 
 @then(parsers.parse('a search for "{query}" finds "{code}" first'))

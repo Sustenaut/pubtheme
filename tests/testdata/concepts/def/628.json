@@ -1,19 +1,26 @@
 {
   "address": "https://pub.example.org/def/628",
   "bundle": 1,
+  "classes": [
+    {
+      "code": "628",
+      "family": "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq"
+    }
+  ],
   "definitions": [
-    "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea"
+    "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq"
   ],
   "name": "628",
   "related": {
-    "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea": {
-      "cid": "pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea",
+    "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq": {
+      "cid": "pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq",
       "class": "definitional",
       "held": true,
-      "label": "628",
-      "name": "628",
-      "path": "o/pub:sha2-256:4ovtpt2mtyv2ys4eck6gu77d6p6765yeco3ifhjloj2cpsd5jhea.json",
-      "sort": "concept",
+      "label": "62",
+      "name": null,
+      "path": "o/pub:sha2-256:xjiclgm7x7us3zdnbdf5ujv3v73e7iyohf4c3czp36lnv4m5fmgq.json",
+      "signature": "missing",
+      "sort": "family",
       "type": "claim.prose"
     }
   },

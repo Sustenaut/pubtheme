@@ -1,0 +1,155 @@
+{
+  "address": null,
+  "bundle": 1,
+  "bytes": {
+    "path": "pub/v1/object/pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq",
+    "size": 593
+  },
+  "cid": "pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq",
+  "classified_under": [],
+  "closure": [],
+  "concept": null,
+  "critiques": [],
+  "family": {
+    "anchors": [],
+    "broader": [
+      "pub:sha2-256:2purgjzshyvll5rdlslmjyxdib66zpxemaptdlhtpnjciq6fwt5q"
+    ],
+    "classes": [
+      {
+        "auxiliary": false,
+        "children": true,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Agriculture in general",
+        "narrower": [
+          "pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq"
+        ],
+        "pdc": "631"
+      },
+      {
+        "auxiliary": false,
+        "children": true,
+        "competing": [],
+        "form": "subject",
+        "members": [],
+        "name": "Horticulture in general. Specific crops",
+        "narrower": [
+          "pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq"
+        ],
+        "pdc": "633/635"
+      }
+    ],
+    "grouping": 1,
+    "parent": "631/635"
+  },
+  "lineage": {
+    "genesis": "pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq",
+    "heads": [
+      "pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq"
+    ],
+    "members": [
+      "pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq"
+    ]
+  },
+  "object": {
+    "author": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+    "body": {
+      "class": "definitional",
+      "content": "The PDC classes directly under 631/635 Farm management. Agronomy. Horticulture.",
+      "defines": {
+        "grouping": 1,
+        "members": [
+          {
+            "children": true,
+            "matches": [
+              {
+                "ref": "http://udcdata.info/050935",
+                "relation": "exact"
+              }
+            ],
+            "name": "Agriculture in general",
+            "pdc": "631"
+          },
+          {
+            "children": true,
+            "matches": [
+              {
+                "ref": "http://udcdata.info/051732",
+                "relation": "exact"
+              }
+            ],
+            "name": "Horticulture in general. Specific crops",
+            "pdc": "633/635"
+          }
+        ],
+        "parent": "631/635",
+        "sort": "family"
+      },
+      "depends": [],
+      "evidence": [],
+      "lang": "en",
+      "scope": {
+        "conditions": [],
+        "domain": "unconditional"
+      }
+    },
+    "created": "2026-10-14T12:00:00Z",
+    "type": "claim.prose"
+  },
+  "parameters": {},
+  "related": {
+    "pub:sha2-256:2purgjzshyvll5rdlslmjyxdib66zpxemaptdlhtpnjciq6fwt5q": {
+      "cid": "pub:sha2-256:2purgjzshyvll5rdlslmjyxdib66zpxemaptdlhtpnjciq6fwt5q",
+      "class": "definitional",
+      "held": true,
+      "label": "63",
+      "name": null,
+      "path": "o/pub:sha2-256:2purgjzshyvll5rdlslmjyxdib66zpxemaptdlhtpnjciq6fwt5q.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq": {
+      "cid": "pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq",
+      "class": "definitional",
+      "held": true,
+      "label": "633/635",
+      "name": null,
+      "path": "o/pub:sha2-256:7lcpc6ilpuuajar5qcwcl76t4ptqy4bdlqc5besgk4bfujpwpssq.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq": {
+      "cid": "pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq",
+      "class": "definitional",
+      "held": true,
+      "label": "631",
+      "name": null,
+      "path": "o/pub:sha2-256:d5ewwcojbgbxxtkm7t2gm3wgpmiyh2dfyh3iydezuvmauupun3iq.json",
+      "signature": "missing",
+      "sort": "family",
+      "type": "claim.prose"
+    },
+    "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q": {
+      "cid": "pub:sha2-256:hlnsqgmbek6pzoxuknzi4t64bc46427mcjet2zbnmbb3s6tqfb5q",
+      "held": false
+    }
+  },
+  "rests_on": [],
+  "suggestions": [],
+  "summary": {
+    "cid": "pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq",
+    "class": "definitional",
+    "held": true,
+    "label": "631/635",
+    "name": null,
+    "path": "o/pub:sha2-256:toh5saopj2ounabiiyhgbzwzftt3vidrceldxc4kj3bp3p3zkjcq.json",
+    "signature": "missing",
+    "sort": "family",
+    "type": "claim.prose"
+  },
+  "used_by": []
+}

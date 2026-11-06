@@ -52,7 +52,7 @@ An object's bytes are those you already hold: a CID's hash is their SHA-256.
 
 | Theme | What it is |
 |---|---|
-| `sustenaut` | Sustenaut's look: soil and seedling colours, Nunito, and the components of Sustenaut's planning app ported from its React library. The default, and what sustenaut.eu uses. |
+| `sustenaut` | Sustenaut's look: soil and seedling colours, Nunito, and the components of Sustenaut's planning app ported from its React library. Its tokens and fonts are [`@sustenaut/theme`](https://github.com/Sustenaut/theme)'s, shared with every Sustenaut site. The default, and what sustenaut.eu uses. |
 
 `pubtheme themes` lists them. A theme is an Eleventy project in
 `themes/<name>/`: `theme.json`, `eleventy.config.js`, a Tailwind

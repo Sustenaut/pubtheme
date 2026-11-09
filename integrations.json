@@ -21,5 +21,8 @@
       "path": "tests/**",
       "reason": "Fakes and test data"
     }
+  ],
+  "own_hosts": [
+    "sustenaut.eu"
   ]
 }

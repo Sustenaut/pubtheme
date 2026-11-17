@@ -119,7 +119,7 @@ from publet's v0.4.0 release (the tool names the release it needs). They hold:
   concept at the same code;
 - a relation concept and a calculation that solves it;
 - an expert group (an anchor), and a machine suggestion. The functional suite follows
-[pubkit](https://github.com/schryer/pubkit)'s setup: Gherkin features run
+[pubrules](https://github.com/schryer/pubrules)'s setup: Gherkin features run
 by pytest-bdd, driving the program as a host would.
 
 ## Releasing

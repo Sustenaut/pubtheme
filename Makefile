@@ -15,10 +15,10 @@ functional: ## The Gherkin suite against bin/pubtheme
 	cd tests && PUBTHEME_BIN_DIR=$(CURDIR)/bin ../.venv/bin/pytest -q $(PYTEST_ARGS)
 
 lock: ## Pin tests/requirements.txt with hashes
-	.venv/bin/pubkit lock
+	.venv/bin/pubrules lock
 
-sync-check: ## Fail if pubkit's managed files drifted
-	.venv/bin/pubkit sync --check
+sync-check: ## Fail if pubrules's managed files drifted
+	.venv/bin/pubrules sync --check
 
 example: ## Build the sustenaut theme from the test bundles into _site/
 	rm -rf _site && bin/pubtheme build --bundles=tests/testdata/publication-0 --out=_site

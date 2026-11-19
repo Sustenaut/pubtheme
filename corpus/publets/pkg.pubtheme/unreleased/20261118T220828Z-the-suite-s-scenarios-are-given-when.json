@@ -1,0 +1,4 @@
+{
+  "category": "internal",
+  "change": "The suite's scenarios are Given/When/Then on pubtest's steps: it runs pubtheme with I run and sets up its files with pubtest's file steps"
+}
